@@ -1,0 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+
+public class DiceButon : MonoBehaviour, IPointerDownHandler
+{
+    private Dice dice;
+    private Equipment playerEquipment;
+    [SerializeField] private Image image;
+    [SerializeField] private Text text;
+    [SerializeField] private CanvasGroup canvasGroup;
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
+        canvasGroup.alpha = 0f;
+        playerEquipment.Shoot(dice);
+    }
+
+    public void SetDice(Dice d, Equipment e)
+    {
+        dice = d;
+        playerEquipment = e;
+        // aplico visual dependiendo el uso del dado
+        switch (dice.diceUse)
+        {
+            case DiceUse.Attack:
+                image.color = Color.red;
+                break;
+            case DiceUse.Special1:
+                image.color = Color.blue;
+                break;
+            case DiceUse.Special2:
+                image.color = Color.green;
+                break;
+        }
+        // muestro valores posibles del dado
+        text.text = dice.minValue + "-" + dice.maxValue;
+    }
+}

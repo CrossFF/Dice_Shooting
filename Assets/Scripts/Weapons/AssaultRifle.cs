@@ -8,26 +8,54 @@ public class AssaultRifle : MonoBehaviour, IWeapon
     public Transform weaponOrigin;
     public float fireRate;
     private AnimationManager playerAnimationManager;
+    private int damageMultiplier = 1; // multiplicador de daño de special 2
+    public GameObject prefabCover; // special 1
 
     private void Start()
     {
         playerAnimationManager = transform.parent.GetComponent<AnimationManager>();
-        lineProyectile.SetPosition(0, weaponOrigin.position);
-        lineProyectile.SetPosition(1, new Vector3(weaponOrigin.position.x + 10,
-                                                  weaponOrigin.position.y,
-                                                  weaponOrigin.position.z));
         lineProyectile.enabled = false;
+
+        //print("Multiplicador de daño :" + damageMultiplier);
     }
 
-    public void Shoot(int dice)
+    public void Shoot(Dice dice)
     {
-        StartCoroutine(InstantiateProjectiles(dice));
+        // dispara el doble de lo que tenga el dado cantidad de veces
+        int totalProyectiles = Random.Range(dice.minValue, dice.maxValue);
+        totalProyectiles = totalProyectiles * 2 * damageMultiplier;
+        //print("Total de proyectiles :" + totalProyectiles);
+        StartCoroutine(InstantiateProjectiles(totalProyectiles));
     }
 
-    IEnumerator InstantiateProjectiles(int dice)
+    public void Special1(Dice dice)
+    {
+        // crea una cobertura
+        Vector3 coverSpawn = new Vector3(transform.position.x + 2, 
+                              transform.position.y, 
+                              transform.position.z);
+        Instantiate(prefabCover, coverSpawn, Quaternion.identity);
+    }
+
+    public void Special2(Dice dice)
+    {
+        // los ataque disparan el doble de proyectiles
+        damageMultiplier++;
+
+        //print("Multiplicador de daño :" + damageMultiplier);
+    }
+
+    public void ClearEffects()
+    {
+        damageMultiplier = 1;
+
+        //print("Multiplicador de daño :" + damageMultiplier);
+    }
+
+    IEnumerator InstantiateProjectiles(int proyectiles)
     {    
         playerAnimationManager.RepetitiveShootAnimation();
-        for (int i = 0; i < dice; i++)
+        for (int i = 0; i < proyectiles; i++)
         {         
             // seteo origen del disparo
             lineProyectile.SetPosition(0, weaponOrigin.position);
@@ -44,5 +72,5 @@ public class AssaultRifle : MonoBehaviour, IWeapon
             lineProyectile.enabled = false;
         }
         playerAnimationManager.StopRepetitiveShootAnimation();
-    }
+    } 
 }

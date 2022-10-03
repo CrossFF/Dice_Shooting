@@ -78,6 +78,7 @@ MonoBehaviour:
   lineProyectile: {fileID: 2658596141657247430}
   weaponOrigin: {fileID: 4517929774255257135}
   fireRate: 0.1
+  prefabCover: {fileID: 3036267272314719583, guid: 66ad252b12c48934a90cf146a5a4f61f, type: 3}
 --- !u!120 &2658596141657247430
 LineRenderer:
   m_ObjectHideFlags: 0

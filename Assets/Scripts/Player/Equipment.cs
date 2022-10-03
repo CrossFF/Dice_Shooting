@@ -5,17 +5,18 @@ using UnityEngine.UI;
 
 public class Equipment : MonoBehaviour
 {
-    public GameObject prefabPrimaryWeapon;// armas posibles de usar: proximamente una lista
+    //pool total de dados
+    private List<Dice> dices;
+    private int usedDices = 0; // cantidad de dados utilizados
+                               // cuando llega a 3 genera 5 dados nuevos para usar.
+
+    public GameObject prefabPrimaryWeapon;// armas a usar
     private GameObject primaryWeapon;// arma instanciada
     private IWeapon weaponInUse; // arma que se esta usando actualmente
-    public List<int> diceList; // lista de dados a disparar
     private AnimationManager animationManager; // controlador de animaciones
-    public Text diceTextButton; // texto del boton de dados
-    public Button diceButton; // boton de los dados
-    public List<int> diceBuildList; // lista de dados guardados
-    public List<Image> dicesInBuild; // lista de imagenes de dados guardados
+    public DicePanelManager dicePanelManager; // panel de dados
 
-    private void Start() 
+    private void Start()
     {
         animationManager = GetComponent<AnimationManager>();
         // seteo de armas
@@ -25,119 +26,80 @@ public class Equipment : MonoBehaviour
         weaponInUse = primaryWeapon.GetComponent<IWeapon>();
 
         // si la lista de dados no existe creo una
-        if (diceList.Count == 0)
+        if (dices == null)
         {
-            GenerateDices();
-        }
-
-        // muestro el primer dado a disparar
-        diceTextButton.text = diceList[0].ToString();
-    }
-
-    private void Update() 
-    {
-
-    }
-
-    void GenerateDices()
-    {
-        diceList = new List<int>();
-
-        // si la lista de dados guardados es mayor a 0
-        if(diceBuildList.Count > 0)
-        {
-            //// coloco esos dados como primeros elementos de dados disponibles
-            foreach (var item in diceBuildList)
+            dices = new List<Dice>();
+            for (int i = 0; i < 2; i++)
             {
-                diceList.Add(item);
+                // ataque
+                dices.Add(new Dice(DiceUse.Attack));
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                // ataque 1 mejora
+                dices.Add(new Dice(DiceUse.Attack, DiceProperty.Normal, 1));
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                // especial 1
+                dices.Add(new Dice(DiceUse.Special1));
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                //especial 2
+                dices.Add(new Dice(DiceUse.Special2));
             }
         }
 
-        // genero dados en base a la cantidad de dados que estuvieran guardados 
-        for (int i = 0; i < 6 - diceBuildList.Count; i++)
-        {
-            diceList.Add(Random.Range(1, 7));
-        }
-
-        // limpio la lista de dados guardados
-        diceBuildList.Clear();
-
-        // oculto los dados de la lista de Dados guardados
-        foreach (var item in dicesInBuild)
-        {
-            item.GetComponent<CanvasGroup>().alpha = 0f;
-        }
+        ShowDiceToUse();
     }
 
-    void NextDiceAviable()
+    private void ShowDiceToUse()
     {
-        // mostramos el proximo dado a disparar
-        // si la lista de dados no esta vacia
-        if (diceList.Count != 0)
+        usedDices = 0;
+        // muestro los primeros 5 dados a usar
+        // elijo de manera random 5 dados a usar
+        List<Dice> dicesToUse = new List<Dice>();
+        List<Dice> tempDices = new List<Dice>();
+        foreach (var item in dices)
         {
-            //// muestro el primero elemento de la lista
-            diceTextButton.text = diceList[0].ToString();
-            //// si el boton es ininteractuable, lo hago interactuable
-            if (!diceButton.interactable) diceButton.interactable = true;
+            tempDices.Add(item);
         }
-        else
+        for (int i = 0; i < 5; i++)
         {
-            //// hago el boton de dados ininteractuable   
-            diceTextButton.text = "Empty";
-            diceButton.interactable = false;
+            //print(tempDices.Count);
+            int index = Random.Range(0, tempDices.Count);
+            dicesToUse.Add(tempDices[index]);
+            tempDices.Remove(tempDices[index]);
+            //print(tempDices.Count);
         }
+        // muestro esos dados en el panel de dados
+        dicePanelManager.ShowDicesToUse(dicesToUse, this);
     }
 
-    public void Shoot()
+    public void Shoot(Dice dice)
     {
-        // verifico si hay balas
-        //// si hay disparo
-        if (diceList.Count != 0)
+        if (dice.diceProperty != DiceProperty.Quick) usedDices++;
+
+        switch (dice.diceUse)
         {
-            ////// le digo al arma que dispare
-            weaponInUse.Shoot(diceList[0]);
-            ////// gasto una bala
-            diceList.RemoveAt(0);
-        }
-        else
-        //// sino recargo
-        {
-            ////// genero un nuevo array de dados
-            GenerateDices();
-            ////// activo animacion de recarga
+            case DiceUse.Attack:
+                weaponInUse.Shoot(dice);
+                break;
+            case DiceUse.Special1:
+                weaponInUse.Special1(dice);
+                break;
+            case DiceUse.Special2:
+                weaponInUse.Special2(dice);
+                break;
         }
 
-        NextDiceAviable();
-    }
-
-    public void SaveDice()
-    {
-        // si la lista de dados guardados no existe la creo
-        if (diceBuildList.Count == 0) diceBuildList = new List<int>();
-
-        // si la lista de dados guardados tiene menos de 2 elementos
-        if (diceBuildList.Count < dicesInBuild.Count)
+        // muestro nuevos dados
+        if (usedDices == 3)
         {
-            //// guardo el primer elemnto de la lista de dados disponibles
-            //// en la lista de dados guardados
-            diceBuildList.Add(diceList[0]);
-            //// borro el dado guardado de la lista de dados disponibles
-            diceList.RemoveAt(0);
-            //// actualizo la visual del panel y lista de dados disponibles
-            //// activo animacion de guardado
-
-            //// muestro dado en lugar correspondiente dentro del panel
-            int lastIndex = diceBuildList.Count - 1;
-            dicesInBuild[lastIndex].GetComponent<CanvasGroup>().alpha = 1;
-            Text textDice = dicesInBuild[lastIndex].transform.GetChild(0).GetComponent<Text>();
-            textDice.text = diceBuildList[lastIndex].ToString();
-            //// muestro proximo dado disponible
-            NextDiceAviable();
+            ShowDiceToUse();
+            weaponInUse.ClearEffects();
         }
-        // sino muestro un mensaje de error
-        else
-        {
-            //// activo animacion de dados completos
-        }
+           
     }
 }
