@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimationManager : MonoBehaviour
 {
-    public Animator animator;
+    [SerializeField]private Animator animator;
 
     public void MoveAnimation()
     {
@@ -14,6 +14,15 @@ public class AnimationManager : MonoBehaviour
     public void ShootAnimation()
     {
         animator.SetTrigger("Shoot");
+    }
+
+    public void RepetitiveShootAnimation()
+    {
+        animator.SetTrigger("Repetitive Shoot");
+    }
+    public void StopRepetitiveShootAnimation()
+    {
+        animator.SetTrigger("Stop Repetitive Shoot");
     }
 
     public void GetDamageAnimation()

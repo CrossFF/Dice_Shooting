@@ -96,8 +96,6 @@ public class Equipment : MonoBehaviour
         {
             ////// le digo al arma que dispare
             weaponInUse.Shoot(diceList[0]);
-            ////// activo animacion de disparo
-            animationManager.ShootAnimation();
             ////// gasto una bala
             diceList.RemoveAt(0);
         }
