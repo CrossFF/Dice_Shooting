@@ -77,20 +77,20 @@ public class Equipment : MonoBehaviour
         dicePanelManager.ShowDicesToUse(dicesToUse, this);
     }
 
-    public void Shoot(Dice dice)
+    public void Shoot(Dice dice, int value)
     {
         if (dice.diceProperty != DiceProperty.Quick) usedDices++;
 
         switch (dice.diceUse)
         {
             case DiceUse.Attack:
-                weaponInUse.Shoot(dice);
+                weaponInUse.Shoot(value);
                 break;
             case DiceUse.Special1:
-                weaponInUse.Special1(dice);
+                weaponInUse.Special1(value);
                 break;
             case DiceUse.Special2:
-                weaponInUse.Special2(dice);
+                weaponInUse.Special2(value);
                 break;
         }
 

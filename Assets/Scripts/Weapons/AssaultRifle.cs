@@ -10,46 +10,43 @@ public class AssaultRifle : MonoBehaviour, IWeapon
     private AnimationManager playerAnimationManager;
     private int damageMultiplier = 1; // multiplicador de daño de special 2
     public GameObject prefabCover; // special 1
+    private LineManager lineManager;
 
     private void Start()
     {
+        lineManager = GameObject.Find("Line Manager").GetComponent<LineManager>();
         playerAnimationManager = transform.parent.GetComponent<AnimationManager>();
         lineProyectile.enabled = false;
-
-        //print("Multiplicador de daño :" + damageMultiplier);
     }
 
-    public void Shoot(Dice dice)
+    public void Shoot(int dice)
     {
         // dispara el doble de lo que tenga el dado cantidad de veces
-        int totalProyectiles = Random.Range(dice.minValue, dice.maxValue);
-        totalProyectiles = totalProyectiles * 2 * damageMultiplier;
-        //print("Total de proyectiles :" + totalProyectiles);
+        int totalProyectiles = dice * 2 * damageMultiplier;
         StartCoroutine(InstantiateProjectiles(totalProyectiles));
     }
 
-    public void Special1(Dice dice)
+    public void Special1(int dice)
     {
-        // crea una cobertura
-        Vector3 coverSpawn = new Vector3(transform.position.x + 2, 
-                              transform.position.y, 
-                              transform.position.z);
-        Instantiate(prefabCover, coverSpawn, Quaternion.identity);
+        // es posible crear una torrera en esta linea?
+        if(!lineManager.IsTurretHere())
+        {
+            // animacion de instalar torreta
+            playerAnimationManager.InstallTurret();
+            // crea una cobertura en la linea correspondiente
+            lineManager.InstallTurret(prefabCover);
+        }  
     }
 
-    public void Special2(Dice dice)
+    public void Special2(int dice)
     {
         // los ataque disparan el doble de proyectiles
         damageMultiplier++;
-
-        //print("Multiplicador de daño :" + damageMultiplier);
     }
 
     public void ClearEffects()
     {
         damageMultiplier = 1;
-
-        //print("Multiplicador de daño :" + damageMultiplier);
     }
 
     IEnumerator InstantiateProjectiles(int proyectiles)

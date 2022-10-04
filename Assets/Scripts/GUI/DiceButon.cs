@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class DiceButon : MonoBehaviour, IPointerDownHandler
 {
     private Dice dice;
+    private int value = 0;
     private Equipment playerEquipment;
     [SerializeField] private Image image;
     [SerializeField] private Text text;
@@ -17,7 +18,7 @@ public class DiceButon : MonoBehaviour, IPointerDownHandler
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0f;
-        playerEquipment.Shoot(dice);
+        playerEquipment.Shoot(dice, value);
     }
 
     public void SetDice(Dice d, Equipment e)
@@ -37,7 +38,8 @@ public class DiceButon : MonoBehaviour, IPointerDownHandler
                 image.color = Color.green;
                 break;
         }
-        // muestro valores posibles del dado
-        text.text = dice.minValue + "-" + dice.maxValue;
+        // muestro el valor final del dado
+        value = Random.Range(dice.minValue, dice.maxValue);
+        text.text = value.ToString();
     }
 }

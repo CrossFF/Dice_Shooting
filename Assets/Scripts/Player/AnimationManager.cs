@@ -34,4 +34,9 @@ public class AnimationManager : MonoBehaviour
     {
         animator.SetTrigger("Death");
     }
+
+    public void InstallTurret()
+    {
+        animator.SetTrigger("Install Turret");
+    }
 }

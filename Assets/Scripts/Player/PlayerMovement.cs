@@ -5,8 +5,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private SwipeControls swipeControls;// Movimiento tipo Swipe
-    public List<Transform> positionsList; // posiciones que puede estar el personaje
     private AnimationManager animationManager;
+
+    // Referencias al controlador de lineas, 
+    //  para el movimiento y otras mecanicas
+    public LineManager lineManager;
     private Vector3 posTarget;
     public float speed;
 
@@ -17,35 +20,24 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        swipeControls = GetComponent<SwipeControls>();
-        posTarget = positionsList[1].position;
         animationManager = GetComponent<AnimationManager>();
         audioSource = GetComponent<AudioSource>();
+        swipeControls = GetComponent<SwipeControls>();
+        //seteo de posicion de personaje
+        posTarget = lineManager.GetPlayerPosition();
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*
-        // movimiento por teclas
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            ChangePosition(false);
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            ChangePosition(true);
-        }
-        */
-
         // movimiento por swipe
         if (swipeControls.SwipeUp)
         {
-            ChangePosition(true);
+            ChangePosition(-1);
         }
         if (swipeControls.SwipeDown)
         {
-            ChangePosition(false);
+            ChangePosition(+1);
         }
 
         // movimiento del personaje desde posicion origen hasta destino
@@ -53,35 +45,15 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // cambio posicion del personaje en base a si tiene que ir hacia arriba o abajo
-    void ChangePosition(bool up)
+    void ChangePosition(int yMove)
     {
-        int actualPos = 0;
-        foreach (var pos in positionsList)
+        Vector3 prevPos = posTarget;
+        posTarget = lineManager.MovePlayer(yMove);
+        if (prevPos != posTarget)
         {
-            if (pos.position == transform.position)
-            {
-                break;
-            }
-            actualPos++;
+            animationManager.MoveAnimation();
+            if (audioSource.clip != dashSoundClip) audioSource.clip = dashSoundClip;
+            audioSource.Play();
         }
-
-        // verifico que pueda moverse en la direccion deseada
-        int nextPos = up ? actualPos - 1 : actualPos + 1;
-        if (nextPos > -1 && nextPos < 3)
-        {
-            StartCoroutine(NextPosition(nextPos));
-        }
-    }
-
-    IEnumerator NextPosition(int index)
-    {
-        // activo animacion de movimiento
-        animationManager.MoveAnimation();
-        yield return new WaitForSeconds(0.2f);
-        // muevo al personaje a su nueva pocicion
-        posTarget = positionsList[index].position;
-        // si el sonido a reproducir no es el de movimiento lo cambio
-        if (audioSource.clip != dashSoundClip) audioSource.clip = dashSoundClip;
-        audioSource.Play();
     }
 }
