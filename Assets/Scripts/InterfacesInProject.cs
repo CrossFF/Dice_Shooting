@@ -9,9 +9,21 @@ public interface IWeapon
     void ClearEffects();
 }
 
-public interface IDamageable 
+public interface IDamageable
 {
     void GetDamage(float damage);
+}
+
+public interface IEnemy
+{
+    Line Line { get; set; }
+}
+
+public interface ITurret
+{
+    float HP{get;set;}
+    void Install(int dice);
+    void Dismantle();
 }
 
 

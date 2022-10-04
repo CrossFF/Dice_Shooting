@@ -33,15 +33,22 @@ public class AssaultRifle : MonoBehaviour, IWeapon
         {
             // animacion de instalar torreta
             playerAnimationManager.InstallTurret();
-            // crea una cobertura en la linea correspondiente
-            lineManager.InstallTurret(prefabCover);
+            // conceguir coordenadas que le corresponde a la covertura
+            Vector3 pos = lineManager.GetTurretPosition();
+            // instanciar covertura
+            GameObject temp = Instantiate(prefabCover, pos, Quaternion.identity);
+            // seteo de covertura
+            ITurret turret = temp.GetComponent<ITurret>();
+            turret.Install(dice);
+            // informo al line manager que guarde la info de la torreta en la linea}
+            lineManager.SetTurret(temp.transform);
         }  
     }
 
     public void Special2(int dice)
     {
         // los ataque disparan el doble de proyectiles
-        damageMultiplier++;
+        damageMultiplier += dice;
     }
 
     public void ClearEffects()

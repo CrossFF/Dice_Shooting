@@ -5,7 +5,8 @@ using UnityEngine;
 public class Line : MonoBehaviour
 {
     private Transform player;
-    [SerializeField]private Transform turret;
+    private Transform turret;
+    private List<Transform> enemys; // enemigos que hay en la linea
     [SerializeField] private Transform playerPosition;
     [SerializeField] private Transform turretPosition;
     [SerializeField] private Transform spawnPoisiiton;
@@ -42,5 +43,13 @@ public class Line : MonoBehaviour
     public Transform GetTurret()
     {
         return turret;
+    }
+
+    public void SpawnEnemy(GameObject enemy)
+    {
+        if (enemys == null) enemys = new List<Transform>();
+        GameObject temp = Instantiate(enemy, spawnPoisiiton.position, Quaternion.identity);
+        enemys.Add(temp.transform);
+        temp.GetComponent<IEnemy>().Line = this;
     }
 }

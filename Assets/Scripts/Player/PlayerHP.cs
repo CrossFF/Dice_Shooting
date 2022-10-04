@@ -32,6 +32,8 @@ public class PlayerHP : MonoBehaviour, IDamageable
         {
             // disminuyo vida
             hp -= damage;
+            // activo FX de recibir daño
+            getDamageParticleSystem.Play();
             if (hp > 0)
             {
                 // personaje solo sufre daño
@@ -40,8 +42,6 @@ public class PlayerHP : MonoBehaviour, IDamageable
                 // activo sonido de recibir daño
                 if (audioSource.clip != getDamageSoundClip) audioSource.clip = getDamageSoundClip;
                 audioSource.Play();
-                // activo FX de recibir daño
-                getDamageParticleSystem.Play();
             }
             else
             {
