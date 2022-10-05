@@ -21,6 +21,7 @@ public interface IEnemy
 
 public interface ITurret
 {
+    Line Line { get; set; }
     float HP{get;set;}
     void Install(int dice);
     void Dismantle();

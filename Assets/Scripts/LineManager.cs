@@ -70,4 +70,14 @@ public class LineManager : MonoBehaviour
     {
         linesList[playerIndex].SetTurret(t);
     }
+
+    public Transform GetTurret()
+    {
+        return linesList[playerIndex].GetTurret();
+    }
+
+    public Transform GetEnemy()
+    {
+        return linesList[playerIndex].GetEnemy();
+    }
 }

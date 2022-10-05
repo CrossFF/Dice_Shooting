@@ -33,6 +33,7 @@ public class Line : MonoBehaviour
     public void SetTurret(Transform t)
     {
         turret = t;
+        t.GetComponent<ITurret>().Line = this;
     }
 
     public void ClearTurret()
@@ -51,5 +52,28 @@ public class Line : MonoBehaviour
         GameObject temp = Instantiate(enemy, spawnPoisiiton.position, Quaternion.identity);
         enemys.Add(temp.transform);
         temp.GetComponent<IEnemy>().Line = this;
+    }
+
+    public Transform GetEnemy()
+    {
+        return enemys[0];
+    }
+
+    public List<Transform> GetEnemys(int amount)
+    {
+        List<Transform> list = new List<Transform>();
+        for (int i = 0; i < enemys.Count; i++)
+        {
+            if(i < amount)
+            {
+                list.Add(enemys[i]);
+            }
+        }
+        return list;
+    }
+
+    public List<Transform> GetAllEnemys()
+    {
+        return enemys;
     }
 }
