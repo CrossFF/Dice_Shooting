@@ -92,6 +92,8 @@ public class AssaultRifle : MonoBehaviour, IWeapon
             if (enemy != null)
             {
                 target = new Vector3(enemy.position.x, enemy.position.y + impresision, 0f);
+                // aplicacion de daño
+                enemy.GetComponent<IDamageable>().GetDamage(1);
             }
             else
             {
@@ -108,8 +110,6 @@ public class AssaultRifle : MonoBehaviour, IWeapon
             audioSource.pitch += pitch;
             if (audioSource.clip != simpleShootSound) audioSource.clip = simpleShootSound;
             audioSource.Play();
-            // aplicacion de daño
-            enemy.GetComponent<IDamageable>().GetDamage(1);
             yield return new WaitForSeconds(fireRate);
             // oculto la linea del disparo
             lineProyectile.enabled = false;

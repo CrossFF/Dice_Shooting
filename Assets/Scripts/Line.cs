@@ -54,9 +54,22 @@ public class Line : MonoBehaviour
         temp.GetComponent<IEnemy>().Line = this;
     }
 
+    public void RemoveEnemy(Transform e)
+    {
+        enemys.Remove(e);
+    }
+
     public Transform GetEnemy()
     {
-        return enemys[0];
+        if (enemys.Count != 0)
+        {
+            return enemys[0];
+        }
+        else
+        {
+            return null;
+        }
+
     }
 
     public List<Transform> GetEnemys(int amount)
@@ -64,7 +77,7 @@ public class Line : MonoBehaviour
         List<Transform> list = new List<Transform>();
         for (int i = 0; i < enemys.Count; i++)
         {
-            if(i < amount)
+            if (i < amount)
             {
                 list.Add(enemys[i]);
             }
