@@ -14,6 +14,8 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
 
     [Header("FXs")]
     [SerializeField] private ParticleSystem getDamage;
+    private AudioSource audioSource;
+    public AudioClip getDamageSound, deathSound, attackSound;
 
     private bool isAttacking = false;
     private bool alive = true;
@@ -23,6 +25,7 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
     private void Start()
     {
         animator.SetBool("Move", true);
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -31,17 +34,7 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
         if (alive)
         {
             // guardo data de objetivo en linea; torreta o jugador
-            Transform t, p;
-            t = Line.GetTurret();
-            p = Line.GetPlayer();
-            if (t != null)
-            {
-                target = t;
-            }
-            else if (p != null)
-            {
-                target = p;
-            }
+            target = Line.GetTargetToEnemy();
 
             // si hay un objetivo
             if (target)
@@ -98,6 +91,11 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
 
     IEnumerator OnlyDamage()
     {
+        //sonido
+        audioSource.pitch = AjustPitch();
+        audioSource.clip = getDamageSound;
+        audioSource.Play();
+        //control de animaciones y movimiento
         isGetingDamage = true;
         animator.SetTrigger("Get Damage");
         yield return new WaitForSeconds(0.5f);
@@ -107,8 +105,14 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
 
     IEnumerator Death()
     {
+        //sonido
+        audioSource.pitch = 1;
+        audioSource.clip = deathSound;
+        audioSource.Play();
+        //animaciones y control de acciones
         alive = false;
         animator.SetTrigger("Death");
+        // seteo de muerte en linea
         Line.RemoveEnemy(transform);
         Line = null;
         yield return new WaitForSeconds(2f);
@@ -123,6 +127,10 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
         // activo animacion
         animator.SetTrigger("Attack");
         yield return new WaitForSeconds(0.3f);
+        //sonido
+        audioSource.pitch = AjustPitch();
+        audioSource.clip = attackSound;
+        audioSource.Play();
         // aplico daño al objetivo
         IDamageable t = target.GetComponent<IDamageable>();
         if (t != null)
@@ -136,6 +144,11 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
     {
         yield return new WaitForSeconds(timeBetweenAttacks);
         isAttacking = false;
+    }
+
+    float AjustPitch()
+    {
+        return Random.Range(0.9f, 1.1f);
     }
 
 }

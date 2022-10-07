@@ -89,4 +89,20 @@ public class Line : MonoBehaviour
     {
         return enemys;
     }
+
+    public Transform GetTargetToEnemy()
+    {
+        if(GetTurret())
+        {
+            return GetTurret();
+        }
+        else if(GetPlayer())
+        {
+            return GetPlayer();
+        }
+        else
+        {
+            return null;
+        }
+    }
 }
