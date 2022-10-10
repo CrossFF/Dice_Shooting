@@ -5,6 +5,7 @@ using UnityEngine;
 public class Dummy : MonoBehaviour, IDamageable, IEnemy
 {
     public Line Line { get; set; }
+    public LineManager LineManager { get; set; }
 
     public void GetDamage(float damage)
     {

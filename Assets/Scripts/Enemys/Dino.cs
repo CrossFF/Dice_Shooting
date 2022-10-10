@@ -5,6 +5,7 @@ using UnityEngine;
 public class Dino : MonoBehaviour, IEnemy, IDamageable
 {
     public Line Line { get; set; }
+    public LineManager LineManager { get; set; }
     [SerializeField] private Animator animator;
     [SerializeField] private float HP = 3;
     [SerializeField] private float speed;
@@ -113,6 +114,7 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
         alive = false;
         animator.SetTrigger("Death");
         // seteo de muerte en linea
+        GameObject.Find("Line Manager").GetComponent<LineManager>().RemoveEnemy();
         Line.RemoveEnemy(transform);
         Line = null;
         yield return new WaitForSeconds(2f);

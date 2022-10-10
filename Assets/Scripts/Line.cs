@@ -15,6 +15,11 @@ public class Line : MonoBehaviour
     public Vector3 PlayerPosition { get { return playerPosition.position; } }
     public Vector3 TurretPosition { get { return turretPosition.position; } }
 
+    private void Start() 
+    {
+        enemys = new List<Transform>();    
+    }
+
     public void SetPlayer(Transform p)
     {
         player = p;

@@ -10,6 +10,17 @@ public class LineManager : MonoBehaviour
 
     [Header("Enemies")]
     public GameObject prefabDummy;
+    public List<GameObject> prefabEnemys;
+
+    [Header("Extermine")]
+    [SerializeField]private int level = 1;
+    [SerializeField]private int wabe = 1;
+    [SerializeField] private float timeSpawn;
+    private float cronometer = 0f;
+    [SerializeField]private int enemysPerWabe;
+    [SerializeField]private int totalEnemySpawn;
+    [SerializeField]private int enemysInWabe;
+    [SerializeField]private bool isWabeActive = false;
 
     private void Awake()
     {
@@ -21,10 +32,66 @@ public class LineManager : MonoBehaviour
 
     private void Start()
     {
-        // instancio 3 dummys, uno en cada linea
+        /*// instancio 3 dummys, uno en cada linea
         for (int i = 0; i < 3; i++)
         {
             linesList[i].SpawnEnemy(prefabDummy);
+        }*/
+
+        isWabeActive = true;
+    }
+
+    private void Update()
+    {
+        if (isWabeActive)
+        {
+            enemysPerWabe = level * wabe;
+            // si puedo spawnear un enemigo lo hago
+            if (enemysPerWabe > totalEnemySpawn)
+            {
+                // el cronometro avanza
+                cronometer += Time.deltaTime;
+                if (cronometer >= timeSpawn)
+                {
+                    // cuando sea tiempo de spawner algo
+                    //spawn de enemigo
+                    int index = Random.Range(0, linesList.Count);
+                    linesList[index].SpawnEnemy(prefabEnemys[0]);
+                    totalEnemySpawn++;
+                    enemysInWabe++;
+                    cronometer = 0;
+                }
+            }
+            else
+            {
+                // verifico si estan muertos todos los enemigos
+                if (enemysInWabe <= 0)
+                {
+                    // aumento la oleada o el nivel
+                    if (wabe < 3)
+                    {
+                        wabe++;
+                    }
+                    else
+                    {
+                        wabe = 1;
+                        level++;
+                    }
+
+                    //reseteo variables
+                    totalEnemySpawn = 0;
+                    enemysInWabe = 0;
+                    cronometer = 0f;
+                    if (timeSpawn > 0.2f)
+                    {
+                        timeSpawn -= 0.2f;
+                    }
+                    else
+                    {
+                        timeSpawn = 0.2f;
+                    }
+                }
+            }
         }
     }
 
@@ -79,5 +146,9 @@ public class LineManager : MonoBehaviour
     public Transform GetEnemy()
     {
         return linesList[playerIndex].GetEnemy();
+    }
+    public void RemoveEnemy()
+    {
+        enemysInWabe--;
     }
 }

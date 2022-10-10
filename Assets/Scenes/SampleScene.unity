@@ -7157,7 +7157,10 @@ MonoBehaviour:
   - {fileID: 1413645648}
   - {fileID: 2724201}
   player: {fileID: 0}
-  prefabDummy: {fileID: 3018194306759995540, guid: 51d12d8ef3a798649a6b96c9ff6148ab, type: 3}
+  prefabDummy: {fileID: 4599122731886822542, guid: 72fa2281eda0f2d4f9b817f92d91243a, type: 3}
+  prefabEnemys:
+  - {fileID: 3018194306759995540, guid: 51d12d8ef3a798649a6b96c9ff6148ab, type: 3}
+  timeSpawn: 3
 --- !u!1 &2077035132
 GameObject:
   m_ObjectHideFlags: 3
