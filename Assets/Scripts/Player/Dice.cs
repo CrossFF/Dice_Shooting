@@ -2,13 +2,84 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class DicePool
+{
+    private List<Dice> dices;
+
+    #region constructores
+    public DicePool()
+    {
+        dices = new List<Dice>();
+        for (int i = 0; i < 2; i++)
+        {
+            // ataque
+            dices.Add(new Dice(DiceUse.Attack));
+        }
+        for (int i = 0; i < 2; i++)
+        {
+            // ataque 1 mejora
+            dices.Add(new Dice(DiceUse.Attack, DiceProperty.Normal, 1));
+        }
+        for (int i = 0; i < 2; i++)
+        {
+            // especial 1
+            dices.Add(new Dice(DiceUse.Special1));
+        }
+        for (int i = 0; i < 2; i++)
+        {
+            //especial 2
+            dices.Add(new Dice(DiceUse.Special2));
+        }
+    }
+    #endregion
+    #region fucniones
+    public List<Dice> GetDices(int amount)
+    {
+        List<Dice> tempDices = new List<Dice>();
+        List<Dice> dicesToUse = new List<Dice>();
+        foreach (var item in dices)
+        {
+            tempDices.Add(item);
+        }
+        for (int i = 0; i < amount; i++)
+        {
+            if (tempDices.Count != 0)
+            {
+                int index = Random.Range(0, tempDices.Count);
+                dicesToUse.Add(tempDices[index]);
+                tempDices.Remove(tempDices[index]);
+            }
+            else
+            {
+                break;
+            }
+        }
+        return dicesToUse;
+    }
+
+    public List<Dice> GetAllDices()
+    {
+        List<Dice> tempDices = new List<Dice>();
+        foreach (var item in dices)
+        {
+            tempDices.Add(item);
+        }
+        return tempDices;
+    }
+    #endregion
+}
+
 public class Dice
 {
-    public DiceUse diceUse;
-    public int minValue;
-    public int maxValue;
-    public int upgrades;
-    public DiceProperty diceProperty;
+    private DiceUse diceUse;
+    private int minValue;
+    private int maxValue;
+    private int upgrades;
+    private DiceProperty diceProperty;
+
+    // propiedades
+    public DiceUse DiceUse { get { return diceUse; } }
+    public DiceProperty DiceProperty { get { return diceProperty; } }
 
     #region Constructors
     public Dice(DiceUse use)
@@ -136,24 +207,66 @@ public class Dice
     }
     #endregion
     #region Functions
+    public int RollDice()
+    {
+        return Random.Range(minValue, maxValue);
+    }
+
     public void UpgradeDice()
     {
+        // aumento el nivel
         if (diceProperty == DiceProperty.Quick)
         {
-            if (upgrades + 1 < 2)
-            {
-                upgrades++;
-            }
+            // dado repido
+            if (upgrades + 1 < 2) upgrades++;
+        }
+        else if (diceProperty == DiceProperty.Advanced)
+        {
+            // dado avanzado
+            if (upgrades + 1 < 4) upgrades++;
         }
         else
         {
-            if (upgrades + 1 < 3)
-            {
-                upgrades++;
-
-            }
+            // dado normal
+            if (upgrades + 1 < 3) upgrades++;
         }
-        // aumento el uso maximo
+        // aumento el valor maximo del dado
+        switch (diceProperty)
+        {
+            case DiceProperty.Normal:
+                switch (upgrades)
+                {
+                    case 1:
+                        maxValue = 3;
+                        break;
+                    case 2:
+                        maxValue = 4;
+                        break;
+                }
+                break;
+            case DiceProperty.Advanced:
+                switch (upgrades)
+                {
+                    case 1:
+                        maxValue = 5;
+                        break;
+                    case 2:
+                        maxValue = 6;
+                        break;
+                    case 3:
+                        maxValue = 7;
+                        break;
+                }
+                break;
+            case DiceProperty.Quick:
+                switch (upgrades)
+                {
+                    case 1:
+                        maxValue = 3;
+                        break;
+                }
+                break;
+        }
     }
     #endregion
 }

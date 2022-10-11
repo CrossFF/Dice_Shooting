@@ -26,7 +26,7 @@ public class DiceButon : MonoBehaviour, IPointerDownHandler
         dice = d;
         playerEquipment = e;
         // aplico visual dependiendo el uso del dado
-        switch (dice.diceUse)
+        switch (dice.DiceUse)
         {
             case DiceUse.Attack:
                 image.color = Color.red;
@@ -39,7 +39,7 @@ public class DiceButon : MonoBehaviour, IPointerDownHandler
                 break;
         }
         // muestro el valor final del dado
-        value = Random.Range(dice.minValue, dice.maxValue);
+        value = dice.RollDice();
         text.text = value.ToString();
     }
 }
