@@ -13,10 +13,13 @@ public class Equipment : MonoBehaviour
     private GameObject primaryWeapon;// arma instanciada
     private IWeapon weaponInUse; // arma que se esta usando actualmente
     private AnimationManager animationManager; // controlador de animaciones
-    public DicePanelManager dicePanelManager; // panel de dados
+    private DicePanelManager dicePanelManager; // panel de dados
+    private LineManager lineManager; 
 
     private void Start()
     {
+        dicePanelManager = GameObject.Find("Panel_Dice Selection").GetComponent<DicePanelManager>();
+        lineManager = GameObject.Find("Line Manager").GetComponent<LineManager>();
         animationManager = GetComponent<AnimationManager>();
         // seteo de armas
         // instancio las armas que va a usar el jugador
@@ -62,5 +65,44 @@ public class Equipment : MonoBehaviour
             weaponInUse.ClearEffects();
         }
            
+    }
+
+    public void AddDice(Dice d)
+    {
+        dices.AddDice(d);
+        lineManager.ActivateWabe();
+    }
+    
+    public void DeleteDice(Dice d)
+    {
+        dices.DeleteDice(d);
+        lineManager.ActivateWabe();
+    }
+
+    public void UpgradeDice(Dice d)
+    {
+        d.UpgradeDice();
+        lineManager.ActivateWabe();
+    }
+
+    public void TransformDice(Dice d, DiceProperty p)
+    {
+        dices.DeleteDice(d);
+        dices.AddDice(new Dice(d.DiceUse, p));
+        lineManager.ActivateWabe();
+    }
+
+    public List<Dice> GetAllDices()
+    {
+        return dices.GetAllDices();
+    }
+
+    public List<Dice> GetAllUpgradeablesDices()
+    {
+        return dices.GetAllUpgradeablesDices();
+    }
+
+    public List<Dice> GetAllTypeDices(DiceProperty p){
+        return dices.GetAllTypeDices(p);
     }
 }

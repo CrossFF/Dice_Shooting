@@ -66,6 +66,86 @@ public class DicePool
         }
         return tempDices;
     }
+
+    public void AddDice(Dice d)
+    {
+        dices.Add(d);
+    }
+
+    public void DeleteDice(Dice d)
+    {
+        dices.Remove(d);
+    }
+
+    public List<Dice> GetAllUpgradeablesDices()
+    {
+        List<Dice> tempDices = new List<Dice>();
+        foreach (var item in dices)
+        {
+            if (item.IsUpgradePosible()) tempDices.Add(item);
+        }
+        return tempDices;
+    }
+
+    public List<Dice> GetAllTypeDices(DiceProperty p)
+    {
+        List<Dice> tempDices = new List<Dice>();
+        foreach (var item in dices)
+        {
+            if (item.DiceProperty == p) tempDices.Add(item);
+        }
+        return tempDices;
+    }
+    #endregion
+    #region static functions
+    public static List<Dice> GetNewDices(int amount)
+    {
+        List<Dice> tempDices = new List<Dice>();
+        for (int i = 0; i < amount; i++)
+        {
+            // defino el uso del dado
+            DiceUse diceUse;
+            int num = Random.Range(0, 3);
+            switch (num)
+            {
+                case 0:
+                    diceUse = DiceUse.Attack;
+                    break;
+                case 1:
+                    diceUse = DiceUse.Special1;
+                    break;
+                case 2:
+                    diceUse = DiceUse.Special2;
+                    break;
+                default:
+                    diceUse = DiceUse.Attack;
+                    break;
+            }
+            // defino el tipo del dado
+            DiceProperty diceProperty;
+            num = Random.Range(0, 3);
+            switch (num)
+            {
+                case 0:
+                    diceProperty = DiceProperty.Normal;
+                    break;
+                case 1:
+                    diceProperty = DiceProperty.Advanced;
+                    break;
+                case 2:
+                    diceProperty = DiceProperty.Quick;
+                    break;
+                default:
+                    diceProperty = DiceProperty.Normal;
+                    break;
+            }
+            // defino el nivel
+            num = Random.Range(0, 4);
+            // agrego el dado a la lista
+            tempDices.Add(new Dice(diceUse, diceProperty, num));
+        }
+        return tempDices;
+    }
     #endregion
 }
 
@@ -80,6 +160,8 @@ public class Dice
     // propiedades
     public DiceUse DiceUse { get { return diceUse; } }
     public DiceProperty DiceProperty { get { return diceProperty; } }
+    public int MinValue { get { return minValue; } }
+    public int MaxValue { get { return maxValue; } }
 
     #region Constructors
     public Dice(DiceUse use)
@@ -215,20 +297,17 @@ public class Dice
     public void UpgradeDice()
     {
         // aumento el nivel
-        if (diceProperty == DiceProperty.Quick)
+        switch (diceProperty)
         {
-            // dado repido
-            if (upgrades + 1 < 2) upgrades++;
-        }
-        else if (diceProperty == DiceProperty.Advanced)
-        {
-            // dado avanzado
-            if (upgrades + 1 < 4) upgrades++;
-        }
-        else
-        {
-            // dado normal
-            if (upgrades + 1 < 3) upgrades++;
+            case DiceProperty.Normal:
+                if (upgrades + 1 < 3) upgrades++;
+                break;
+            case DiceProperty.Advanced:
+                if (upgrades + 1 < 4) upgrades++;
+                break;
+            case DiceProperty.Quick:
+                if (upgrades + 1 < 2) upgrades++;
+                break;
         }
         // aumento el valor maximo del dado
         switch (diceProperty)
@@ -267,6 +346,24 @@ public class Dice
                 }
                 break;
         }
+    }
+
+    public bool IsUpgradePosible()
+    {
+        bool r = false;
+        switch (diceProperty)
+        {
+            case DiceProperty.Normal:
+                if (upgrades + 1 < 3) r = true;
+                break;
+            case DiceProperty.Advanced:
+                if (upgrades + 1 < 4) r = true;
+                break;
+            case DiceProperty.Quick:
+                if (upgrades + 1 < 2) r = true;
+                break;
+        }
+        return r;
     }
     #endregion
 }

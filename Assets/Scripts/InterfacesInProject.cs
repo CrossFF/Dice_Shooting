@@ -27,4 +27,11 @@ public interface ITurret
     void Dismantle();
 }
 
+public interface IRewardPanel
+{
+    void Activate();
+    void Desactivate();
+    void Use(Dice d);
+}
+
 

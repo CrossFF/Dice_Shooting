@@ -22,6 +22,9 @@ public class LineManager : MonoBehaviour
     [SerializeField]private int enemysInWabe;
     [SerializeField]private bool isWabeActive = false;
 
+    [Header("Rewards")]
+    [SerializeField]private RewardsOptions rewardsOptions;
+
     private void Awake()
     {
         // seteo pocicion inicial del jugador 
@@ -32,12 +35,6 @@ public class LineManager : MonoBehaviour
 
     private void Start()
     {
-        /*// instancio 3 dummys, uno en cada linea
-        for (int i = 0; i < 3; i++)
-        {
-            linesList[i].SpawnEnemy(prefabDummy);
-        }*/
-
         isWabeActive = true;
     }
 
@@ -76,9 +73,11 @@ public class LineManager : MonoBehaviour
                     {
                         wabe = 1;
                         level++;
+                        // inicio etapa de recompenza
+                        rewardsOptions.ShowOptions();
+                        isWabeActive = false;
                     }
-
-                    //reseteo variables
+                    //reseteo variables  
                     totalEnemySpawn = 0;
                     enemysInWabe = 0;
                     cronometer = 0f;
@@ -90,6 +89,7 @@ public class LineManager : MonoBehaviour
                     {
                         timeSpawn = 0.2f;
                     }
+                    
                 }
             }
         }
@@ -150,5 +150,10 @@ public class LineManager : MonoBehaviour
     public void RemoveEnemy()
     {
         enemysInWabe--;
+    }
+
+    public void ActivateWabe()
+    {
+        isWabeActive = true;
     }
 }
