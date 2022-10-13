@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Dino : MonoBehaviour, IEnemy, IDamageable
-{
+{ 
     public Line Line { get; set; }
-    public LineManager LineManager { get; set; }
+    public float HP { get; set; }
+
+    [Header("Referncias")]
     [SerializeField] private Animator animator;
-    [SerializeField] private float HP = 3;
+
+    [Header("Estadisticas del Dino")]
+    [SerializeField] private float hp;
     [SerializeField] private float speed;
     [SerializeField] private float damage;
     [SerializeField] private float attackDistance;
@@ -25,6 +29,8 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
 
     private void Start()
     {
+        // seteos
+        HP = hp;
         animator.SetBool("Move", true);
         audioSource = GetComponent<AudioSource>();
     }
@@ -153,4 +159,12 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
         return Random.Range(0.9f, 1.1f);
     }
 
+    public void Despawn()
+    {
+        print("Me despauneo bro");
+        GameObject.Find("Line Manager").GetComponent<LineManager>().RemoveEnemy();
+        Line.RemoveEnemy(transform);
+        Line = null;
+        Destroy(gameObject);
+    }
 }

@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Dummy : MonoBehaviour, IDamageable, IEnemy
 {
+    public float HP { get; set; }
     public Line Line { get; set; }
-    public LineManager LineManager { get; set; }
+
+    public void Despawn()
+    {
+        throw new System.NotImplementedException();
+    }
 
     public void GetDamage(float damage)
     {

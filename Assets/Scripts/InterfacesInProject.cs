@@ -11,12 +11,14 @@ public interface IWeapon
 
 public interface IDamageable
 {
+    float HP { get; set; }
     void GetDamage(float damage);
 }
 
 public interface IEnemy
 {
     Line Line { get; set; }
+    void Despawn();
 }
 
 public interface ITurret

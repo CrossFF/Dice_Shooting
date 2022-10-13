@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerHP : MonoBehaviour, IDamageable
 {
-    [SerializeField] private float hp; // vida del jugador
+    [SerializeField] private float hp; // para poder ponerle la vida que considere necesaria
+    public float HP { get; set; } // interfaz
     private bool alive;
 
     // animacion
@@ -18,9 +19,9 @@ public class PlayerHP : MonoBehaviour, IDamageable
     // efectos
     public ParticleSystem getDamageParticleSystem;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
+        HP = hp;
         alive = true;
         animationManager = GetComponent<AnimationManager>();
         audioSource = GetComponent<AudioSource>();
@@ -31,10 +32,10 @@ public class PlayerHP : MonoBehaviour, IDamageable
         if (alive)
         {
             // disminuyo vida
-            hp -= damage;
+            HP -= damage;
             // activo FX de recibir daño
             getDamageParticleSystem.Play();
-            if (hp > 0)
+            if (HP > 0)
             {
                 // personaje solo sufre daño
                 // activo animacion de recibir daño
