@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Exterminate : MonoBehaviour, IGameMode
 {
@@ -8,6 +9,8 @@ public class Exterminate : MonoBehaviour, IGameMode
     [SerializeField] private List<GameObject> prefabEnemys;
     [SerializeField] private LineManager lineManager;
     [SerializeField] private RewardsOptions rewardsOptions;
+    [SerializeField] private Text textCountEnemys;
+    [SerializeField] private Text textTimePlayed;
 
     [Header("Extermine")]
     [SerializeField] private int level = 1;
@@ -22,6 +25,10 @@ public class Exterminate : MonoBehaviour, IGameMode
     // para control de win condition
     private int enemysDefeat = 0;
 
+    // para mostrar estadisticas
+    private int totalEnemyDefeat = 0;
+    private float timePlayed = 0f;
+
     public void Activate()
     {
         isWabeActive = true;
@@ -31,6 +38,7 @@ public class Exterminate : MonoBehaviour, IGameMode
     {
         enemysInWabe--;
         enemysDefeat++;
+        totalEnemyDefeat++;
     }
 
     public void DespawnEnemy()
@@ -74,6 +82,11 @@ public class Exterminate : MonoBehaviour, IGameMode
     {
         if (isWabeActive)
         {
+            // estadistica de tiempo
+            timePlayed += Time.deltaTime;
+            textTimePlayed.text = timePlayed.ToString();
+            textCountEnemys.text = totalEnemyDefeat.ToString();
+
             enemysPerWabe = level * wabe;
             // si puedo spawnear un enemigo lo hago
             if (enemysPerWabe > totalEnemySpawn)

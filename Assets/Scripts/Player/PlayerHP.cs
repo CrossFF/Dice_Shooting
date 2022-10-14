@@ -47,17 +47,21 @@ public class PlayerHP : MonoBehaviour, IDamageable
             else
             {
                 //perosnaje muere
-                ////activo animacion de muerte
-                animationManager.DeathAnimation();
-                //// sonido de muerte
-                audioSource.clip = deadSoundClip;
-                audioSource.Play();
-                alive = false;
+                StartCoroutine(Death());
             }
         }
-        else
-        {
-            //esta muerto
-        }
+    }
+
+    IEnumerator Death()
+    {
+        ////activo animacion de muerte
+        animationManager.DeathAnimation();
+        //// sonido de muerte
+        audioSource.clip = deadSoundClip;
+        audioSource.Play();
+        alive = false;
+        GameObject.Find("Game Mode").GetComponent<IGameMode>().Pause();
+        yield return new WaitForSeconds(2);
+        GameObject.Find("SceneController").GetComponent<SceneControl>().MainMenu();
     }
 }

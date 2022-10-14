@@ -9,6 +9,7 @@ public class Equipment : MonoBehaviour
     private DicePool dices;
     private int usedDices = 0; // cantidad de dados utilizados
                                // cuando llega a 3 genera 5 dados nuevos para usar.
+    private int handSize;
     public GameObject prefabPrimaryWeapon;// armas a usar
     private GameObject primaryWeapon;// arma instanciada
     private IWeapon weaponInUse; // arma que se esta usando actualmente
@@ -33,6 +34,7 @@ public class Equipment : MonoBehaviour
 
     private void ShowDiceToUse()
     {
+        handSize = 5;
         usedDices = 0;
         // muestro los primeros 5 dados a usar
         // elijo de manera random 5 dados a usar
@@ -43,6 +45,7 @@ public class Equipment : MonoBehaviour
 
     public void Shoot(Dice dice, int value)
     {
+        handSize--;
         if (dice.DiceProperty != DiceProperty.Quick) usedDices++;
 
         switch (dice.DiceUse)
@@ -59,37 +62,27 @@ public class Equipment : MonoBehaviour
         }
 
         // muestro nuevos dados
-        if (usedDices == 3)
+        if (usedDices == 3 || handSize == 0)
         {
             ShowDiceToUse();
             weaponInUse.ClearEffects();
-        }
-           
+        }        
     }
 
     public void AddDice(Dice d)
     {
         dices.AddDice(d);
-        lineManager.ActivateGameMode();
     }
     
     public void DeleteDice(Dice d)
     {
         dices.DeleteDice(d);
-        lineManager.ActivateGameMode();
-    }
-
-    public void UpgradeDice(Dice d)
-    {
-        d.UpgradeDice();
-        lineManager.ActivateGameMode();
     }
 
     public void TransformDice(Dice d, DiceProperty p)
     {
         dices.DeleteDice(d);
         dices.AddDice(new Dice(d.DiceUse, p));
-        lineManager.ActivateGameMode();
     }
 
     public List<Dice> GetAllDices()

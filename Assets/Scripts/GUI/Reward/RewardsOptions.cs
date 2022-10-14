@@ -75,4 +75,11 @@ public class RewardsOptions : MonoBehaviour
         }
         tempButtons.Clear();
     }
+
+    public void CancelReward()
+    {
+        // cancelo la recompenza e inicio una nueva oleada
+        HideOptions();
+        GameObject.Find("Line Manager").GetComponent<LineManager>().ActivateGameMode();
+    }
 }
