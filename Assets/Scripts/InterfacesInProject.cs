@@ -36,4 +36,14 @@ public interface IRewardPanel
     void Use(Dice d);
 }
 
+public interface IGameMode
+{
+    void Activate();
+    void Pause();
+    void DespawnEnemy();
+    void DeathEnemy();
+    void Win();
+    void Lose();
+}
+
 

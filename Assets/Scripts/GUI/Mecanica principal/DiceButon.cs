@@ -12,6 +12,7 @@ public class DiceButon : MonoBehaviour, IPointerDownHandler
     [SerializeField] private Image image;
     [SerializeField] private Text text;
     [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] List<Sprite> spritesDices;
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -29,13 +30,34 @@ public class DiceButon : MonoBehaviour, IPointerDownHandler
         switch (dice.DiceUse)
         {
             case DiceUse.Attack:
-                image.color = Color.red;
+                if (dice.DiceProperty != DiceProperty.Quick)
+                {
+                    image.sprite = spritesDices[0];
+                }
+                else
+                {
+                    image.sprite = spritesDices[1];
+                }
                 break;
             case DiceUse.Special1:
-                image.color = Color.blue;
+                if (dice.DiceProperty != DiceProperty.Quick)
+                {
+                    image.sprite = spritesDices[2];
+                }
+                else
+                {
+                    image.sprite = spritesDices[3];
+                }
                 break;
             case DiceUse.Special2:
-                image.color = Color.green;
+                if (dice.DiceProperty != DiceProperty.Quick)
+                {
+                    image.sprite = spritesDices[4];
+                }
+                else
+                {
+                    image.sprite = spritesDices[5];
+                }
                 break;
         }
         // muestro el valor final del dado

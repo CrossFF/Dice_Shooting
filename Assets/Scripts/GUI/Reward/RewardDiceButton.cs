@@ -8,9 +8,10 @@ public class RewardDiceButton : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] Text text;
     [SerializeField] Image image;
+    [SerializeField] List<Sprite> spritesDices;
     private Dice dice;
     private IRewardPanel panel;
-    
+
     public void OnPointerDown(PointerEventData eventData)
     {
         panel.Use(dice);
@@ -24,13 +25,34 @@ public class RewardDiceButton : MonoBehaviour, IPointerDownHandler
         switch (dice.DiceUse)
         {
             case DiceUse.Attack:
-                image.color = Color.red;
+                if (dice.DiceProperty != DiceProperty.Quick)
+                {
+                    image.sprite = spritesDices[0];
+                }
+                else
+                {
+                    image.sprite = spritesDices[1];
+                }
                 break;
             case DiceUse.Special1:
-                image.color = Color.blue;
+                if (dice.DiceProperty != DiceProperty.Quick)
+                {
+                    image.sprite = spritesDices[2];
+                }
+                else
+                {
+                    image.sprite = spritesDices[3];
+                }
                 break;
             case DiceUse.Special2:
-                image.color = Color.green;
+                if (dice.DiceProperty != DiceProperty.Quick)
+                {
+                    image.sprite = spritesDices[4];
+                }
+                else
+                {
+                    image.sprite = spritesDices[5];
+                }
                 break;
         }
         string t = dice.MinValue + "~" + (dice.MaxValue - 1);

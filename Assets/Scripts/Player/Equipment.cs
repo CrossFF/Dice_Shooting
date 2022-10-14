@@ -70,26 +70,26 @@ public class Equipment : MonoBehaviour
     public void AddDice(Dice d)
     {
         dices.AddDice(d);
-        lineManager.ActivateWabe();
+        lineManager.ActivateGameMode();
     }
     
     public void DeleteDice(Dice d)
     {
         dices.DeleteDice(d);
-        lineManager.ActivateWabe();
+        lineManager.ActivateGameMode();
     }
 
     public void UpgradeDice(Dice d)
     {
         d.UpgradeDice();
-        lineManager.ActivateWabe();
+        lineManager.ActivateGameMode();
     }
 
     public void TransformDice(Dice d, DiceProperty p)
     {
         dices.DeleteDice(d);
         dices.AddDice(new Dice(d.DiceUse, p));
-        lineManager.ActivateWabe();
+        lineManager.ActivateGameMode();
     }
 
     public List<Dice> GetAllDices()

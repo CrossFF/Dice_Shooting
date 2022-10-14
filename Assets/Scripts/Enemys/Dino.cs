@@ -161,8 +161,7 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
 
     public void Despawn()
     {
-        print("Me despauneo bro");
-        GameObject.Find("Line Manager").GetComponent<LineManager>().RemoveEnemy();
+        GameObject.Find("Line Manager").GetComponent<LineManager>().DespawnEnemy();
         Line.RemoveEnemy(transform);
         Line = null;
         Destroy(gameObject);
