@@ -12,6 +12,7 @@ public class AssaultRifle : MonoBehaviour, IWeapon
     private int damageMultiplier = 1; // multiplicador de daño de special 2
     public GameObject prefabCover; // special 1
     private LineManager lineManager;
+    private CameraController cameraController;
     //sonido
     public AudioSource audioSource;
     public AudioClip simpleShootSound;
@@ -20,6 +21,7 @@ public class AssaultRifle : MonoBehaviour, IWeapon
     private void Start()
     {
         lineManager = GameObject.Find("Line Manager").GetComponent<LineManager>();
+        cameraController = GameObject.Find("Camera Controller").GetComponent<CameraController>();
         playerAnimationManager = transform.parent.GetComponent<AnimationManager>();
         lineProyectile.enabled = false;
     }
@@ -78,6 +80,7 @@ public class AssaultRifle : MonoBehaviour, IWeapon
     IEnumerator InstantiateProjectiles(int proyectiles)
     {
         // efectos
+        cameraController.Shake(1);
         fireFlash.Play();
         playerAnimationManager.RepetitiveShootAnimation();
         // disparos
@@ -114,6 +117,7 @@ public class AssaultRifle : MonoBehaviour, IWeapon
             // oculto la linea del disparo
             lineProyectile.enabled = false;
         }
+        cameraController.Shake(0);
         fireFlash.Stop();
         playerAnimationManager.StopRepetitiveShootAnimation();
     }

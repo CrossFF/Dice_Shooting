@@ -18,6 +18,7 @@ public class PlayerHP : MonoBehaviour, IDamageable
 
     // efectos
     public ParticleSystem getDamageParticleSystem;
+    private CameraController cameraController;
 
     private void Awake()
     {
@@ -25,6 +26,7 @@ public class PlayerHP : MonoBehaviour, IDamageable
         alive = true;
         animationManager = GetComponent<AnimationManager>();
         audioSource = GetComponent<AudioSource>();
+        cameraController = GameObject.Find("Camera Controller").GetComponent<CameraController>();
     }
 
     public void GetDamage(float damage)
@@ -40,6 +42,7 @@ public class PlayerHP : MonoBehaviour, IDamageable
                 // personaje solo sufre daño
                 // activo animacion de recibir daño
                 animationManager.GetDamageAnimation();
+                StartCoroutine(Shake());
                 // activo sonido de recibir daño
                 if (audioSource.clip != getDamageSoundClip) audioSource.clip = getDamageSoundClip;
                 audioSource.Play();
@@ -50,6 +53,13 @@ public class PlayerHP : MonoBehaviour, IDamageable
                 StartCoroutine(Death());
             }
         }
+    }
+
+    IEnumerator Shake()
+    {
+        cameraController.Shake(1);
+        yield return new WaitForSeconds(0.25f);
+        cameraController.Shake(0);
     }
 
     IEnumerator Death()
