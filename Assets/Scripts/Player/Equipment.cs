@@ -7,8 +7,8 @@ public class Equipment : MonoBehaviour
 {
     //pool total de dados
     private DicePool dices;
-    private int usedDices = 0; // cantidad de dados utilizados
-                               // cuando llega a 3 genera 5 dados nuevos para usar.
+    private int actionPoints = 3; // cantidad de dados utilizados
+                                  // cuando llega a 3 genera 5 dados nuevos para usar.
     private int handSize;
 
     [Header("Armas")]
@@ -20,6 +20,7 @@ public class Equipment : MonoBehaviour
     [SerializeField] private Transform dicePanel;
     [SerializeField] private GameObject prefabDiceButton;
     private List<GameObject> dicesGameObjetc;
+    [SerializeField] private Image actionPointImage;
 
     [Header("Referencias")]
     [SerializeField] private AnimationManager animationManager; // controlador de animaciones
@@ -38,11 +39,17 @@ public class Equipment : MonoBehaviour
         ShowDiceToUse();
     }
 
+    private void Update()
+    {
+        print(actionPoints / 3f);
+        actionPointImage.fillAmount = actionPoints / 3f;
+    }
+
     private void ShowDiceToUse()
     {
         //reseto valores
         handSize = 5;
-        usedDices = 0;
+        actionPoints = 3;
         // limpio los dados anteriores
         if (dicesGameObjetc.Count != 0)
         {
@@ -68,7 +75,7 @@ public class Equipment : MonoBehaviour
     public void Shoot(Dice dice, int value)
     {
         handSize--;
-        if (dice.DiceProperty != DiceProperty.Quick) usedDices++;
+        if (dice.DiceProperty != DiceProperty.Quick) actionPoints--;
 
         switch (dice.DiceUse)
         {
@@ -84,7 +91,7 @@ public class Equipment : MonoBehaviour
         }
 
         // muestro nuevos dados
-        if (usedDices == 3 || handSize == 0)
+        if (actionPoints == 0 || handSize == 0)
         {
             ShowDiceToUse();
             weaponInUse.ClearEffects();
