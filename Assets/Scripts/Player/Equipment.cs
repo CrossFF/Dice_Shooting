@@ -10,18 +10,24 @@ public class Equipment : MonoBehaviour
     private int usedDices = 0; // cantidad de dados utilizados
                                // cuando llega a 3 genera 5 dados nuevos para usar.
     private int handSize;
+
+    [Header("Armas")]
     public GameObject prefabPrimaryWeapon;// armas a usar
     private GameObject primaryWeapon;// arma instanciada
     private IWeapon weaponInUse; // arma que se esta usando actualmente
-    private AnimationManager animationManager; // controlador de animaciones
-    private DicePanelManager dicePanelManager; // panel de dados
-    private LineManager lineManager; 
+
+    [Header("UI")]
+    [SerializeField] private Transform dicePanel;
+    [SerializeField] private GameObject prefabDiceButton;
+    private List<GameObject> dicesGameObjetc;
+
+    [Header("Referencias")]
+    [SerializeField] private AnimationManager animationManager; // controlador de animaciones
+    [SerializeField] private LineManager lineManager;
 
     private void Start()
     {
-        dicePanelManager = GameObject.Find("Panel_Dice Selection").GetComponent<DicePanelManager>();
-        lineManager = GameObject.Find("Line Manager").GetComponent<LineManager>();
-        animationManager = GetComponent<AnimationManager>();
+        dicesGameObjetc = new List<GameObject>();
         // seteo de armas
         // instancio las armas que va a usar el jugador
         primaryWeapon = Instantiate(prefabPrimaryWeapon, transform);
@@ -34,13 +40,29 @@ public class Equipment : MonoBehaviour
 
     private void ShowDiceToUse()
     {
+        //reseto valores
         handSize = 5;
         usedDices = 0;
+        // limpio los dados anteriores
+        if (dicesGameObjetc.Count != 0)
+        {
+            foreach (var item in dicesGameObjetc.ToArray())
+            {
+                Destroy(item);
+            }
+        }
+        dicesGameObjetc.Clear();
+
         // muestro los primeros 5 dados a usar
         // elijo de manera random 5 dados a usar
         List<Dice> dicesToUse = dices.GetDices(5);
-        // muestro esos dados en el panel de dados
-        dicePanelManager.ShowDicesToUse(dicesToUse, this);
+        //muestro los nuevos dados
+        foreach (var item in dicesToUse)
+        {
+            GameObject temp = Instantiate(prefabDiceButton, dicePanel);
+            temp.GetComponent<DiceButon>().SetDice(item, this);
+            dicesGameObjetc.Add(temp);
+        }
     }
 
     public void Shoot(Dice dice, int value)
@@ -66,14 +88,14 @@ public class Equipment : MonoBehaviour
         {
             ShowDiceToUse();
             weaponInUse.ClearEffects();
-        }        
+        }
     }
 
     public void AddDice(Dice d)
     {
         dices.AddDice(d);
     }
-    
+
     public void DeleteDice(Dice d)
     {
         dices.DeleteDice(d);
@@ -95,7 +117,8 @@ public class Equipment : MonoBehaviour
         return dices.GetAllUpgradeablesDices();
     }
 
-    public List<Dice> GetAllTypeDices(DiceProperty p){
+    public List<Dice> GetAllTypeDices(DiceProperty p)
+    {
         return dices.GetAllTypeDices(p);
     }
 }

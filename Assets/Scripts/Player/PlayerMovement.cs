@@ -30,6 +30,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //movimiento por teclado
+        if (Input.GetButtonDown("Vertical"))
+        {
+            ChangePosition(Mathf.FloorToInt(Input.GetAxisRaw("Vertical")) * -1);
+        }
         // movimiento por swipe
         if (swipeControls.SwipeUp)
         {
