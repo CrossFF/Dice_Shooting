@@ -662,7 +662,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
+  m_CellSize: {x: 122.6074, y: 160.615}
   m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -950,7 +950,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1641,7 +1641,7 @@ RectTransform:
   - {fileID: 1511612982}
   - {fileID: 1514469255}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8212,6 +8212,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 2037718892}
   - {fileID: 180319699}
   - {fileID: 1808661605}
   - {fileID: 377966678}
@@ -8219,7 +8220,6 @@ RectTransform:
   - {fileID: 1434973841}
   - {fileID: 2085562560}
   - {fileID: 1797594544}
-  - {fileID: 2037718892}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9166,7 +9166,7 @@ RectTransform:
   - {fileID: 230944579}
   - {fileID: 756028}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9293,7 +9293,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
+  m_CellSize: {x: 122.6074, y: 160.615}
   m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -9364,7 +9364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae6fc982a7f13546a4ac5010d6e15b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabPrimaryWeapon: {fileID: 4517929774465634753, guid: a9d3694ddb045c9489592483895102e9, type: 3}
+  prefabPrimaryWeapon: {fileID: 2299444958927416617, guid: 1c63bdeedcc7c0f4289c131d364cafb5, type: 3}
   dicePanel: {fileID: 180319699}
   prefabDiceButton: {fileID: 7772008346688846970, guid: 070f820e5a3997141b8667a00b833c5e, type: 3}
   actionPointImage: {fileID: 2099107348}
@@ -9593,7 +9593,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
+  m_CellSize: {x: 122.6074, y: 160.615}
   m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -10162,7 +10162,7 @@ RectTransform:
   - {fileID: 1979434620}
   - {fileID: 1412511926}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10551,7 +10551,7 @@ RectTransform:
   - {fileID: 546615223}
   - {fileID: 1361344621}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10631,7 +10631,7 @@ RectTransform:
   - {fileID: 2105206520}
   - {fileID: 2048689491}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11344,7 +11344,7 @@ RectTransform:
   - {fileID: 1371492832}
   - {fileID: 2099107347}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11710,7 +11710,7 @@ RectTransform:
   - {fileID: 157726584}
   - {fileID: 1832851263}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
