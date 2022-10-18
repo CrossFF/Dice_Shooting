@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6801184352946074753}
   - component: {fileID: 7941963142082094960}
   m_Layer: 5
-  m_Name: Button_Opcion_Upgrade
+  m_Name: Upgrade Dice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6801184352946074753}
   - component: {fileID: 7941963142082094960}
   m_Layer: 5
-  m_Name: Button_Opcion_Transform
+  m_Name: Add Dice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d2a59681f656847bc8acf5f873c8e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enumRewardOptions: 1
+  enumRewardOptions: 2
   text: {fileID: 6801184354243047261}
 --- !u!1 &6801184354243047235
 GameObject:

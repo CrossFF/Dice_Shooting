@@ -306,7 +306,7 @@ public class Dice
                 if (upgrades + 1 < 4) upgrades++;
                 break;
             case DiceProperty.Quick:
-                if (upgrades + 1 < 2) upgrades++;
+                if (upgrades + 1 < 3) upgrades++;
                 break;
         }
         // aumento el valor maximo del dado
@@ -343,6 +343,9 @@ public class Dice
                     case 1:
                         maxValue = 3;
                         break;
+                    case 2:
+                        maxValue = 4;
+                        break;
                 }
                 break;
         }
@@ -360,7 +363,7 @@ public class Dice
                 if (upgrades + 1 < 4) r = true;
                 break;
             case DiceProperty.Quick:
-                if (upgrades + 1 < 2) r = true;
+                if (upgrades + 1 < 3) r = true;
                 break;
         }
         return r;
