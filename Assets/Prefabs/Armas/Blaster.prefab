@@ -48,6 +48,7 @@ MonoBehaviour:
   damage: 1
   lineProyectile: {fileID: 6854136099964950105}
   rayOrigin: {fileID: 2003798722847622132}
+  prefabElectricTurret: {fileID: 5247533545840813881, guid: 937911813ab036a429f511f5526e29a6, type: 3}
 --- !u!1 &7983774739060305670
 GameObject:
   m_ObjectHideFlags: 0
