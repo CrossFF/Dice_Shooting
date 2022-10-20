@@ -41,7 +41,7 @@ public class Equipment : MonoBehaviour
 
     private void Update()
     {
-        print(actionPoints / 3f);
+        //print(actionPoints / 3f);
         actionPointImage.fillAmount = actionPoints / 3f;
     }
 

@@ -15,7 +15,11 @@ public class Blaster : MonoBehaviour, IWeapon
     private LineManager lineManager;
     private CameraController cameraController;
     private AnimationManager playerAnimationManager;
-    [SerializeField]private GameObject prefabElectricTurret;
+    [SerializeField] private GameObject prefabElectricTurret;
+
+    [Header("Sound and Effects")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip laserShoot;
 
     void Start()
     {
@@ -63,7 +67,7 @@ public class Blaster : MonoBehaviour, IWeapon
         else
         {
             // aumento el tiempo que pude funcionar la torreta
-            turret = lineManager.GetTurret().GetComponent<ITurret>();    
+            turret = lineManager.GetTurret().GetComponent<ITurret>();
         }
         turret.Install(dice);
     }
@@ -77,6 +81,12 @@ public class Blaster : MonoBehaviour, IWeapon
 
     IEnumerator BlasterAttack()
     {
+        // activo sonido variando su pich
+        audioSource.clip = laserShoot;
+        audioSource.pitch = 1;
+        float pitch = Random.Range(-0.1f, 0.1f);
+        audioSource.pitch += pitch;
+        audioSource.Play();
         // solicito los enemigos que hay en la linea
         //  segun la penetracion del blaster
         List<Transform> enemys = lineManager.GetEnemys(weaponPenetration);
