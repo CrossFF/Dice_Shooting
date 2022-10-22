@@ -17,6 +17,8 @@ public class ElectricTurret : MonoBehaviour, IDamageable, ITurret
     [Header("References")]
     [SerializeField] private ParticleSystem particlesTurretActive;
     [SerializeField] private ParticleSystem particlesAttack;
+    [SerializeField] private AudioSource audioSourceActiveTurret;
+    [SerializeField] private AudioSource audioSourceTurretAttack;
 
     public void Install(int dice)
     {
@@ -62,6 +64,7 @@ public class ElectricTurret : MonoBehaviour, IDamageable, ITurret
         if (Line.GetEnemy() && Vector3.Distance(transform.position, Line.GetEnemy().position) <= attackDistance)
         {      
             if (!particlesAttack.isPlaying) particlesAttack.Play();
+            audioSourceTurretAttack.Play();
             // bajo energia de la torreta.
             HP -= 0.25f;
             // consigo la lista de enemigos en la lines

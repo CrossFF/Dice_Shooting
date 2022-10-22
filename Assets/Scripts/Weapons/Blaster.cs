@@ -21,12 +21,29 @@ public class Blaster : MonoBehaviour, IWeapon
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip laserShoot;
 
+    [Header("Effetcs")]
+    [SerializeField] private ParticleSystem particleChargedAttack;
+    [SerializeField] private ParticleSystem particleAttack;
+
     void Start()
     {
         lineManager = GameObject.Find("Line Manager").GetComponent<LineManager>();
         cameraController = GameObject.Find("Camera Controller").GetComponent<CameraController>();
         playerAnimationManager = transform.parent.GetComponent<AnimationManager>();
         lineProyectile.enabled = false;
+    }
+
+    private void Update()
+    {
+        // particulas de artaques cargados
+        if (damageBonus > 0)
+        {
+            if (!particleChargedAttack.isPlaying) particleChargedAttack.Play();
+        }
+        else
+        {
+            if (particleChargedAttack.isPlaying) particleChargedAttack.Stop();
+        }
     }
 
     public void ClearEffects()
@@ -81,6 +98,7 @@ public class Blaster : MonoBehaviour, IWeapon
 
     IEnumerator BlasterAttack()
     {
+        particleAttack.Play();
         // activo sonido variando su pich
         audioSource.clip = laserShoot;
         audioSource.pitch = 1;
