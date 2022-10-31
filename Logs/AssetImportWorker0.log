@@ -15,11 +15,11 @@ D:/Github/Dice_Shooting_v2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52617
+54387
 Successfully changed project path to: D:/Github/Dice_Shooting_v2
 D:/Github/Dice_Shooting_v2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 62.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 65.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.24f1 (79c78de19888)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -35,38 +35,38 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003687 seconds.
+Registered in 0.003578 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 64.95 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 63.96 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.609 seconds
+- Completed reload, in  0.628 seconds
 Domain Reload Profiling:
-	ReloadAssembly (609ms)
-		BeginReloadAssembly (59ms)
+	ReloadAssembly (628ms)
+		BeginReloadAssembly (60ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (469ms)
-			LoadAssemblies (56ms)
+		EndReloadAssembly (486ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (149ms)
+			SetupTypeCache (147ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (28ms)
 			SetupLoadedEditorAssemblies (193ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (65ms)
-				BeforeProcessingInitializeOnLoad (12ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (13ms)
 				ProcessInitializeOnLoadAttributes (82ms)
 				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (0ms)
@@ -75,35 +75,35 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004221 seconds.
+Registered in 0.004292 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 65.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 70.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.240 seconds
+- Completed reload, in  1.290 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1241ms)
+	ReloadAssembly (1291ms)
 		BeginReloadAssembly (157ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1014ms)
-			LoadAssemblies (96ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1064ms)
+			LoadAssemblies (99ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (337ms)
+			SetupTypeCache (343ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (404ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (429ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (66ms)
-				BeforeProcessingInitializeOnLoad (90ms)
-				ProcessInitializeOnLoadAttributes (220ms)
+				RefreshPlugins (70ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (224ms)
 				ProcessInitializeOnLoadMethodAttributes (13ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
@@ -112,15 +112,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3329 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3330 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 159.5 MB.
 System memory in use after: 159.7 MB.
 
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 3780.
-Total: 3.703000 ms (FindLiveObjects: 0.359400 ms CreateObjectMapping: 0.085800 ms MarkObjects: 3.230400 ms  DeleteObjects: 0.026400 ms)
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 3781.
+Total: 3.762300 ms (FindLiveObjects: 0.342200 ms CreateObjectMapping: 0.084300 ms MarkObjects: 3.309000 ms  DeleteObjects: 0.025700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,73 +134,65 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Audio/Audio Clips/257236__javierzumer__taser.wav
-  artifactKey: Guid(cc044bf72fee3fd439d2409b38b6adb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio Clips/257236__javierzumer__taser.wav using Guid(cc044bf72fee3fd439d2409b38b6adb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ced432d5c7e2df8316e8b148398bd5') in 0.096529 seconds 
-  Import took 0.101381 seconds .
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8b38315a261042f5babc9625f5fe1d') in 0.226636 seconds 
+  Import took 0.232307 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.042301 seconds.
-  path: Assets/Audio/Audio Clips/Taser_Electric Attack.wav
-  artifactKey: Guid(cc044bf72fee3fd439d2409b38b6adb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio Clips/Taser_Electric Attack.wav using Guid(cc044bf72fee3fd439d2409b38b6adb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180bd8fcccc9a45d7d01691cfd82f3bb') in 0.017860 seconds 
-  Import took 0.025882 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.896625 seconds.
-  path: Assets/Scripts/Weapons/ElectricTurret.cs
-  artifactKey: Guid(7b06d6e8646a58841b0cf12a80dc6547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Weapons/ElectricTurret.cs using Guid(7b06d6e8646a58841b0cf12a80dc6547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f7b731728f576316b5278c4203b4d91') in 0.052636 seconds 
-  Import took 0.061431 seconds .
+  Time since last request: 38.617802 seconds.
+  path: Assets/Scripts/Weapons/Flametower.cs
+  artifactKey: Guid(cb88331746823f940a7a1919cc6aa13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Weapons/Flametower.cs using Guid(cb88331746823f940a7a1919cc6aa13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c211269fe1d69438a1918a6e017a11b1') in 0.004071 seconds 
+  Import took 0.009580 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004687 seconds.
+Registered in 0.004812 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.178 seconds
+- Completed reload, in  1.266 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1179ms)
-		BeginReloadAssembly (136ms)
+	ReloadAssembly (1267ms)
+		BeginReloadAssembly (160ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (966ms)
-			LoadAssemblies (106ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1026ms)
+			LoadAssemblies (111ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (348ms)
+			SetupTypeCache (344ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (323ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (362ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (201ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (221ms)
 				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 153.4 MB.
-System memory in use after: 153.7 MB.
+Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.6 MB.
+System memory in use after: 155.8 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3791.
-Total: 4.730700 ms (FindLiveObjects: 0.365800 ms CreateObjectMapping: 0.109300 ms MarkObjects: 4.231400 ms  DeleteObjects: 0.022700 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3829.
+Total: 3.901800 ms (FindLiveObjects: 0.340800 ms CreateObjectMapping: 0.089200 ms MarkObjects: 3.450700 ms  DeleteObjects: 0.019300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -214,316 +206,301 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 187.668189 seconds.
-  path: Assets/Scripts/Weapons/ElectricTurret.cs
-  artifactKey: Guid(7b06d6e8646a58841b0cf12a80dc6547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Weapons/ElectricTurret.cs using Guid(7b06d6e8646a58841b0cf12a80dc6547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d544de236d4a81563cbfdcd26867a1b') in 0.029579 seconds 
-  Import took 0.035056 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.816307 seconds.
-  path: Assets/Prefabs/Armas/Electirc Turret.prefab
-  artifactKey: Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Electirc Turret.prefab using Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da2e166bfe5b59603f98c48db4160a40') in 0.210607 seconds 
-  Import took 0.216594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.234484 seconds.
-  path: Assets/Prefabs/Armas/Electirc Turret.prefab
-  artifactKey: Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Electirc Turret.prefab using Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa66b16c6c3b8aee6a26768ee940e98') in 0.016283 seconds 
-  Import took 0.022621 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.228485 seconds.
-  path: Assets/Prefabs/Armas/Electirc Turret.prefab
-  artifactKey: Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Electirc Turret.prefab using Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c94121cf3253d3cb04a3dd109341619') in 0.016078 seconds 
-  Import took 0.022625 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.653267 seconds.
-  path: Assets/Prefabs/Armas/Electirc Turret.prefab
-  artifactKey: Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Electirc Turret.prefab using Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e61ca746c04fdca7a1b80fba5edf78ef') in 0.016845 seconds 
-  Import took 0.023261 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.939152 seconds.
-  path: Assets/Prefabs/Armas/Electirc Turret.prefab
-  artifactKey: Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Electirc Turret.prefab using Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd40c5dff81cd0eb67973bb5dcbc526b') in 0.016625 seconds 
-  Import took 0.023012 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.730150 seconds.
-  path: Assets/Prefabs/Armas/Electirc Turret.prefab
-  artifactKey: Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Electirc Turret.prefab using Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8455a1f5e13c34966d70651776c0fee2') in 0.029606 seconds 
-  Import took 0.035987 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.322706 seconds.
-  path: Assets/Prefabs/Armas/Electirc Turret.prefab
-  artifactKey: Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Electirc Turret.prefab using Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c8788ece403f8a15d15ce64bcf6253a') in 0.016719 seconds 
-  Import took 0.023269 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.491380 seconds.
-  path: Assets/Prefabs/Armas/Electirc Turret.prefab
-  artifactKey: Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Electirc Turret.prefab using Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ead8f9539e35e90a2260e9b91c771a4e') in 0.023628 seconds 
-  Import took 0.034417 seconds .
+  Time since last request: 5261.484406 seconds.
+  path: Assets/Scripts/Weapons/Flametower.cs
+  artifactKey: Guid(cb88331746823f940a7a1919cc6aa13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Weapons/Flametower.cs using Guid(cb88331746823f940a7a1919cc6aa13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c0dc224e7ebf93097d9e2e739fee23a') in 0.006455 seconds 
+  Import took 0.011384 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004622 seconds.
+Registered in 0.004625 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.246 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1246ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1025ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (353ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (351ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (220ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.6 MB.
+System memory in use after: 155.9 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3831.
+Total: 4.302900 ms (FindLiveObjects: 0.335100 ms CreateObjectMapping: 0.084600 ms MarkObjects: 3.856900 ms  DeleteObjects: 0.024700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 142.159893 seconds.
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0b93fa3e4b1284e940af9b7f641d22') in 0.174779 seconds 
+  Import took 0.180726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.932950 seconds.
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c018d7642299156af0585edbb8e65d31') in 0.015369 seconds 
+  Import took 0.022311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.541729 seconds.
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bedeea865ea9de06b368daa9a50b8c8') in 0.032522 seconds 
+  Import took 0.039468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.439049 seconds.
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed0b69c7ead9c8fc1351c064fe11c03d') in 0.012653 seconds 
+  Import took 0.042596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.515047 seconds.
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238048868779ba7c79b98e93f031a52b') in 0.012425 seconds 
+  Import took 0.018545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.304381 seconds.
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46eee563fc5d9c0db9330efd25aa0d36') in 0.012550 seconds 
+  Import took 0.018524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.702503 seconds.
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c389a9fbf7305e619d3ee74a86cb5a2') in 0.013683 seconds 
+  Import took 0.021231 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004661 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.279 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1280ms)
+		BeginReloadAssembly (140ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1059ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (369ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (345ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.8 MB.
+System memory in use after: 156.0 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3869.
+Total: 4.079800 ms (FindLiveObjects: 0.361900 ms CreateObjectMapping: 0.093800 ms MarkObjects: 3.603000 ms  DeleteObjects: 0.019600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 77.467434 seconds.
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92de42501c1e6092423695d0b895c0af') in 0.174806 seconds 
+  Import took 0.181131 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005006 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.289 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1290ms)
+		BeginReloadAssembly (160ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1053ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (384ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (351ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (220ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.9 MB.
+System memory in use after: 156.1 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3907.
+Total: 4.334900 ms (FindLiveObjects: 0.375200 ms CreateObjectMapping: 0.092700 ms MarkObjects: 3.837000 ms  DeleteObjects: 0.028500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 44.020565 seconds.
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3659ed42598bc4bd919541eb51aebef2') in 0.177231 seconds 
+  Import took 0.184262 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004755 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.158 seconds
+- Completed reload, in  1.341 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1159ms)
+	ReloadAssembly (1342ms)
 		BeginReloadAssembly (139ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (950ms)
-			LoadAssemblies (96ms)
+		EndReloadAssembly (1121ms)
+			LoadAssemblies (113ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (335ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (324ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (95ms)
-				ProcessInitializeOnLoadAttributes (201ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.8 MB.
-System memory in use after: 156.0 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3834.
-Total: 3.709000 ms (FindLiveObjects: 0.333400 ms CreateObjectMapping: 0.083800 ms MarkObjects: 3.272300 ms  DeleteObjects: 0.018700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 49.711186 seconds.
-  path: Assets/Prefabs/Armas/Electirc Turret.prefab
-  artifactKey: Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Electirc Turret.prefab using Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24212904ea92f712e8352200e907d69') in 0.175252 seconds 
-  Import took 0.181438 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3867.616930 seconds.
-  path: Assets/Audio/Musica.mixer
-  artifactKey: Guid(af12a39220a28c249b3eaf9d320ddd3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Musica.mixer using Guid(af12a39220a28c249b3eaf9d320ddd3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c3534d5a8eb133ee6bf32ca39e77f4') in 0.030949 seconds 
-  Import took 0.038890 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.640332 seconds.
-  path: Assets/Audio/UI.mixer
-  artifactKey: Guid(1d0acf527a2210842a1341085f5b8df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/UI.mixer using Guid(1d0acf527a2210842a1341085f5b8df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c780c41ffd4b58c7f37c0b32b41694a') in 0.008204 seconds 
-  Import took 0.017749 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 69.518421 seconds.
-  path: Assets/Audio/Audio.mixer
-  artifactKey: Guid(e0ac85c40186fab43b40de76b4d32410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio.mixer using Guid(e0ac85c40186fab43b40de76b4d32410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd9ef515842c869d79be9eeb1381a10') in 0.012182 seconds 
-  Import took 0.017939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 195.495895 seconds.
-  path: Assets/Prefabs/Armas/Electirc Turret.prefab
-  artifactKey: Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Electirc Turret.prefab using Guid(937911813ab036a429f511f5526e29a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a5ab2ef059cc70f27518097b510f17') in 0.028928 seconds 
-  Import took 0.035374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.809308 seconds.
-  path: Assets/Prefabs/Armas/Assault Rifle.prefab
-  artifactKey: Guid(a9d3694ddb045c9489592483895102e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Assault Rifle.prefab using Guid(a9d3694ddb045c9489592483895102e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5aad3c93be97d7ae5c38f11ca7df97f') in 0.025941 seconds 
-  Import took 0.031792 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.085489 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd25cdba32920e45fe8e695564633c78') in 0.037870 seconds 
-  Import took 0.046872 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.333772 seconds.
-  path: Assets/Prefabs/Armas/Cover.prefab
-  artifactKey: Guid(66ad252b12c48934a90cf146a5a4f61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Cover.prefab using Guid(66ad252b12c48934a90cf146a5a4f61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7eb2bb06548521673d479c9992df61') in 0.022370 seconds 
-  Import took 0.028089 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.493309 seconds.
-  path: Assets/Prefabs/Enemigos/Dino.prefab
-  artifactKey: Guid(51d12d8ef3a798649a6b96c9ff6148ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemigos/Dino.prefab using Guid(51d12d8ef3a798649a6b96c9ff6148ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4c130c2596732ee2978dcf321508bc2') in 0.138143 seconds 
-  Import took 0.144955 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.130547 seconds.
-  path: Assets/Prefabs/Enemigos/Dino.prefab
-  artifactKey: Guid(51d12d8ef3a798649a6b96c9ff6148ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemigos/Dino.prefab using Guid(51d12d8ef3a798649a6b96c9ff6148ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3f066a440bc0a03a8ea5a5716468658') in 0.029846 seconds 
-  Import took 0.035833 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004859 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.75 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.430 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1431ms)
-		BeginReloadAssembly (149ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1198ms)
-			LoadAssemblies (120ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (413ms)
+			SetupTypeCache (386ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (421ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (122ms)
-				ProcessInitializeOnLoadAttributes (262ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (23ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.0 MB.
-System memory in use after: 156.3 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3872.
-Total: 4.289400 ms (FindLiveObjects: 0.349700 ms CreateObjectMapping: 0.093300 ms MarkObjects: 3.824400 ms  DeleteObjects: 0.020600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004664 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.404 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1405ms)
-		BeginReloadAssembly (142ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1174ms)
-			LoadAssemblies (117ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (417ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (399ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (386ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (122ms)
-				ProcessInitializeOnLoadAttributes (244ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (240ms)
 				ProcessInitializeOnLoadMethodAttributes (13ms)
 				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (23ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3199 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 156.0 MB.
 System memory in use after: 156.3 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3874.
-Total: 4.183700 ms (FindLiveObjects: 0.348000 ms CreateObjectMapping: 0.093900 ms MarkObjects: 3.720200 ms  DeleteObjects: 0.020300 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3945.
+Total: 4.800800 ms (FindLiveObjects: 0.398800 ms CreateObjectMapping: 0.094700 ms MarkObjects: 4.283200 ms  DeleteObjects: 0.022300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -537,699 +514,66 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1246.894073 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe54319d109ed4bbd399b28d6a2d0eb') in 0.191043 seconds 
-  Import took 0.198011 seconds .
+  Time since last request: 68.003036 seconds.
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9d5bd31366202c64de728aa7cc39dc') in 0.168440 seconds 
+  Import took 0.176801 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.215010 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f0ba1deb7bd7960ec70b634da70356') in 0.019209 seconds 
-  Import took 0.025937 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.021178 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e79934865985bd4e87d93682c70e85') in 0.027176 seconds 
-  Import took 0.035440 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.951030 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075b1e673a14ee9366bf53b8c4900b2f') in 0.016278 seconds 
-  Import took 0.023226 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.924646 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65da93b58ae8a559803b776bbbe2b7ba') in 0.047050 seconds 
-  Import took 0.053791 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.897151 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b9d054fecf774fc9ce9e8046bfcf6f0') in 0.014530 seconds 
-  Import took 0.021397 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.016250 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '999e1aac7a63be2c265cad435901c211') in 0.014135 seconds 
-  Import took 0.020982 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.713780 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd42f072f1a2968b69f9a893ce197069c') in 0.027669 seconds 
-  Import took 0.034600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.106215 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0558001cbae22c2c7d67c8a77d5c60b9') in 0.015017 seconds 
-  Import took 0.023903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.221696 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625f9bb7844376c02fe8f65b99791e1e') in 0.028315 seconds 
-  Import took 0.035585 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 33.151477 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '508242d96fe889d923f510af9f8a7056') in 0.015526 seconds 
-  Import took 0.023452 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.592262 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b916fb98f5dff6e93f3c544eb465cfc') in 0.026132 seconds 
-  Import took 0.032764 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.184160 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a70f0d5d6b843b7b996ab0013f932fe9') in 0.013617 seconds 
-  Import took 0.020207 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.839778 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8225a44ee007bb24e06c88b443e806c') in 0.032741 seconds 
-  Import took 0.039447 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.014044 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84efac9d198909bbf4886d8a866d4710') in 0.014662 seconds 
-  Import took 0.021799 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.401445 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32b932ef5d62b5ba7da41e75cdd468f4') in 0.016556 seconds 
-  Import took 0.023996 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.965634 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045df06ab681d1d99301555d5c9eba20') in 0.015439 seconds 
-  Import took 0.022403 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.492238 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2824c863c240181381c36fba4980598a') in 0.019017 seconds 
-  Import took 0.026529 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.092327 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a295397b6d6104b94f0093f11d2b2880') in 0.014449 seconds 
-  Import took 0.035119 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.388427 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640233cc0ec2c2cf2cfd6228d847a653') in 0.014980 seconds 
-  Import took 0.021774 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.031373 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '319f0b30977eeee3ef0b8389a5efb9ac') in 0.019865 seconds 
-  Import took 0.026673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.830160 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df3383c64d5be5b1ef58c26b00c6d863') in 0.030269 seconds 
-  Import took 0.037044 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.416562 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e4f7a6b5ae3e57a4624566619bd6ed') in 0.015744 seconds 
-  Import took 0.045132 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.865998 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34215c78d761c3cb836fa02bcaec113') in 0.036848 seconds 
-  Import took 0.043953 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.814810 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf725fe4f39fc40910a1b1f8b0cb759') in 0.028711 seconds 
-  Import took 0.035583 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.888554 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9656e39fa3b6eaf1a19b870a044f571c') in 0.015641 seconds 
-  Import took 0.022839 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.412293 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '985f6eacc41b9314646107f1a13c2dcf') in 0.023360 seconds 
-  Import took 0.030255 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.434451 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be1a9532d8706d90937b19fb79793fe') in 0.022003 seconds 
-  Import took 0.028815 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.435808 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941ba5cc1db622d28afc44aa1503682e') in 0.017487 seconds 
-  Import took 0.025001 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.652926 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba5aa049fb20f63570b0bb24cccf9a0') in 0.016302 seconds 
-  Import took 0.024622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.195278 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a90d989dd6f7916e98fe0ad3e92b00d') in 0.015562 seconds 
-  Import took 0.023029 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.583765 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a227a8ea065f34461520ebe6faf031') in 0.028339 seconds 
-  Import took 0.036538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.882529 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ef43aafa101025560d74b2c2e6e2d4') in 0.014014 seconds 
-  Import took 0.021014 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.472019 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57ab36854e740250e3b3d90b709c0e4') in 0.015420 seconds 
-  Import took 0.022734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.977109 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb199a682705a68c6912e4a98958089') in 0.020918 seconds 
-  Import took 0.028483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.604492 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad03043570297a84069c69eb891c0bba') in 0.016458 seconds 
-  Import took 0.023409 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.153818 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a566f8d11ee06c72af02555a0af50b0b') in 0.016305 seconds 
-  Import took 0.023268 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.724112 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994c554ad6346637d335636eeb7581af') in 0.017730 seconds 
-  Import took 0.026469 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.474943 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a7e8f75ae038658505c4818e87ce63') in 0.017789 seconds 
-  Import took 0.025244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.495223 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c1288889bdbc1f0780881738a40432') in 0.016700 seconds 
-  Import took 0.023896 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.502648 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4236ccf1d8c399349ffd6032e87caf2f') in 0.039912 seconds 
-  Import took 0.062062 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.872645 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf662572d429bbf13d7142b42381c0c') in 0.016063 seconds 
-  Import took 0.026043 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.860296 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4bfdf7cc3a5ab82dd979f591f3fdf46') in 0.015897 seconds 
-  Import took 0.023049 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.661331 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04b6d22391ed4d5fd15a190e42b82353') in 0.028400 seconds 
-  Import took 0.053105 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.666597 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd333fed677d2ad38d2ce8afb4e9f10') in 0.014945 seconds 
-  Import took 0.021922 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.414310 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b00d828605dba4e624ec83de88962a16') in 0.015884 seconds 
-  Import took 0.022824 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.395348 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e67df6f46bf5111eb02a4d98b36d81') in 0.018152 seconds 
-  Import took 0.025072 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.838332 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e7056ea5cc89bea138087519d72e55') in 0.015738 seconds 
-  Import took 0.022949 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.024597 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d6246fcd74cc4e73e0ceff4942c9c44') in 0.014354 seconds 
-  Import took 0.021234 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.360917 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836a762598ebc2bb810b579e0dcd374a') in 0.016196 seconds 
-  Import took 0.023146 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.111689 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21dc9ee79f5fe7a554d1c2faaf7a4752') in 0.015018 seconds 
-  Import took 0.043964 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.649687 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bc0ce4c4983c46b4eccbfc9b05025b4') in 0.034690 seconds 
-  Import took 0.042787 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.330300 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e2ed6b94d2cc34840624acaa91d595') in 0.030288 seconds 
-  Import took 0.037328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 85.930625 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '370d473722d6d7988ea45fc4df105846') in 0.018477 seconds 
-  Import took 0.027118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.465342 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b608bb25e189d9c18807dbc5fbd7820') in 0.029325 seconds 
-  Import took 0.036428 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.943748 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196aca9cfd1215e2ec6f7460862ae03f') in 0.017961 seconds 
-  Import took 0.025346 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.403809 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04e6ed9ae0abe1cd5da2a8682568ea2') in 0.016481 seconds 
-  Import took 0.026308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 46.361719 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da07002b8633e21ce1f09b09c4057c91') in 0.026785 seconds 
-  Import took 0.034879 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.397917 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e970e33657a8f888a60b463c01822c61') in 0.024367 seconds 
-  Import took 0.032171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.699308 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dafc934f14dd97a5032fb880e96bb3b') in 0.039292 seconds 
-  Import took 0.047393 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.130485 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5abbe1a333e98cbafcdff11c805e3b7') in 0.037097 seconds 
-  Import took 0.044638 seconds .
+  Time since last request: 4.400140 seconds.
+  path: Assets/Prefabs/Armas/Flametower.prefab
+  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '558a4895306f3a737ab5d09c8d1e9442') in 0.014099 seconds 
+  Import took 0.021891 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004731 seconds.
+Registered in 0.004867 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.450 seconds
+- Completed reload, in  1.330 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1451ms)
-		BeginReloadAssembly (147ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1215ms)
-			LoadAssemblies (120ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (414ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (425ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (120ms)
-				ProcessInitializeOnLoadAttributes (265ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (15ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.3 MB.
-System memory in use after: 156.5 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3912.
-Total: 6.517000 ms (FindLiveObjects: 0.361000 ms CreateObjectMapping: 0.095700 ms MarkObjects: 6.032100 ms  DeleteObjects: 0.026900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 30.644783 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fb3d87b0397527d392cd5aa179ad2c8') in 0.236913 seconds 
-  Import took 0.244563 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.038346 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afdded7c77ade69b9bb3a99879f12797') in 0.017594 seconds 
-  Import took 0.025059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.494432 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e4ff990f13f98fd93c2b031dd5f6f7') in 0.019632 seconds 
-  Import took 0.027964 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.791952 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '484219914d265e43b6249a7a9974c6f1') in 0.029224 seconds 
-  Import took 0.036404 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.898120 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb8e5a1277e164ab52fb899e1a963498') in 0.028272 seconds 
-  Import took 0.035362 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.495633 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc237a4afdd8a6ca4ef51dce185cfcc') in 0.018681 seconds 
-  Import took 0.026458 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.314580 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e88716b9bd30acc431d6f872bcb472b') in 0.042401 seconds 
-  Import took 0.050425 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.641287 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23e3cf029ad2b6e79deabf8a96b4724b') in 0.016955 seconds 
-  Import took 0.025759 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.296576 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d05cf1732213d314aea8f73c5d57be3') in 0.060561 seconds 
-  Import took 0.067995 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.560392 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e63c2f0c0a21ec9b274a5e9fcf4c76c') in 0.018399 seconds 
-  Import took 0.025531 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.645592 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9290479f138ab06a180c3420da3a983a') in 0.035582 seconds 
-  Import took 0.042630 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.446874 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fba0c275167b00cb3ecb9c9bff458a07') in 0.032211 seconds 
-  Import took 0.039181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.286881 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e20f325ff92d8a166b5ca4f70156db') in 0.032019 seconds 
-  Import took 0.041243 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004752 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.426 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1427ms)
-		BeginReloadAssembly (146ms)
+	ReloadAssembly (1331ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (1192ms)
-			LoadAssemblies (119ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1110ms)
+			LoadAssemblies (125ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (409ms)
+			SetupTypeCache (386ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (410ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (361ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (122ms)
-				ProcessInitializeOnLoadAttributes (254ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (14ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
+			AwakeInstancesAfterBackupRestoration (24ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.5 MB.
-System memory in use after: 156.7 MB.
+Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.2 MB.
+System memory in use after: 156.4 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3950.
-Total: 4.240300 ms (FindLiveObjects: 0.363400 ms CreateObjectMapping: 0.092900 ms MarkObjects: 3.763300 ms  DeleteObjects: 0.019500 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3983.
+Total: 4.446000 ms (FindLiveObjects: 0.357800 ms CreateObjectMapping: 0.093600 ms MarkObjects: 3.969700 ms  DeleteObjects: 0.023200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1242,927 +586,51 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 56.768046 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddbc2a2470cde1be02020f94daedc6e4') in 0.212168 seconds 
-  Import took 0.219507 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.143760 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e52ce84a790a73a6bef25cc5dd455cdd') in 0.018871 seconds 
-  Import took 0.026478 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 41.907169 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c08ebf98486c2722bfb713282a9d1f') in 0.030674 seconds 
-  Import took 0.037886 seconds .
-
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005088 seconds.
+Registered in 0.005046 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.441 seconds
+- Completed reload, in  1.289 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1442ms)
-		BeginReloadAssembly (152ms)
+	ReloadAssembly (1289ms)
+		BeginReloadAssembly (131ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1190ms)
-			LoadAssemblies (125ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1079ms)
+			LoadAssemblies (110ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (411ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (411ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (123ms)
-				ProcessInitializeOnLoadAttributes (254ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (26ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.6 MB.
-System memory in use after: 156.8 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3988.
-Total: 4.097700 ms (FindLiveObjects: 0.359000 ms CreateObjectMapping: 0.087200 ms MarkObjects: 3.630100 ms  DeleteObjects: 0.020300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 239.108194 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d13ac7d15cba4cf0e97f59dd436743a') in 0.203246 seconds 
-  Import took 0.212292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.059137 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c3e5565762393f61da2735ac18119e') in 0.033368 seconds 
-  Import took 0.041140 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005295 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.457 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1458ms)
-		BeginReloadAssembly (154ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1216ms)
-			LoadAssemblies (126ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (414ms)
+			SetupTypeCache (369ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (419ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (375ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (122ms)
-				ProcessInitializeOnLoadAttributes (261ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.7 MB.
-System memory in use after: 156.9 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 4026.
-Total: 4.503700 ms (FindLiveObjects: 0.394500 ms CreateObjectMapping: 0.098400 ms MarkObjects: 3.917400 ms  DeleteObjects: 0.090600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 91.936772 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624a995e56f36bfbcc64645889455787') in 0.223375 seconds 
-  Import took 0.232914 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 47.508303 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a99bb48f6258fc7228ee3d15dcf4faff') in 0.056333 seconds 
-  Import took 0.066007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.449495 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f855f2fbb6beb126ff9457a44969e1cc') in 0.027578 seconds 
-  Import took 0.034725 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.786037 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8ff398894e42d7dbacfc8877bf17c7') in 0.047241 seconds 
-  Import took 0.054572 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.333028 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7334a238ad46f3216a5ca2ef6bef72a') in 0.036645 seconds 
-  Import took 0.044837 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.885297 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6890344959600ad2d57d03d21399bc79') in 0.018218 seconds 
-  Import took 0.025851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.283711 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e05d061278d572994974754b511e5e74') in 0.017618 seconds 
-  Import took 0.024920 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.116589 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b35e5893ad5e8b86bd425dd82f1e5ae') in 0.025141 seconds 
-  Import took 0.033851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.231735 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b77798c499fa031069147a0fca0d9f0') in 0.032308 seconds 
-  Import took 0.040005 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.226085 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '239dacdc030334c73be6ca0c2218f626') in 0.015597 seconds 
-  Import took 0.022760 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.477747 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b9f1776b8d60a64fada67ff214e1ee') in 0.016494 seconds 
-  Import took 0.023843 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.276243 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5876474e0fde522505e3d91b5d3a62') in 0.035624 seconds 
-  Import took 0.045277 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.189640 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5807fe80930d3dc68112e9b3bff02b11') in 0.016854 seconds 
-  Import took 0.023894 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.648739 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7054d53adbb7408fd2f08c75fd98039f') in 0.037212 seconds 
-  Import took 0.044397 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.267970 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a78c139b797ead7596fe67751ac16da0') in 0.019193 seconds 
-  Import took 0.035235 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.386358 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70959f79891e0ddf72a84fbd8c79da7b') in 0.027585 seconds 
-  Import took 0.034595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.118781 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd568097a655c2df70624aeea7ad9e28') in 0.017218 seconds 
-  Import took 0.024397 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.494252 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b8c6dd879a4db3bf81aaeb93b4b385') in 0.034342 seconds 
-  Import took 0.041536 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.101629 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f352e8f4b8470e9b4adcf53b85ddb585') in 0.017125 seconds 
-  Import took 0.025380 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.054814 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d028b61ce0e4c896682c384ec465962') in 0.019409 seconds 
-  Import took 0.027948 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.732397 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b044678aa0694285054407c3534403fd') in 0.023132 seconds 
-  Import took 0.030923 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.021594 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73aa90bd774b0194ab43ae2507ca3901') in 0.034717 seconds 
-  Import took 0.042426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.901626 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14b2aadc234a4dd8e37e5bcefb8aebb0') in 0.021097 seconds 
-  Import took 0.028526 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.724086 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45ba80b3db27b14d45eaa98ab8ac05c') in 0.029085 seconds 
-  Import took 0.036307 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.502891 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd597e0d6b46f34e10e76ce1024d9bd0e') in 0.029901 seconds 
-  Import took 0.039406 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.868138 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c076e4f5b81a20a7e57437378969f559') in 0.032930 seconds 
-  Import took 0.040221 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.340145 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9c106ebd0c7f2585acb40a235f2c1c') in 0.029066 seconds 
-  Import took 0.038417 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.560522 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70131c1e388e5d90dd4a02476cbcc4de') in 0.034760 seconds 
-  Import took 0.042165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.299286 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d55581b4ac4be8ca08ff0b83d10bc0') in 0.018558 seconds 
-  Import took 0.027265 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.693008 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0488209f0ef0ccca1771505dc54532') in 0.040972 seconds 
-  Import took 0.048889 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.001673 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30c6a11f32371a15d11379af2a16c078') in 0.031863 seconds 
-  Import took 0.041337 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.443813 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '784fe1c33c16ff0acc4f8044f22fb135') in 0.016323 seconds 
-  Import took 0.023557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.613446 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d85f4ba21562bf37b9cdb88b7eb5d8') in 0.018055 seconds 
-  Import took 0.027301 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.659749 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e70d7cc6706c1eb85706094c9e3a02') in 0.027762 seconds 
-  Import took 0.035059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.903217 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39cb9d02a020438998c790819c0e1391') in 0.017271 seconds 
-  Import took 0.024592 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.251963 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ce892c1f6f2c0179ba6692d885d72d0') in 0.017924 seconds 
-  Import took 0.026141 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.658008 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f588825d136702333908cac38a660d3') in 0.018650 seconds 
-  Import took 0.026786 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.050181 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929f979e6a4cc9f7b53e8bcd37980e7d') in 0.030819 seconds 
-  Import took 0.037999 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.591374 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '354cdfba1f46d745082d7b0e791d6c0a') in 0.020697 seconds 
-  Import took 0.029144 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.280952 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8302f70fbfa0698602b6ba6c31cb1a3') in 0.020282 seconds 
-  Import took 0.029103 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.884937 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd57fd675aed81224293e899f06448e28') in 0.029601 seconds 
-  Import took 0.036871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.185244 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7787b95c87c32c6ea6e7de543a22381') in 0.035865 seconds 
-  Import took 0.043889 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.885617 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c21d069c6c1cb97cee922d48b8c70f38') in 0.040097 seconds 
-  Import took 0.048578 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.717037 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab4e1b167e250cdb0f3afe55d6d82c4e') in 0.016975 seconds 
-  Import took 0.025790 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.912201 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5be571928450eca30f517a041797a7') in 0.040324 seconds 
-  Import took 0.047691 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.608320 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa53d7a5d0eaa1d7bcd86220276e3fc') in 0.027387 seconds 
-  Import took 0.036369 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.901920 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf136860103fdc4e61f0939b828a559') in 0.018353 seconds 
-  Import took 0.026117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.461712 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '057f6f21799b184736107cb1ff7815cb') in 0.042754 seconds 
-  Import took 0.051351 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.464037 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0b7400de19582f6202f44b40117363') in 0.038164 seconds 
-  Import took 0.045475 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.395204 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51623eec8b6d7bba657eb7c88698868') in 0.017558 seconds 
-  Import took 0.025052 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.637191 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9a48eb15112dc741ec4a3a65c044a8') in 0.018686 seconds 
-  Import took 0.026550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.482100 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7814f76275ecd790555605eaf7c485e4') in 0.018858 seconds 
-  Import took 0.027053 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.461991 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb05e351c70cb8f0848e03fa2db8de2') in 0.022450 seconds 
-  Import took 0.031163 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.956074 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f54a04d8245c37a1388bafe3f2e2f350') in 0.016528 seconds 
-  Import took 0.024083 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.821879 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5f60f2dc38a1f1983a2faa4707fb157') in 0.018119 seconds 
-  Import took 0.026716 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.437143 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac0e299c9b506dcf63b3c3decff2a7f') in 0.034384 seconds 
-  Import took 0.042363 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.609848 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a97adff8ae7b4c5b46343aa6861dd5') in 0.018173 seconds 
-  Import took 0.026721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.793198 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea11f52e0ba10c08d5d8f338360f3443') in 0.016732 seconds 
-  Import took 0.025215 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.620697 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ba6f076cb8c57573a10f8cca36d1bd9') in 0.020915 seconds 
-  Import took 0.029476 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.240451 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9efa5239dd8a2d2ccaed2fbe0549fe34') in 0.017269 seconds 
-  Import took 0.025261 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.436301 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3111ab4701b849443d878fb8565747f0') in 0.020487 seconds 
-  Import took 0.028601 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.089453 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce01be60b0142de9a734c308f21ec101') in 0.018187 seconds 
-  Import took 0.026775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.066326 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26fe06e711130efcdb8bebd72cdcf4b0') in 0.033334 seconds 
-  Import took 0.040675 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.282211 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64d9d9b6d3f9ecb8402b95871e1d8f1f') in 0.016515 seconds 
-  Import took 0.023640 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.254550 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf19ea5d9987b70fe73e47ffe04bb09') in 0.017703 seconds 
-  Import took 0.025816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.198006 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65a92031c9e1b7afcf744912b2302aed') in 0.017220 seconds 
-  Import took 0.025962 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.222855 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ada868a3ec7aa8b06da2d667e6623f5b') in 0.041742 seconds 
-  Import took 0.049008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.935094 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2573bead7a38ccd3a52bfcc061d4ec45') in 0.021008 seconds 
-  Import took 0.028529 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.652470 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02896c2c172d987fc0d409a1f91137ef') in 0.017036 seconds 
-  Import took 0.024380 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004605 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.376 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1376ms)
-		BeginReloadAssembly (152ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (1142ms)
-			LoadAssemblies (116ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (393ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (390ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (115ms)
-				ProcessInitializeOnLoadAttributes (242ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 157.0 MB.
-System memory in use after: 157.2 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 4064.
-Total: 5.652200 ms (FindLiveObjects: 0.706200 ms CreateObjectMapping: 0.203800 ms MarkObjects: 4.713600 ms  DeleteObjects: 0.027200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 91.379265 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3029995f236f89ee2444a8f8c4300f6') in 0.195537 seconds 
-  Import took 0.203164 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.896186 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e09017b43493bc0edebff9573a637ae') in 0.017448 seconds 
-  Import took 0.025031 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004719 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.381 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1381ms)
-		BeginReloadAssembly (148ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1150ms)
-			LoadAssemblies (113ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (392ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (397ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (118ms)
-				ProcessInitializeOnLoadAttributes (246ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (232ms)
 				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 157.1 MB.
-System memory in use after: 157.3 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 4102.
-Total: 5.347700 ms (FindLiveObjects: 0.395700 ms CreateObjectMapping: 0.094300 ms MarkObjects: 4.829300 ms  DeleteObjects: 0.027000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 39.880699 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef89b7301eb8322ed5bd875c84a23cd') in 0.197389 seconds 
-  Import took 0.204675 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.807069 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a35d4ef6d8478a863db8a9f57753ba5') in 0.023587 seconds 
-  Import took 0.031575 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.601016 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bebd98009bade9b9e9bc77331713cb1a') in 0.020553 seconds 
-  Import took 0.028801 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.538495 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0b7c721f4fbb796adbadbbd244a00c') in 0.019065 seconds 
-  Import took 0.026934 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.270678 seconds.
-  path: Assets/Prefabs/Armas/Blaster.prefab
-  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ab4f87b8e3411bb36a6b1a381c17cc') in 0.021340 seconds 
-  Import took 0.029295 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004689 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.242 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1243ms)
-		BeginReloadAssembly (137ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (1028ms)
-			LoadAssemblies (101ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (355ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (359ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (116ms)
-				ProcessInitializeOnLoadAttributes (215ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (26ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 157.2 MB.
-System memory in use after: 157.4 MB.
+Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.2 MB.
+System memory in use after: 156.4 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 4140.
-Total: 4.676900 ms (FindLiveObjects: 0.420400 ms CreateObjectMapping: 0.096700 ms MarkObjects: 4.136500 ms  DeleteObjects: 0.022100 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3985.
+Total: 4.322800 ms (FindLiveObjects: 0.375000 ms CreateObjectMapping: 0.093100 ms MarkObjects: 3.830200 ms  DeleteObjects: 0.022900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

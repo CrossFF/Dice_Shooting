@@ -83,6 +83,11 @@ public class LineManager : MonoBehaviour
         return linesList[playerIndex].GetEnemys(amount);
     }
 
+    public List<Transform> GetAllEnemysInLine()
+    {
+        return linesList[playerIndex].GetAllEnemys();
+    }
+
     public void RemoveEnemy()
     {
         gameMode.DeathEnemy();
