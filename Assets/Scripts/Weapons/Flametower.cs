@@ -136,12 +136,7 @@ public class Flametower : MonoBehaviour, IWeapon
         isAttacking = true;
     }
 
-    public void Special1(int dice)
-    {
-
-    }
-
-    public void Special2(int dice)
+    public void Special(int dice)
     {
         specialAttackTime += dice;
     }

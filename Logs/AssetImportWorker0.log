@@ -15,11 +15,11 @@ D:/Github/Dice_Shooting_v2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54387
+52891
 Successfully changed project path to: D:/Github/Dice_Shooting_v2
 D:/Github/Dice_Shooting_v2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 65.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 63.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.24f1 (79c78de19888)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -35,75 +35,75 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003578 seconds.
+Registered in 0.003487 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 63.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 63.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.628 seconds
+- Completed reload, in  0.604 seconds
 Domain Reload Profiling:
-	ReloadAssembly (628ms)
-		BeginReloadAssembly (60ms)
+	ReloadAssembly (604ms)
+		BeginReloadAssembly (58ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (486ms)
-			LoadAssemblies (57ms)
+		EndReloadAssembly (464ms)
+			LoadAssemblies (55ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (147ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (193ms)
+			SetupLoadedEditorAssemblies (190ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (64ms)
+				RefreshPlugins (63ms)
 				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (82ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
+				ProcessInitializeOnLoadAttributes (81ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004292 seconds.
+Registered in 0.004205 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 70.05 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 64.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.290 seconds
+- Completed reload, in  1.217 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1291ms)
+	ReloadAssembly (1218ms)
 		BeginReloadAssembly (157ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1064ms)
-			LoadAssemblies (99ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (992ms)
+			LoadAssemblies (97ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (343ms)
+			SetupTypeCache (328ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (429ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (394ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (70ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (224ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (213ms)
 				ProcessInitializeOnLoadMethodAttributes (13ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
@@ -112,15 +112,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3330 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 159.5 MB.
 System memory in use after: 159.7 MB.
 
 Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 3781.
-Total: 3.762300 ms (FindLiveObjects: 0.342200 ms CreateObjectMapping: 0.084300 ms MarkObjects: 3.309000 ms  DeleteObjects: 0.025700 ms)
+Total: 3.803200 ms (FindLiveObjects: 0.328600 ms CreateObjectMapping: 0.088500 ms MarkObjects: 3.358600 ms  DeleteObjects: 0.026200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,65 +134,138 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8b38315a261042f5babc9625f5fe1d') in 0.226636 seconds 
-  Import took 0.232307 seconds .
+  path: Assets/Sprites/diseño torreta 1.png
+  artifactKey: Guid(657bb386fbc1f814dbc395f3d52d7549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/diseño torreta 1.png using Guid(657bb386fbc1f814dbc395f3d52d7549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9066424e660cd158bf04910cfbb97577') in 0.130257 seconds 
+  Import took 0.135361 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 38.617802 seconds.
-  path: Assets/Scripts/Weapons/Flametower.cs
-  artifactKey: Guid(cb88331746823f940a7a1919cc6aa13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Weapons/Flametower.cs using Guid(cb88331746823f940a7a1919cc6aa13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c211269fe1d69438a1918a6e017a11b1') in 0.004071 seconds 
-  Import took 0.009580 seconds .
+  Time since last request: 9.308119 seconds.
+  path: Assets/Sprites/Sprite de Explosivo.png
+  artifactKey: Guid(657bb386fbc1f814dbc395f3d52d7549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprite de Explosivo.png using Guid(657bb386fbc1f814dbc395f3d52d7549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba4236c12afd56aeb8ccecb4ecc24a60') in 0.013500 seconds 
+  Import took 0.018971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.779893 seconds.
+  path: Assets/Sprites/Sprite de Explosivo.png
+  artifactKey: Guid(657bb386fbc1f814dbc395f3d52d7549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Sprite de Explosivo.png using Guid(657bb386fbc1f814dbc395f3d52d7549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8088ca4d773b635b3c54871d3afb9567') in 0.023528 seconds 
+  Import took 0.028705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 265.295902 seconds.
+  path: Assets/Scripts/Weapons/ExplosiveTurret.cs
+  artifactKey: Guid(28e2f4876467ef442b9fd6cabc30bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Weapons/ExplosiveTurret.cs using Guid(28e2f4876467ef442b9fd6cabc30bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9c75be8dc65c8d9fd85343d23c2ad1') in 0.017243 seconds 
+  Import took 0.023167 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004812 seconds.
+Registered in 0.004515 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.197 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1198ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (975ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (343ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (350ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (228ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.4 MB.
+System memory in use after: 153.6 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3793.
+Total: 3.874200 ms (FindLiveObjects: 0.335900 ms CreateObjectMapping: 0.087300 ms MarkObjects: 3.430000 ms  DeleteObjects: 0.019300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005019 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.266 seconds
+- Completed reload, in  1.164 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1267ms)
-		BeginReloadAssembly (160ms)
+	ReloadAssembly (1165ms)
+		BeginReloadAssembly (132ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1026ms)
-			LoadAssemblies (111ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (954ms)
+			LoadAssemblies (107ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (344ms)
+			SetupTypeCache (332ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (362ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (339ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (111ms)
-				ProcessInitializeOnLoadAttributes (221ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.6 MB.
-System memory in use after: 155.8 MB.
+Unloading 3201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.5 MB.
+System memory in use after: 153.7 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3829.
-Total: 3.901800 ms (FindLiveObjects: 0.340800 ms CreateObjectMapping: 0.089200 ms MarkObjects: 3.450700 ms  DeleteObjects: 0.019300 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3795.
+Total: 3.605100 ms (FindLiveObjects: 0.328400 ms CreateObjectMapping: 0.082100 ms MarkObjects: 3.176000 ms  DeleteObjects: 0.017600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -206,431 +279,310 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 5261.484406 seconds.
-  path: Assets/Scripts/Weapons/Flametower.cs
-  artifactKey: Guid(cb88331746823f940a7a1919cc6aa13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Weapons/Flametower.cs using Guid(cb88331746823f940a7a1919cc6aa13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c0dc224e7ebf93097d9e2e739fee23a') in 0.006455 seconds 
-  Import took 0.011384 seconds .
+  Time since last request: 1376.290109 seconds.
+  path: Assets/Scripts/Weapons/ExplosiveTurret.cs
+  artifactKey: Guid(28e2f4876467ef442b9fd6cabc30bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Weapons/ExplosiveTurret.cs using Guid(28e2f4876467ef442b9fd6cabc30bae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1265baec047ecb8b0db2c7ea2b9dc40') in 0.019411 seconds 
+  Import took 0.024290 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004625 seconds.
+Registered in 0.004848 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.150 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1151ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (939ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (327ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (323ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.5 MB.
+System memory in use after: 153.7 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3797.
+Total: 4.012400 ms (FindLiveObjects: 0.354400 ms CreateObjectMapping: 0.082000 ms MarkObjects: 3.554500 ms  DeleteObjects: 0.019900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 114.596688 seconds.
+  path: Assets/Prefabs/Armas/Assault Rifle.prefab
+  artifactKey: Guid(a9d3694ddb045c9489592483895102e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Assault Rifle.prefab using Guid(a9d3694ddb045c9489592483895102e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815521ff4adaae5da3f254259119db22') in 0.211935 seconds 
+  Import took 0.227906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Prefabs/Armas/Blaster.prefab
+  artifactKey: Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Blaster.prefab using Guid(1c63bdeedcc7c0f4289c131d364cafb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd611729e21594c51cecb9d51218cc2eb') in 0.037963 seconds 
+  Import took 0.043080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.846735 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a448be55cbb6091bc60a6f0de69bfcc8') in 0.014852 seconds 
+  Import took 0.020399 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004639 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.224 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1225ms)
+		BeginReloadAssembly (153ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (994ms)
+			LoadAssemblies (106ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (347ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (339ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.8 MB.
+System memory in use after: 156.0 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3841.
+Total: 7.346100 ms (FindLiveObjects: 0.363400 ms CreateObjectMapping: 0.082700 ms MarkObjects: 6.863700 ms  DeleteObjects: 0.034700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004649 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.227 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1227ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1013ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (337ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (355ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (227ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.8 MB.
+System memory in use after: 156.0 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3843.
+Total: 4.016200 ms (FindLiveObjects: 0.414100 ms CreateObjectMapping: 0.117900 ms MarkObjects: 3.464200 ms  DeleteObjects: 0.018100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004724 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.276 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1276ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1048ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (344ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (381ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.8 MB.
+System memory in use after: 156.0 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3845.
+Total: 4.143700 ms (FindLiveObjects: 0.356000 ms CreateObjectMapping: 0.092100 ms MarkObjects: 3.673200 ms  DeleteObjects: 0.021600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004724 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.246 seconds
+- Completed reload, in  1.235 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1246ms)
-		BeginReloadAssembly (141ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1025ms)
-			LoadAssemblies (109ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (353ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (351ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (101ms)
-				ProcessInitializeOnLoadAttributes (220ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.6 MB.
-System memory in use after: 155.9 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3831.
-Total: 4.302900 ms (FindLiveObjects: 0.335100 ms CreateObjectMapping: 0.084600 ms MarkObjects: 3.856900 ms  DeleteObjects: 0.024700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 142.159893 seconds.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0b93fa3e4b1284e940af9b7f641d22') in 0.174779 seconds 
-  Import took 0.180726 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.932950 seconds.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c018d7642299156af0585edbb8e65d31') in 0.015369 seconds 
-  Import took 0.022311 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.541729 seconds.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bedeea865ea9de06b368daa9a50b8c8') in 0.032522 seconds 
-  Import took 0.039468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.439049 seconds.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed0b69c7ead9c8fc1351c064fe11c03d') in 0.012653 seconds 
-  Import took 0.042596 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.515047 seconds.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '238048868779ba7c79b98e93f031a52b') in 0.012425 seconds 
-  Import took 0.018545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.304381 seconds.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46eee563fc5d9c0db9330efd25aa0d36') in 0.012550 seconds 
-  Import took 0.018524 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.702503 seconds.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c389a9fbf7305e619d3ee74a86cb5a2') in 0.013683 seconds 
-  Import took 0.021231 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004661 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.279 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1280ms)
-		BeginReloadAssembly (140ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1059ms)
-			LoadAssemblies (110ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (369ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (345ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (211ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.8 MB.
-System memory in use after: 156.0 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3869.
-Total: 4.079800 ms (FindLiveObjects: 0.361900 ms CreateObjectMapping: 0.093800 ms MarkObjects: 3.603000 ms  DeleteObjects: 0.019600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 77.467434 seconds.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92de42501c1e6092423695d0b895c0af') in 0.174806 seconds 
-  Import took 0.181131 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005006 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.289 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1290ms)
-		BeginReloadAssembly (160ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (48ms)
-		EndReloadAssembly (1053ms)
-			LoadAssemblies (123ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (384ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (351ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (220ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 155.9 MB.
-System memory in use after: 156.1 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3907.
-Total: 4.334900 ms (FindLiveObjects: 0.375200 ms CreateObjectMapping: 0.092700 ms MarkObjects: 3.837000 ms  DeleteObjects: 0.028500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 44.020565 seconds.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3659ed42598bc4bd919541eb51aebef2') in 0.177231 seconds 
-  Import took 0.184262 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004755 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.341 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1342ms)
-		BeginReloadAssembly (139ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (1121ms)
-			LoadAssemblies (113ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (386ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (386ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (114ms)
-				ProcessInitializeOnLoadAttributes (240ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (23ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.0 MB.
-System memory in use after: 156.3 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3945.
-Total: 4.800800 ms (FindLiveObjects: 0.398800 ms CreateObjectMapping: 0.094700 ms MarkObjects: 4.283200 ms  DeleteObjects: 0.022300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 68.003036 seconds.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9d5bd31366202c64de728aa7cc39dc') in 0.168440 seconds 
-  Import took 0.176801 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.400140 seconds.
-  path: Assets/Prefabs/Armas/Flametower.prefab
-  artifactKey: Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Armas/Flametower.prefab using Guid(f3687ff182405f14c9f0c613b9bc823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '558a4895306f3a737ab5d09c8d1e9442') in 0.014099 seconds 
-  Import took 0.021891 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004867 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.330 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1331ms)
-		BeginReloadAssembly (140ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (1110ms)
-			LoadAssemblies (125ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (386ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (361ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (104ms)
-				ProcessInitializeOnLoadAttributes (222ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.2 MB.
-System memory in use after: 156.4 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3983.
-Total: 4.446000 ms (FindLiveObjects: 0.357800 ms CreateObjectMapping: 0.093600 ms MarkObjects: 3.969700 ms  DeleteObjects: 0.023200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005046 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.289 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1289ms)
+	ReloadAssembly (1235ms)
 		BeginReloadAssembly (131ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (1079ms)
-			LoadAssemblies (110ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (1029ms)
+			LoadAssemblies (108ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (369ms)
-			ReleaseScriptCaches (2ms)
+			SetupTypeCache (371ms)
+			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (375ms)
+			SetupLoadedEditorAssemblies (345ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (113ms)
-				ProcessInitializeOnLoadAttributes (232ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
 				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (19ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3200 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 156.2 MB.
-System memory in use after: 156.4 MB.
+Unloading 3201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 155.8 MB.
+System memory in use after: 156.0 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3985.
-Total: 4.322800 ms (FindLiveObjects: 0.375000 ms CreateObjectMapping: 0.093100 ms MarkObjects: 3.830200 ms  DeleteObjects: 0.022900 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3847.
+Total: 5.485300 ms (FindLiveObjects: 0.869000 ms CreateObjectMapping: 0.194000 ms MarkObjects: 4.391900 ms  DeleteObjects: 0.028200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -642,4 +594,726 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1716.109309 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3f291d20d33282c41fc52e814d01fa5') in 0.159573 seconds 
+  Import took 0.166877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.019702 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcdd2847016d2ce72874eebe4f68b181') in 0.011775 seconds 
+  Import took 0.017319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.494574 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca830d74024161344a73cc79564c619f') in 0.019636 seconds 
+  Import took 0.026178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.462760 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5faee988f6a35c0579f451c96db1bcb5') in 0.033979 seconds 
+  Import took 0.053583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.632356 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062e335da84936b3795a4579bda541e6') in 0.012144 seconds 
+  Import took 0.018581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.811883 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0244b49aac6d56738a6de9d98504685') in 0.053259 seconds 
+  Import took 0.059193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.017791 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed36b9c657a1828c1ef4cf3b6eddd4a5') in 0.011280 seconds 
+  Import took 0.016620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.322108 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e77816f206282a5ae673fb99a0f2a2') in 0.026194 seconds 
+  Import took 0.032673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.721251 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b45d164eaf9d7e662bfec73977628027') in 0.032386 seconds 
+  Import took 0.038400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.494370 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8249bd23bb8ff305cfd036b46a13856') in 0.012002 seconds 
+  Import took 0.017709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.392581 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49cc777119b37ab103a419b45989cde') in 0.022327 seconds 
+  Import took 0.028159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.904866 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7519b2389b82e786be00085534b3ffbe') in 0.012683 seconds 
+  Import took 0.018842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.202738 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395b1fb219be5e6f2513e0ea1ecf2d80') in 0.049631 seconds 
+  Import took 0.055197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.934244 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881f96fef9f311732782e4ff58aea05d') in 0.030741 seconds 
+  Import took 0.036848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.058931 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0ee7997961bcaa891ec3781a5a9f1a') in 0.022402 seconds 
+  Import took 0.029538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.653552 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d8a4de33041640dfb965e73d66dfa1') in 0.023560 seconds 
+  Import took 0.029069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.100918 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9b6c404a57f7e57db72430eb5be893') in 0.024225 seconds 
+  Import took 0.029897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.858327 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8917f286071fc429082615890ecd03d') in 0.010942 seconds 
+  Import took 0.016783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.160462 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd058e813647286b74bd52a547414c8e9') in 0.032414 seconds 
+  Import took 0.038647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.385691 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf403daaf6d259c6bcec05b9b19e0a2') in 0.012860 seconds 
+  Import took 0.031845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.581107 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6aee3764e03b47dcd0a96e473bb1fa6') in 0.025591 seconds 
+  Import took 0.031286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.313142 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fbbaccefe1c00facc369a41e6f32077') in 0.011157 seconds 
+  Import took 0.017367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.462370 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd1fc3944de8c45a7a2be7e4b6067f62') in 0.033301 seconds 
+  Import took 0.049666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.326542 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec11a448d25660e3ae7b19255b2410d') in 0.029714 seconds 
+  Import took 0.036213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.876034 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '948c4feb279b4253f5c415aa0639b281') in 0.011510 seconds 
+  Import took 0.017173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.331907 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '182028a7105eff357019c23549ebe2d6') in 0.023997 seconds 
+  Import took 0.030076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.052024 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00cf5f3075e0e840eb757e8c0faa2b75') in 0.033281 seconds 
+  Import took 0.038924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.796141 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693ca9cb4f1fefa3cbac560bdaff3081') in 0.012961 seconds 
+  Import took 0.019343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.478691 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c96e3782359fb7fa84340777420efdb') in 0.046170 seconds 
+  Import took 0.069683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.818703 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a24b7f386d43a176e89efbe0b23058c') in 0.013759 seconds 
+  Import took 0.020323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.525531 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1899186f14f89afc412504d0e3bad82d') in 0.012175 seconds 
+  Import took 0.018949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.098485 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bc773686b8e68b2b45b13025716677f') in 0.025698 seconds 
+  Import took 0.031405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.005494 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a90ae3dd77bb7249e05c43041cea55') in 0.011873 seconds 
+  Import took 0.017738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.750875 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b296d7c58e8dffdec3404aa4385250d7') in 0.013695 seconds 
+  Import took 0.019309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.420508 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137138da3280a497efad11deffd2c894') in 0.031030 seconds 
+  Import took 0.037321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.596530 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df076cfd45653971c410d470c9e2df0b') in 0.011551 seconds 
+  Import took 0.017301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.824573 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac4e94570cfbbc43c86fed01c8b2543') in 0.039790 seconds 
+  Import took 0.045586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.781348 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ed46a48232b7044196d251bfeff45e') in 0.013376 seconds 
+  Import took 0.020785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.290208 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd1658425bda80725427ebbc89757546') in 0.011718 seconds 
+  Import took 0.017473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.425730 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff4c00aabc92be522c28b19319f274e2') in 0.013716 seconds 
+  Import took 0.019541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.257476 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a7ae1ea50403538e2b83ae1d196b93') in 0.011761 seconds 
+  Import took 0.018151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.832829 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c044803300fd98596aefe4c1ceecc112') in 0.011412 seconds 
+  Import took 0.017236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.241954 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9eeaefd6e1761f273eccd843d2bb06b') in 0.013154 seconds 
+  Import took 0.019483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.374921 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e19bdaa1ec3cfd2d570d0c32c06e38') in 0.013127 seconds 
+  Import took 0.019730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.555166 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c0461be614c8ef91f614fe634a77f39') in 0.014015 seconds 
+  Import took 0.020637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.043441 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd648af3f4311bacc666cf7dc87650cdf') in 0.012683 seconds 
+  Import took 0.019778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.495035 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c87f3e7ff3d7c6ee9924bfc65537aeea') in 0.013589 seconds 
+  Import took 0.020116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.740160 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35d3889e437a5de583842728be0aa69') in 0.012054 seconds 
+  Import took 0.018319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.878320 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a4202e6afd774289eae47ef9960c7d') in 0.011621 seconds 
+  Import took 0.017434 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.309716 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fae2e3c499a1df9a39f3750ef081809') in 0.013982 seconds 
+  Import took 0.021321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.062933 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c8256d2e406ac5eed1ca223f30c342f') in 0.023175 seconds 
+  Import took 0.028973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.748996 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77cc2e546711ef78e06010d89843d926') in 0.011905 seconds 
+  Import took 0.017715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.849720 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '674256cf39474b8f0f0dfd58dada3631') in 0.012176 seconds 
+  Import took 0.018305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.505965 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d26201415c020510c7b8abfd475617d') in 0.011480 seconds 
+  Import took 0.017482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.235743 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb4834bdacd96f39b431e8db5bee44db') in 0.012756 seconds 
+  Import took 0.018836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.894655 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a67c7afc98732c5395ca8840addba1') in 0.032258 seconds 
+  Import took 0.038016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.323672 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0e30be43cce9bcabfb6b382b56fc6b8') in 0.012238 seconds 
+  Import took 0.019440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.403684 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97958f1c3ab47094f1fddc02682e90e6') in 0.011726 seconds 
+  Import took 0.017596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.357234 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb0ff522343ef5130d06c5b2ebe7f8e3') in 0.013878 seconds 
+  Import took 0.020545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.150013 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea74020b16e3a89f4278696702360044') in 0.011434 seconds 
+  Import took 0.017892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.754981 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99c2cf78a0d294942ca4c49671848b72') in 0.011526 seconds 
+  Import took 0.017479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.152275 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a17be2ea9d59423ebfc27e00be2f38') in 0.026032 seconds 
+  Import took 0.032049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.211652 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35594c388837c7fc92fea062eb1c2d1e') in 0.011594 seconds 
+  Import took 0.017345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.264921 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7378b11f3c28159dd01eed1a390d96a9') in 0.023083 seconds 
+  Import took 0.029136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.774952 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd615d8bb7a38629fb3415e544006da') in 0.011637 seconds 
+  Import took 0.017581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.028432 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76b7d2704e8ca2ba9b8b3d9e5825c4c5') in 0.023853 seconds 
+  Import took 0.030224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.459925 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2544e224e013ec00915e0f6c3e3a8f58') in 0.012882 seconds 
+  Import took 0.018970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.347667 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fabc6821a259131765d6c99c1d132e89') in 0.011639 seconds 
+  Import took 0.017532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.333895 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9da89ddfc5208e7f8677b7afee160f4') in 0.023374 seconds 
+  Import took 0.029248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.957109 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e6d9a08de0dc45233073fe953928c1') in 0.011848 seconds 
+  Import took 0.017790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.532700 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '647ed8292feb03d4eecbafa1d02831e9') in 0.012978 seconds 
+  Import took 0.020425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.246333 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06efd057ce1662965b0aca591ed298fe') in 0.011833 seconds 
+  Import took 0.018026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.884033 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76419c8f23b238b6620f8d6b483bdf31') in 0.034999 seconds 
+  Import took 0.040554 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004702 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.219 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1220ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (996ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (344ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (343ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (208ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.0 MB.
+System memory in use after: 156.3 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3885.
+Total: 4.191300 ms (FindLiveObjects: 0.345100 ms CreateObjectMapping: 0.082400 ms MarkObjects: 3.736700 ms  DeleteObjects: 0.025600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 301.902454 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd59de10dd2df379e1ca62598d50815') in 0.161804 seconds 
+  Import took 0.170266 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004537 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.244 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1245ms)
+		BeginReloadAssembly (140ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1032ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (363ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (347ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (217ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.1 MB.
+System memory in use after: 156.4 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 3923.
+Total: 4.120700 ms (FindLiveObjects: 0.354900 ms CreateObjectMapping: 0.086900 ms MarkObjects: 3.655500 ms  DeleteObjects: 0.021400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 31.791289 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd073c70ba7f92ef30138ddc63d1dbca') in 0.195855 seconds 
+  Import took 0.201500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.699522 seconds.
+  path: Assets/Prefabs/Armas/Explosive Turret.prefab
+  artifactKey: Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Armas/Explosive Turret.prefab using Guid(31bad8505cb81cc4da3ca872156ba9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43776d440a9d257ddd44398dea3635e8') in 0.013401 seconds 
+  Import took 0.019931 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

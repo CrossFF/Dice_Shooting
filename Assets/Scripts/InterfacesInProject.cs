@@ -4,8 +4,7 @@ using System.Collections.Generic;
 public interface IWeapon
 {
     void Shoot(int dice);
-    void Special1(int dice);
-    void Special2(int dice);
+    void Special(int dice);
     void ClearEffects();
 }
 

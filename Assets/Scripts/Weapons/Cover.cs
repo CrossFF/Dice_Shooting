@@ -14,7 +14,7 @@ public class Cover : MonoBehaviour, IDamageable, ITurret
     public void Install(int dice)
     {
         // tiene una vida igual al dado utilizado para crearla
-        HP = dice;
+        HP += dice;
     }
 
     public void Dismantle()

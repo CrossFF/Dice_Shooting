@@ -10,7 +10,6 @@ public class AssaultRifle : MonoBehaviour, IWeapon
     public float fireRate;
     private AnimationManager playerAnimationManager;
     private int damageMultiplier = 1; // multiplicador de daño de special 2
-    public GameObject prefabCover; // special 1
     private LineManager lineManager;
     private CameraController cameraController;
     //sonido
@@ -33,36 +32,7 @@ public class AssaultRifle : MonoBehaviour, IWeapon
         StartCoroutine(InstantiateProjectiles(totalProyectiles));
     }
 
-    public void Special1(int dice)
-    {
-        // animacion de instalar torreta
-        playerAnimationManager.InstallTurret();
-        // es posible crear una torrera en esta linea?
-        if (!lineManager.IsTurretHere())
-        {
-            // conceguir coordenadas que le corresponde a la covertura
-            Vector3 pos = lineManager.GetTurretPosition();
-            // instanciar covertura
-            GameObject temp = Instantiate(prefabCover, pos, Quaternion.identity);
-            // seteo de covertura
-            ITurret turret = temp.GetComponent<ITurret>();
-            turret.Install(dice);
-            // informo al line manager que guarde la info de la torreta en la linea}
-            lineManager.SetTurret(temp.transform);
-
-            audioSource.pitch = 1;
-            if (audioSource.clip != overchargeSound) audioSource.clip = overchargeSound;
-            audioSource.Play();
-        }
-        else
-        {
-            // aumento la vida de la torreta
-            ITurret turret = lineManager.GetTurret().GetComponent<ITurret>();
-            turret.HP += dice;
-        }
-    }
-
-    public void Special2(int dice)
+    public void Special(int dice)
     {
         // los ataque disparan el doble de proyectiles
         damageMultiplier += dice;

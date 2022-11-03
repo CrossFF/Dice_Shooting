@@ -12,9 +12,9 @@ public class Equipment : MonoBehaviour
     private int handSize;
 
     [Header("Armas")]
-    public GameObject prefabPrimaryWeapon;// armas a usar
-    private GameObject primaryWeapon;// arma instanciada
-    private IWeapon weaponInUse; // arma que se esta usando actualmente
+    [SerializeField]private GameObject prefabPrimaryWeapon;// arma primaria
+    [SerializeField]private GameObject prefabTurret; // torreta a instalar
+    private IWeapon primaryWeapon; // arma que se esta usando actualmente
 
     [Header("UI")]
     [SerializeField] private Transform dicePanel;
@@ -31,9 +31,9 @@ public class Equipment : MonoBehaviour
         dicesGameObjetc = new List<GameObject>();
         // seteo de armas
         // instancio las armas que va a usar el jugador
-        primaryWeapon = Instantiate(prefabPrimaryWeapon, transform);
+        GameObject tPrimaryWeapon = Instantiate(prefabPrimaryWeapon, transform);
         // defino el arma que se esta usando en primera instancia
-        weaponInUse = primaryWeapon.GetComponent<IWeapon>();
+        primaryWeapon = tPrimaryWeapon.GetComponent<IWeapon>();
         // seteo una pool de dados iniciales
         dices = new DicePool();
         ShowDiceToUse();
@@ -80,13 +80,13 @@ public class Equipment : MonoBehaviour
         switch (dice.DiceUse)
         {
             case DiceUse.Attack:
-                weaponInUse.Shoot(value);
+                primaryWeapon.Shoot(value);
                 break;
             case DiceUse.Special1:
-                weaponInUse.Special1(value);
+                InstallTurret(value);
                 break;
             case DiceUse.Special2:
-                weaponInUse.Special2(value);
+                primaryWeapon.Special(value);
                 break;
         }
 
@@ -94,8 +94,35 @@ public class Equipment : MonoBehaviour
         if (actionPoints == 0 || handSize == 0)
         {
             ShowDiceToUse();
-            weaponInUse.ClearEffects();
+            primaryWeapon.ClearEffects();
         }
+    }
+
+    void InstallTurret(int dice)
+    {
+        // Instalo el tipo de torreta que tenga equipado el perosnaje
+
+        ITurret turret;
+        // animacion de instalar torreta
+        animationManager.InstallTurret();
+        // es posible crear una torrera en esta linea?
+        if (!lineManager.IsTurretHere())
+        {
+            // conceguir coordenadas que le corresponde a la torreta
+            Vector3 pos = lineManager.GetTurretPosition();
+            // instanciar torreta
+            GameObject temp = Instantiate(prefabTurret, pos, Quaternion.identity);
+            // seteo la torreta
+            turret = temp.GetComponent<ITurret>();
+            // informo al line manager que guarde la info de la torreta en la linea
+            lineManager.SetTurret(temp.transform);
+        }
+        else
+        {
+            // aumento el tiempo que pude funcionar la torreta
+            turret = lineManager.GetTurret().GetComponent<ITurret>();
+        }
+        turret.Install(dice);
     }
 
     public void AddDice(Dice d)

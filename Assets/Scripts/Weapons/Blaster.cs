@@ -15,13 +15,10 @@ public class Blaster : MonoBehaviour, IWeapon
     private LineManager lineManager;
     private CameraController cameraController;
     private AnimationManager playerAnimationManager;
-    [SerializeField] private GameObject prefabElectricTurret;
 
     [Header("Sound and Effects")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip laserShoot;
-
-    [Header("Effetcs")]
     [SerializeField] private ParticleSystem particleChargedAttack;
     [SerializeField] private ParticleSystem particleAttack;
 
@@ -59,37 +56,7 @@ public class Blaster : MonoBehaviour, IWeapon
         StartCoroutine(BlasterAttack());
     }
 
-    public void Special1(int dice)
-    {
-        // Instalo una torreta que procuce daño continuamente a los
-        //  enemigos dentro de un area.
-        //   La torreta no tiene vida como tal, sino que puede funcionar por X tiempo
-        //    siendo X el valor del dado utilizado.
-
-        ITurret turret;
-        // animacion de instalar torreta
-        playerAnimationManager.InstallTurret();
-        // es posible crear una torrera en esta linea?
-        if (!lineManager.IsTurretHere())
-        {
-            // conceguir coordenadas que le corresponde a la torreta
-            Vector3 pos = lineManager.GetTurretPosition();
-            // instanciar torreta
-            GameObject temp = Instantiate(prefabElectricTurret, pos, Quaternion.identity);
-            // seteo la torreta
-            turret = temp.GetComponent<ITurret>();
-            // informo al line manager que guarde la info de la torreta en la linea
-            lineManager.SetTurret(temp.transform);
-        }
-        else
-        {
-            // aumento el tiempo que pude funcionar la torreta
-            turret = lineManager.GetTurret().GetComponent<ITurret>();
-        }
-        turret.Install(dice);
-    }
-
-    public void Special2(int dice)
+    public void Special(int dice)
     {
         // el ataque normal gana potencia
         //  probocando mas daño
