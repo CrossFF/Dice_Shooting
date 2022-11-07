@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ExplosiveTurret : MonoBehaviour, IDamageable, ITurret
 {
@@ -9,10 +11,13 @@ public class ExplosiveTurret : MonoBehaviour, IDamageable, ITurret
 
     //stats
     private int explosiveCapacity = 0;
+    private float levelChargue = 0f; // nivel de carga de la torreta
 
     [Header("References")]
-    [SerializeField]private ParticleSystem particleExplosionCharge;
-    [SerializeField]private ParticleSystem particleExplosion;
+    [SerializeField] private ParticleSystem particleExplosionCharge;
+    [SerializeField] private ParticleSystem particleExplosion;
+    [SerializeField] private Image chargueLevelImage;
+    [SerializeField] private TMP_Text cgargueLevelText;
 
     public void Dismantle()
     {
@@ -27,7 +32,7 @@ public class ExplosiveTurret : MonoBehaviour, IDamageable, ITurret
         }
         foreach (var item in enemys)
         {
-            item.GetDamage(explosiveCapacity);
+            item.GetDamage(levelChargue);
         }
         // la torreta es destruida
         Destroy(gameObject, 0.5f);
@@ -42,5 +47,23 @@ public class ExplosiveTurret : MonoBehaviour, IDamageable, ITurret
     {
         // la mina explota
         Dismantle();
+    }
+
+    private void Update()
+    {
+        // aumento la cantidad de carga de la torreta, 
+        //  con respecto a la capacidad explosiva de la misma
+        // El daño de la torreta se hace en base a la carga que tenga
+        //  siendo la capacidad explosiva el daño maximo posible.
+        if(levelChargue < explosiveCapacity)
+        {
+            levelChargue += Time.deltaTime;
+        }
+        else
+        {
+            levelChargue = explosiveCapacity;
+        }  
+        chargueLevelImage.fillAmount = levelChargue / explosiveCapacity;
+        cgargueLevelText.text = Mathf.Floor(levelChargue).ToString();
     }
 }
