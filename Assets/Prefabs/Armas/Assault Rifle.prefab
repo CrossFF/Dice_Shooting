@@ -24,11 +24,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2745751238457147270}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4517929774465634758}
+  m_Father: {fileID: 6229481176679745104}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!120 &8655445875478621472
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4517929774255257135}
   m_Layer: 0
-  m_Name: Weapon Origin
+  m_Name: Shoot Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,8 +164,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.463, y: 0.029000044, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 228763881921711051}
+  m_Children: []
   m_Father: {fileID: 4517929774465634758}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -178,8 +177,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4517929774465634758}
-  - component: {fileID: 4517929774465634759}
   - component: {fileID: 4589008113163622084}
+  - component: {fileID: 5908900913508263906}
   m_Layer: 0
   m_Name: Assault Rifle
   m_TagString: Untagged
@@ -199,30 +198,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4517929774255257135}
-  - {fileID: 3500431419778651760}
+  - {fileID: 6229481176679745104}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4517929774465634759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4517929774465634753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3bcf48ab59b70d4a97d8509432bb9a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireFlash: {fileID: 8935587084234538185}
-  lineProyectile: {fileID: 8655445875478621472}
-  weaponOrigin: {fileID: 4517929774255257135}
-  fireRate: 0.1
-  prefabCover: {fileID: 3036267272314719583, guid: 66ad252b12c48934a90cf146a5a4f61f, type: 3}
-  audioSource: {fileID: 4589008113163622084}
-  simpleShootSound: {fileID: 8300000, guid: 22d208e76c9d47b468654d0375cbb1d1, type: 3}
-  overchargeSound: {fileID: 8300000, guid: 566d5e4b88348c544860423f392a6c8a, type: 3}
 --- !u!82 &4589008113163622084
 AudioSource:
   m_ObjectHideFlags: 0
@@ -319,6 +298,59 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5908900913508263906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4517929774465634753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f099c7dcce4164285f8f3a7ece73ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleFireFlash: {fileID: 8935587084234538185}
+  lineProyectile: {fileID: 8655445875478621472}
+  shootOrigin: {fileID: 4517929774255257135}
+  audioSource: {fileID: 4589008113163622084}
+  simpleShootSound: {fileID: 8300000, guid: 22d208e76c9d47b468654d0375cbb1d1, type: 3}
+  overchargeSound: {fileID: 8300000, guid: 566d5e4b88348c544860423f392a6c8a, type: 3}
+  fireRate: 0.1
+  inicialDamage: 1
+  proyectilesMultipler: 1
+--- !u!1 &4815354330342834023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6229481176679745104}
+  m_Layer: 0
+  m_Name: Effects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6229481176679745104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4815354330342834023}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 228763881921711051}
+  - {fileID: 3500431419778651760}
+  m_Father: {fileID: 4517929774465634758}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6552515351057257087
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +363,7 @@ GameObject:
   - component: {fileID: 8935587084234538185}
   - component: {fileID: 6469482817846467833}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Fire Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -345,10 +377,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6552515351057257087}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.26, y: 0, z: 0}
+  m_LocalPosition: {x: 1.2030001, y: 0.029000044, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4517929774255257135}
+  m_Father: {fileID: 6229481176679745104}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &8935587084234538185

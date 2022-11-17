@@ -9364,13 +9364,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae6fc982a7f13546a4ac5010d6e15b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabPrimaryWeapon: {fileID: 1832244423907685094, guid: f3687ff182405f14c9f0c613b9bc823b, type: 3}
+  prefabPrimaryWeapon: {fileID: 2299444958927416617, guid: 1c63bdeedcc7c0f4289c131d364cafb5, type: 3}
   prefabTurret: {fileID: 5477260888239873835, guid: 31bad8505cb81cc4da3ca872156ba9df, type: 3}
   dicePanel: {fileID: 180319699}
   prefabDiceButton: {fileID: 7772008346688846970, guid: 070f820e5a3997141b8667a00b833c5e, type: 3}
   actionPointImage: {fileID: 2099107348}
   animationManager: {fileID: 1483224951}
   lineManager: {fileID: 2032892350}
+  cameraController: {fileID: 29440594}
 --- !u!114 &1483224951
 MonoBehaviour:
   m_ObjectHideFlags: 0

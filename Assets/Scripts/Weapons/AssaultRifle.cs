@@ -1,77 +1,76 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class AssaultRifle : MonoBehaviour, IWeapon
+public class AssaultRifle : Weapon, IShootable
 {
-    public ParticleSystem fireFlash;
-    public LineRenderer lineProyectile; // line renderer que hace como disparo
-    public Transform weaponOrigin;
-    public float fireRate;
-    private AnimationManager playerAnimationManager;
-    private int damageMultiplier = 1; // multiplicador de daño de special 2
-    private LineManager lineManager;
-    private CameraController cameraController;
-    //sonido
-    public AudioSource audioSource;
-    public AudioClip simpleShootSound;
-    public AudioClip overchargeSound;
+    [Header("References")]
+    // efectos visuales de arma
+    [SerializeField] private ParticleSystem particleFireFlash; // particulas de disparo
+    [SerializeField] private LineRenderer lineProyectile; // line renderer que hace como disparo
+    [SerializeField] private Transform shootOrigin; // origen del disparo
+    // efectos sonoros de arma
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip simpleShootSound;
+    [SerializeField] private AudioClip overchargeSound;
 
-    private void Start()
+    [Header("Stats iniciales")]
+    [SerializeField] private float fireRate;
+    [SerializeField] private float inicialDamage = 1;
+    [SerializeField] private int proyectilesMultipler = 1;
+
+    public void ClearEffects()
     {
-        lineManager = GameObject.Find("Line Manager").GetComponent<LineManager>();
-        cameraController = GameObject.Find("Camera Controller").GetComponent<CameraController>();
-        playerAnimationManager = transform.parent.GetComponent<AnimationManager>();
-        lineProyectile.enabled = false;
+        proyectilesMultipler = 1;
     }
 
     public void Shoot(int dice)
     {
         // dispara el doble de lo que tenga el dado cantidad de veces
-        int totalProyectiles = dice * 2 * damageMultiplier;
+        int totalProyectiles = dice * 2 * proyectilesMultipler;
         StartCoroutine(InstantiateProjectiles(totalProyectiles));
     }
 
     public void Special(int dice)
     {
         // los ataque disparan el doble de proyectiles
-        damageMultiplier += dice;
-
+        proyectilesMultipler += dice;
+        // efecto visual y sonoro
         audioSource.pitch = 1;
         if (audioSource.clip != overchargeSound) audioSource.clip = overchargeSound;
         audioSource.Play();
     }
 
-    public void ClearEffects()
+    private void Start()
     {
-        damageMultiplier = 1;
+        lineProyectile.enabled = false;
+        SetDamage(inicialDamage);
     }
 
     IEnumerator InstantiateProjectiles(int proyectiles)
     {
         // efectos
-        cameraController.Shake(1);
-        fireFlash.Play();
-        playerAnimationManager.RepetitiveShootAnimation();
+        EquipmentReference.CameraController.Shake(1);
+        particleFireFlash.Play();
+        EquipmentReference.AnimationManager.RepetitiveShootAnimation();
         // disparos
         for (int i = 0; i < proyectiles; i++)
         {
             // seteos
             // proyectiles
-            lineProyectile.SetPosition(0, weaponOrigin.position);
-            Transform enemy = lineManager.GetEnemy();
+            lineProyectile.SetPosition(0, shootOrigin.position);
+            Transform enemy = EquipmentReference.LineManager.GetEnemy();
             Vector3 target;
             float impresision = Random.Range(-0.5f, 0.5f);
             if (enemy != null)
             {
                 target = new Vector3(enemy.position.x, enemy.position.y + impresision, 0f);
                 // aplicacion de daño
-                enemy.GetComponent<IDamageable>().GetDamage(1);
+                enemy.GetComponent<IDamageable>().GetDamage(Damage);
             }
             else
             {
-                target = new Vector3(weaponOrigin.position.x + 20,
-                                     weaponOrigin.position.y + impresision,
+                target = new Vector3(shootOrigin.position.x + 20,
+                                     shootOrigin.position.y + impresision,
                                      0f);
             }
             lineProyectile.SetPosition(1, target);
@@ -87,8 +86,8 @@ public class AssaultRifle : MonoBehaviour, IWeapon
             // oculto la linea del disparo
             lineProyectile.enabled = false;
         }
-        cameraController.Shake(0);
-        fireFlash.Stop();
-        playerAnimationManager.StopRepetitiveShootAnimation();
+        EquipmentReference.CameraController.Shake(0);
+        particleFireFlash.Stop();
+        EquipmentReference.AnimationManager.StopRepetitiveShootAnimation();
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flametower : MonoBehaviour, IWeapon
+public class Flametower : MonoBehaviour, IShootable
 {
     [Header("Stats")]
     [SerializeField] private float damage;

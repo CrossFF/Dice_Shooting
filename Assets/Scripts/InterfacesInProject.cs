@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-
-public interface IWeapon
+public interface IShootable
 {
     void Shoot(int dice);
     void Special(int dice);

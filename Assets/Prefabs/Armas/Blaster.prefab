@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5396194590260235252}
-  - component: {fileID: 1387986434156959473}
+  - component: {fileID: 4255328075033460402}
   - component: {fileID: 5710351314750741321}
   m_Layer: 0
   m_Name: Blaster
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1387986434156959473
+--- !u!114 &4255328075033460402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,18 +43,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2299444958927416617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78554550a58edad42ac32fbda452e411, type: 3}
+  m_Script: {fileID: 11500000, guid: 67d5eaaab7adc0a459790436ca786197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   weaponPenetration: 0
-  damage: 1
+  inicialDamage: 1
   lineProyectile: {fileID: 6854136099964950105}
   rayOrigin: {fileID: 2003798722847622132}
-  prefabElectricTurret: {fileID: 5247533545840813881, guid: 937911813ab036a429f511f5526e29a6, type: 3}
-  audioSource: {fileID: 5710351314750741321}
-  laserShoot: {fileID: 8300000, guid: 210399001f988444e8c3827c9ca6e586, type: 3}
   particleChargedAttack: {fileID: 5936218788155203585}
   particleAttack: {fileID: 6000199865034353489}
+  audioSource: {fileID: 5710351314750741321}
+  laserShoot: {fileID: 8300000, guid: 210399001f988444e8c3827c9ca6e586, type: 3}
 --- !u!82 &5710351314750741321
 AudioSource:
   m_ObjectHideFlags: 0

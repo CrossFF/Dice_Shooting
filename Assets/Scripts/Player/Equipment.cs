@@ -12,9 +12,9 @@ public class Equipment : MonoBehaviour
     private int handSize;
 
     [Header("Armas")]
-    [SerializeField]private GameObject prefabPrimaryWeapon;// arma primaria
-    [SerializeField]private GameObject prefabTurret; // torreta a instalar
-    private IWeapon primaryWeapon; // arma que se esta usando actualmente
+    [SerializeField] private GameObject prefabPrimaryWeapon;// arma primaria
+    [SerializeField] private GameObject prefabTurret; // torreta a instalar
+    private IShootable primaryWeapon; // arma que se esta usando actualmente
 
     [Header("UI")]
     [SerializeField] private Transform dicePanel;
@@ -24,7 +24,13 @@ public class Equipment : MonoBehaviour
 
     [Header("Referencias")]
     [SerializeField] private AnimationManager animationManager; // controlador de animaciones
-    [SerializeField] private LineManager lineManager;
+    [SerializeField] private LineManager lineManager; // controlador de Lineas
+    [SerializeField] private CameraController cameraController; // controlador de camaras
+
+    // referencias como propíedades para el arma
+    public AnimationManager AnimationManager { get { return animationManager; } }
+    public LineManager LineManager { get { return lineManager; } }
+    public CameraController CameraController { get { return cameraController; } }
 
     private void Start()
     {
@@ -33,7 +39,8 @@ public class Equipment : MonoBehaviour
         // instancio las armas que va a usar el jugador
         GameObject tPrimaryWeapon = Instantiate(prefabPrimaryWeapon, transform);
         // defino el arma que se esta usando en primera instancia
-        primaryWeapon = tPrimaryWeapon.GetComponent<IWeapon>();
+        primaryWeapon = tPrimaryWeapon.GetComponent<IShootable>();
+        tPrimaryWeapon.GetComponent<Weapon>().SetEquipment(this);
         // seteo una pool de dados iniciales
         dices = new DicePool();
         ShowDiceToUse();
