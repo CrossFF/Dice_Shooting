@@ -56,7 +56,7 @@ public class UpgradeDice : MonoBehaviour, IRewardPanel
 
     public void Use(Dice d)
     {
-        d.UpgradeDice();
+        playerEquipment.UpgradeDice(d);
         Desactivate();
     }   
 }

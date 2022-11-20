@@ -9364,7 +9364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae6fc982a7f13546a4ac5010d6e15b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabPrimaryWeapon: {fileID: 2299444958927416617, guid: 1c63bdeedcc7c0f4289c131d364cafb5, type: 3}
+  prefabPrimaryWeapon: {fileID: 4517929774465634753, guid: a9d3694ddb045c9489592483895102e9, type: 3}
   prefabTurret: {fileID: 5477260888239873835, guid: 31bad8505cb81cc4da3ca872156ba9df, type: 3}
   dicePanel: {fileID: 180319699}
   prefabDiceButton: {fileID: 7772008346688846970, guid: 070f820e5a3997141b8667a00b833c5e, type: 3}
@@ -10705,8 +10705,8 @@ MonoBehaviour:
   prefabOptionsButtons:
   - {fileID: 6801184352946074759, guid: 58ebff6444487e242b61b8255fbcfecd, type: 3}
   - {fileID: 6801184352946074759, guid: 73b3499d83bb1a244a61e6aa0d70bad7, type: 3}
-  - {fileID: 6801184352946074759, guid: 0decb2a351995a444b794f7f6fb396de, type: 3}
   - {fileID: 6801184352946074759, guid: 0eafc60906013a743afa4e8e1bce4853, type: 3}
+  - {fileID: 6801184352946074759, guid: 0decb2a351995a444b794f7f6fb396de, type: 3}
   parentOptions: {fileID: 2105206520}
   panelUpgrade: {fileID: 1434973841}
   panelTransform: {fileID: 2085562560}

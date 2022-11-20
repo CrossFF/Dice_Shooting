@@ -9,7 +9,7 @@ public class DiceButon : MonoBehaviour, IPointerDownHandler
     private Dice dice;
     private int value = 0;
     private Equipment playerEquipment;
-    
+
     [Header("References")]
     [SerializeField] private Image imageBottom;
     [SerializeField] private Image imageSpriteCard;
@@ -27,10 +27,14 @@ public class DiceButon : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        canvasGroup.interactable = false;
-        canvasGroup.blocksRaycasts = false;
-        canvasGroup.alpha = 0f;
-        playerEquipment.Shoot(dice, value);
+        // solo posible si el personaje esta vivo
+        if (PlayerHP.IsPlayerAlive())
+        {
+            canvasGroup.interactable = false;
+            canvasGroup.blocksRaycasts = false;
+            canvasGroup.alpha = 0f;
+            playerEquipment.Shoot(dice, value);
+        }
     }
 
     public void SetDice(Dice d, Equipment e)

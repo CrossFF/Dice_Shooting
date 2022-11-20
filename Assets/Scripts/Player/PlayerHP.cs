@@ -7,6 +7,7 @@ public class PlayerHP : MonoBehaviour, IDamageable
     [SerializeField] private float hp; // para poder ponerle la vida que considere necesaria
     public float HP { get; set; } // interfaz
     private bool alive;
+    private static bool Alive;
 
     // animacion
     private AnimationManager animationManager;
@@ -24,6 +25,7 @@ public class PlayerHP : MonoBehaviour, IDamageable
     {
         HP = hp;
         alive = true;
+        Alive = alive;
         animationManager = GetComponent<AnimationManager>();
         audioSource = GetComponent<AudioSource>();
         cameraController = GameObject.Find("Camera Controller").GetComponent<CameraController>();
@@ -70,8 +72,14 @@ public class PlayerHP : MonoBehaviour, IDamageable
         audioSource.clip = deadSoundClip;
         audioSource.Play();
         alive = false;
+        Alive = alive;
         GameObject.Find("Game Mode").GetComponent<IGameMode>().Pause();
         yield return new WaitForSeconds(2);
         GameObject.Find("SceneController").GetComponent<SceneControl>().MainMenu();
+    }
+
+    public static bool IsPlayerAlive()
+    {
+        return Alive;
     }
 }

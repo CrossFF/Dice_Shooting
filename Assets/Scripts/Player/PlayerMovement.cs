@@ -30,21 +30,24 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //movimiento por teclado
-        if (Input.GetButtonDown("Vertical"))
+        // movimiento solo permitido cuando estas vivo
+        if (PlayerHP.IsPlayerAlive())
         {
-            ChangePosition(Mathf.FloorToInt(Input.GetAxisRaw("Vertical")) * -1);
+            //movimiento por teclado
+            if (Input.GetButtonDown("Vertical"))
+            {
+                ChangePosition(Mathf.FloorToInt(Input.GetAxisRaw("Vertical")) * -1);
+            }
+            // movimiento por swipe
+            if (swipeControls.SwipeUp)
+            {
+                ChangePosition(-1);
+            }
+            if (swipeControls.SwipeDown)
+            {
+                ChangePosition(+1);
+            }
         }
-        // movimiento por swipe
-        if (swipeControls.SwipeUp)
-        {
-            ChangePosition(-1);
-        }
-        if (swipeControls.SwipeDown)
-        {
-            ChangePosition(+1);
-        }
-
         // movimiento del personaje desde posicion origen hasta destino
         transform.position = Vector3.MoveTowards(transform.position, posTarget, speed * Time.deltaTime);
     }

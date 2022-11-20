@@ -54,8 +54,10 @@ public class Equipment : MonoBehaviour
 
     private void ShowDiceToUse()
     {
-        //reseto valores
-        handSize = 5;
+        // elijo de manera random 5 dados a usar
+        List<Dice> dicesToUse = dices.GetDices(5);
+        //seto valores de mano
+        handSize = Mathf.Clamp(dicesToUse.Count, 0, 5);
         actionPoints = 3;
         // limpio los dados anteriores
         if (dicesGameObjetc.Count != 0)
@@ -68,8 +70,6 @@ public class Equipment : MonoBehaviour
         dicesGameObjetc.Clear();
 
         // muestro los primeros 5 dados a usar
-        // elijo de manera random 5 dados a usar
-        List<Dice> dicesToUse = dices.GetDices(5);
         //muestro los nuevos dados
         foreach (var item in dicesToUse)
         {
@@ -135,17 +135,26 @@ public class Equipment : MonoBehaviour
     public void AddDice(Dice d)
     {
         dices.AddDice(d);
+        ShowDiceToUse();
     }
 
     public void DeleteDice(Dice d)
     {
         dices.DeleteDice(d);
+        ShowDiceToUse();
     }
 
     public void TransformDice(Dice d, DiceProperty p)
     {
         dices.DeleteDice(d);
         dices.AddDice(new Dice(d.DiceUse, p));
+        ShowDiceToUse();
+    }
+
+    public void UpgradeDice(Dice d)
+    {
+        d.UpgradeDice();
+        ShowDiceToUse();
     }
 
     public List<Dice> GetAllDices()
