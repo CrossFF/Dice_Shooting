@@ -1,14 +1,14 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Dino : MonoBehaviour, IEnemy, IDamageable
-{ 
+{
     public Line Line { get; set; }
     public float HP { get; set; }
 
     [Header("Referncias")]
     [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     [Header("Estadisticas del Dino")]
     [SerializeField] private float hp;
@@ -33,6 +33,7 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
         HP = hp;
         animator.SetBool("Move", true);
         audioSource = GetComponent<AudioSource>();
+        spriteRenderer.sortingOrder = Line.LayerForEnemys;
     }
 
     private void Update()
@@ -164,6 +165,8 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
         GameObject.Find("Line Manager").GetComponent<LineManager>().DespawnEnemy();
         Line.RemoveEnemy(transform);
         Line = null;
-        Destroy(gameObject);
+        alive = false;
+        animator.SetBool("Move", true);
+        Destroy(gameObject, 5f);
     }
 }

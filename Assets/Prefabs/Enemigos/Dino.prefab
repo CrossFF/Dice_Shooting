@@ -247,6 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3018194306608417895}
+  spriteRenderer: {fileID: 3018194306608417888}
   hp: 3
   speed: 5
   damage: 1

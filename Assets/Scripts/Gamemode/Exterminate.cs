@@ -13,6 +13,7 @@ public class Exterminate : MonoBehaviour, IGameMode
     [SerializeField] private Text textTimePlayed;
 
     [Header("Extermine")]
+    [SerializeField] private Difficulty theDifficulty;
     [SerializeField] private int level = 1;
     [SerializeField] private int wabe = 1;
     [SerializeField] private float timeSpawn;
@@ -57,6 +58,26 @@ public class Exterminate : MonoBehaviour, IGameMode
         isWabeActive = false;
     }
 
+    public void SetDifficulty(Difficulty difficulty)
+    {
+        switch (difficulty)
+        {
+            case Difficulty.Easy:
+                level = 1;
+                timeSpawn = 2f;
+                break;
+            case Difficulty.Normal:
+                level = 5;
+                timeSpawn = 1f;
+                break;
+            case Difficulty.Hard:
+                level = 20;
+                timeSpawn = 0.2f;
+                break;
+        }
+        wabe = 1;
+    }
+
     public void Win()
     {
         Pause();
@@ -68,14 +89,12 @@ public class Exterminate : MonoBehaviour, IGameMode
         totalEnemySpawn = 0;
         enemysInWabe = 0;
         cronometer = 0f;
-        if (timeSpawn > 0.2f)
-        {
-            timeSpawn -= 0.2f;
-        }
-        else
-        {
-            timeSpawn = 0.2f;
-        }
+        if (timeSpawn > 0.2f) timeSpawn = Mathf.Clamp(timeSpawn - 0.2f, 0.2f, 5);
+    }
+
+    private void Start()
+    {
+        SetDifficulty(theDifficulty);
     }
 
     void Update()
@@ -128,4 +147,11 @@ public class Exterminate : MonoBehaviour, IGameMode
             }
         }
     }
+}
+
+public enum Difficulty
+{
+    Easy,
+    Normal,
+    Hard
 }

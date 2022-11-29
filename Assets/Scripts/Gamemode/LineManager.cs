@@ -93,6 +93,7 @@ public class LineManager : MonoBehaviour
         gameMode.DeathEnemy();
     }
 
+    // activa la siguiente oleada desde el inventario
     public void ActivateGameMode()
     {
         gameMode.Activate();

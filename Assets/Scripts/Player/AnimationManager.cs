@@ -39,4 +39,9 @@ public class AnimationManager : MonoBehaviour
     {
         animator.SetTrigger("Install Turret");
     }
+
+    public void Walk(bool state)
+    {
+        animator.SetBool("Walk",state);
+    }
 }

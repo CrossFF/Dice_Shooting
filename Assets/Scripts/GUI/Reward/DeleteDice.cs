@@ -50,8 +50,6 @@ public class DeleteDice : MonoBehaviour , IRewardPanel
             Destroy(tempDices[i]);
         }
         tempDices.Clear();
-        // nueva oleada
-        GameObject.Find("Line Manager").GetComponent<LineManager>().ActivateGameMode();
     }
 
     public void Use(Dice d)

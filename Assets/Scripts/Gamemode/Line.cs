@@ -10,14 +10,16 @@ public class Line : MonoBehaviour
     [SerializeField] private Transform playerPosition;
     [SerializeField] private Transform turretPosition;
     [SerializeField] private Transform spawnPoisiiton;
+    [SerializeField] private int layerForEnemys;
 
     // propiedades
     public Vector3 PlayerPosition { get { return playerPosition.position; } }
     public Vector3 TurretPosition { get { return turretPosition.position; } }
+    public int LayerForEnemys { get { return layerForEnemys; } }
 
-    private void Start() 
+    private void Start()
     {
-        enemys = new List<Transform>();    
+        enemys = new List<Transform>();
     }
 
     public void SetPlayer(Transform p)
@@ -74,7 +76,6 @@ public class Line : MonoBehaviour
         {
             return null;
         }
-
     }
 
     public List<Transform> GetEnemys(int amount)
@@ -97,11 +98,11 @@ public class Line : MonoBehaviour
 
     public Transform GetTargetToEnemy()
     {
-        if(GetTurret())
+        if (GetTurret())
         {
             return GetTurret();
         }
-        else if(GetPlayer())
+        else if (GetPlayer())
         {
             return GetPlayer();
         }

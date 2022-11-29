@@ -80,6 +80,6 @@ public class RewardsOptions : MonoBehaviour
     {
         // cancelo la recompenza e inicio una nueva oleada
         HideOptions();
-        GameObject.Find("Line Manager").GetComponent<LineManager>().ActivateGameMode();
+        GameObject.Find("Character").GetComponent<Equipment>().NewWabe();
     }
 }

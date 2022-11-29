@@ -34,6 +34,7 @@ public interface IRewardPanel
 
 public interface IGameMode
 {
+    void SetDifficulty(Difficulty difficulty);
     void Activate();
     void Pause();
     void DespawnEnemy();

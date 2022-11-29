@@ -136,12 +136,14 @@ public class Equipment : MonoBehaviour
     {
         dices.AddDice(d);
         ShowDiceToUse();
+        NewWabe();
     }
 
     public void DeleteDice(Dice d)
     {
         dices.DeleteDice(d);
         ShowDiceToUse();
+        NewWabe();
     }
 
     public void TransformDice(Dice d, DiceProperty p)
@@ -149,12 +151,14 @@ public class Equipment : MonoBehaviour
         dices.DeleteDice(d);
         dices.AddDice(new Dice(d.DiceUse, p));
         ShowDiceToUse();
+        NewWabe();
     }
 
     public void UpgradeDice(Dice d)
     {
         d.UpgradeDice();
         ShowDiceToUse();
+        NewWabe();
     }
 
     public List<Dice> GetAllDices()
@@ -170,5 +174,20 @@ public class Equipment : MonoBehaviour
     public List<Dice> GetAllTypeDices(DiceProperty p)
     {
         return dices.GetAllTypeDices(p);
+    }
+
+    // inicia nueva oleada, para centralizar funciones
+    public void NewWabe()
+    {
+        StartCoroutine(Walking());      
+    }
+    IEnumerator Walking()
+    {
+        // activo animacion de caminata
+        animationManager.Walk(true);
+        yield return new WaitForSeconds(3f);
+        // inicio nueva oleada
+        animationManager.Walk(false);
+        lineManager.ActivateGameMode(); 
     }
 }

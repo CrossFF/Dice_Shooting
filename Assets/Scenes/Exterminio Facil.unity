@@ -357,6 +357,7 @@ MonoBehaviour:
   playerPosition: {fileID: 1486987479}
   turretPosition: {fileID: 369116859}
   spawnPoisiiton: {fileID: 1873915896}
+  layerForEnemys: 2
 --- !u!1 &11668663
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,16 +946,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180319698}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1170056600}
+  m_Father: {fileID: 196070375}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -449.78}
+  m_AnchoredPosition: {x: 0.000061035156, y: -449.78}
   m_SizeDelta: {x: -830.5486, y: -899.5691}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &180319700
@@ -1051,6 +1052,43 @@ Transform:
   m_Father: {fileID: 1172540941}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &196070374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 196070375}
+  m_Layer: 5
+  m_Name: Panel_Cards Selection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &196070375
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196070374}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2037718892}
+  - {fileID: 180319699}
+  m_Father: {fileID: 1170056600}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000061035, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &213919149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,7 +1403,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306136843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.86, y: 1.31, z: 0}
+  m_LocalPosition: {x: -3.59, y: 1.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1641,7 +1679,7 @@ RectTransform:
   - {fileID: 1511612982}
   - {fileID: 1514469255}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8212,8 +8250,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 2037718892}
-  - {fileID: 180319699}
+  - {fileID: 196070375}
   - {fileID: 1808661605}
   - {fileID: 377966678}
   - {fileID: 1759134438}
@@ -8329,6 +8366,7 @@ MonoBehaviour:
   playerPosition: {fileID: 193529805}
   turretPosition: {fileID: 1266829706}
   spawnPoisiiton: {fileID: 1434942340}
+  layerForEnemys: 0
 --- !u!1 &1206464151
 GameObject:
   m_ObjectHideFlags: 0
@@ -9070,6 +9108,7 @@ MonoBehaviour:
   playerPosition: {fileID: 1391468962}
   turretPosition: {fileID: 1206464152}
   spawnPoisiiton: {fileID: 1907846488}
+  layerForEnemys: 1
 --- !u!1 &1417717612
 GameObject:
   m_ObjectHideFlags: 0
@@ -9166,7 +9205,7 @@ RectTransform:
   - {fileID: 230944579}
   - {fileID: 756028}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10164,7 +10203,7 @@ RectTransform:
   - {fileID: 1979434620}
   - {fileID: 1412511926}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10376,9 +10415,10 @@ MonoBehaviour:
   rewardsOptions: {fileID: 1808661609}
   textCountEnemys: {fileID: 546615224}
   textTimePlayed: {fileID: 1361344622}
+  theDifficulty: 0
   level: 1
   wabe: 1
-  timeSpawn: 3
+  timeSpawn: 0.5
 --- !u!4 &1767038977
 Transform:
   m_ObjectHideFlags: 0
@@ -10387,7 +10427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767038975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2144244, y: 2.5741274, z: -0.857056}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10553,7 +10593,7 @@ RectTransform:
   - {fileID: 546615223}
   - {fileID: 1361344621}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10633,7 +10673,7 @@ RectTransform:
   - {fileID: 2105206520}
   - {fileID: 2048689491}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11315,7 +11355,7 @@ MonoBehaviour:
   - {fileID: 1172540942}
   - {fileID: 1413645648}
   - {fileID: 2724201}
-  player: {fileID: 0}
+  player: {fileID: 1483224948}
 --- !u!1 &2037718891
 GameObject:
   m_ObjectHideFlags: 0
@@ -11339,18 +11379,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037718891}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1371492832}
   - {fileID: 2099107347}
-  m_Father: {fileID: 1170056600}
+  m_Father: {fileID: 196070375}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2048689490
@@ -11712,7 +11752,7 @@ RectTransform:
   - {fileID: 157726584}
   - {fileID: 1832851263}
   m_Father: {fileID: 1170056600}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
