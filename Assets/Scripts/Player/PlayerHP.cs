@@ -75,7 +75,7 @@ public class PlayerHP : MonoBehaviour, IDamageable
         Alive = alive;
         GameObject.Find("Game Mode").GetComponent<IGameMode>().Pause();
         yield return new WaitForSeconds(2);
-        GameObject.Find("SceneController").GetComponent<SceneControl>().MainMenu();
+        GameObject.Find("SceneController").GetComponent<SceneControl>().GameOver();
     }
 
     public static bool IsPlayerAlive()

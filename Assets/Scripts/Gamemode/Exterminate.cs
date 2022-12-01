@@ -11,9 +11,13 @@ public class Exterminate : MonoBehaviour, IGameMode
     [SerializeField] private RewardsOptions rewardsOptions;
     [SerializeField] private Text textCountEnemys;
     [SerializeField] private Text textTimePlayed;
+    [SerializeField] private SceneControl sceneControl;
+    [SerializeField] private PanelDeCarteles panelDeCarteles;
 
     [Header("Extermine")]
     [SerializeField] private Difficulty theDifficulty;
+    [SerializeField] private int limitWabe; // cantidad maxima de oleadas por dificultad
+    [SerializeField] private int totalLevels; // cantidad de niveles por dificultad
     [SerializeField] private int level = 1;
     [SerializeField] private int wabe = 1;
     [SerializeField] private float timeSpawn;
@@ -33,6 +37,7 @@ public class Exterminate : MonoBehaviour, IGameMode
     public void Activate()
     {
         isWabeActive = true;
+        panelDeCarteles.MostrarCartel("Nuevo nivel");
     }
 
     public void DeathEnemy()
@@ -48,11 +53,6 @@ public class Exterminate : MonoBehaviour, IGameMode
         // pero es un enemigo menos para derrotar
     }
 
-    public void Lose()
-    {
-        print("Perdiste pa");
-    }
-
     public void Pause()
     {
         isWabeActive = false;
@@ -63,16 +63,22 @@ public class Exterminate : MonoBehaviour, IGameMode
         switch (difficulty)
         {
             case Difficulty.Easy:
-                level = 1;
+                level = 3;
                 timeSpawn = 2f;
+                limitWabe = 5;
+                totalLevels = 3;
                 break;
             case Difficulty.Normal:
                 level = 5;
                 timeSpawn = 1f;
+                limitWabe = 5;
+                totalLevels = 5;
                 break;
             case Difficulty.Hard:
                 level = 20;
                 timeSpawn = 0.2f;
+                limitWabe = 8;
+                totalLevels = 8;
                 break;
         }
         wabe = 1;
@@ -80,19 +86,15 @@ public class Exterminate : MonoBehaviour, IGameMode
 
     public void Win()
     {
-        Pause();
-        wabe = 1;
-        level++;
-        // inicio etapa de recompenza
-        rewardsOptions.ShowOptions();
-        //reseteo variables  
-        totalEnemySpawn = 0;
-        enemysInWabe = 0;
-        cronometer = 0f;
-        if (timeSpawn > 0.2f) timeSpawn = Mathf.Clamp(timeSpawn - 0.2f, 0.2f, 5);
+        sceneControl.YouWin();
     }
 
-    private void Start()
+    public void Lose()
+    {
+        sceneControl.GameOver();
+    }
+
+    private void Awake()
     {
         SetDifficulty(theDifficulty);
     }
@@ -128,15 +130,33 @@ public class Exterminate : MonoBehaviour, IGameMode
                 if (enemysInWabe <= 0)
                 {
                     // aumento la oleada o el nivel
-                    if (wabe < 3)
+                    if (wabe < limitWabe)
                     {
                         wabe++;
+                        panelDeCarteles.MostrarCartel("Nueva oleada");
                     }
                     else
                     {
                         if (enemysDefeat > totalEnemySpawn / 2)
                         {
-                            Win();
+                            Pause();
+                            totalLevels--;
+                            if (totalLevels > 0)
+                            {
+                                wabe = 1;
+                                level++;
+                                // inicio etapa de recompenza
+                                rewardsOptions.ShowOptions();
+                                //reseteo variables  
+                                totalEnemySpawn = 0;
+                                enemysInWabe = 0;
+                                cronometer = 0f;
+                                if (timeSpawn > 0.2f) timeSpawn = Mathf.Clamp(timeSpawn - 0.2f, 0.2f, 5);
+                            }
+                            else
+                            {
+                                StartCoroutine(ActiveWin());
+                            }
                         }
                         else
                         {
@@ -146,6 +166,13 @@ public class Exterminate : MonoBehaviour, IGameMode
                 }
             }
         }
+    }
+
+    IEnumerator ActiveWin()
+    {
+        panelDeCarteles.MostrarCartel("ENEMIGOS ELIMINADOS");
+        yield return new WaitForSeconds(3f);
+        Win();
     }
 }
 

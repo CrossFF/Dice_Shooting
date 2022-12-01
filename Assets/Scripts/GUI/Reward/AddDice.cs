@@ -46,6 +46,7 @@ public class AddDice : MonoBehaviour, IRewardPanel
             Destroy(tempDices[i]);
         }
         tempDices.Clear();
+        GameObject.Find("Character").GetComponent<Equipment>().NewWabe();
     }
 
     public void Use(Dice d)
