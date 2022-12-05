@@ -10,12 +10,11 @@ public class Exterminate : MonoBehaviour, IGameMode
     [SerializeField] private LineManager lineManager;
     [SerializeField] private RewardsOptions rewardsOptions;
     [SerializeField] private Text textCountEnemys;
-    [SerializeField] private Text textTimePlayed;
+    [SerializeField] private Text textCountEnemysNotDead;
     [SerializeField] private SceneControl sceneControl;
     [SerializeField] private PanelDeCarteles panelDeCarteles;
 
     [Header("Extermine")]
-    [SerializeField] private Difficulty theDifficulty;
     [SerializeField] private int limitWabe; // cantidad maxima de oleadas por dificultad
     [SerializeField] private int totalLevels; // cantidad de niveles por dificultad
     [SerializeField] private int level = 1;
@@ -26,13 +25,14 @@ public class Exterminate : MonoBehaviour, IGameMode
     private int totalEnemySpawn;
     private int enemysInWabe;
     private bool isWabeActive = false;
+    private static bool status;
 
     // para control de win condition
     private int enemysDefeat = 0;
 
     // para mostrar estadisticas
     private int totalEnemyDefeat = 0;
-    private float timePlayed = 0f;
+    private int totalEnemysEscape = 0; // enemigos que lograron escaparse
 
     public void Activate()
     {
@@ -50,6 +50,7 @@ public class Exterminate : MonoBehaviour, IGameMode
     public void DespawnEnemy()
     {
         enemysInWabe--;
+        totalEnemysEscape++;
         // pero es un enemigo menos para derrotar
     }
 
@@ -82,6 +83,7 @@ public class Exterminate : MonoBehaviour, IGameMode
                 break;
         }
         wabe = 1;
+        Activate();
     }
 
     public void Win()
@@ -94,18 +96,19 @@ public class Exterminate : MonoBehaviour, IGameMode
         sceneControl.GameOver();
     }
 
-    private void Awake()
+    private void Start() 
     {
-        SetDifficulty(theDifficulty);
+        GameInfo gameInfo = GameObject.Find("Game Info").GetComponent<GameInfo>();
+        SetDifficulty(gameInfo.Difficulty);
     }
 
     void Update()
     {
+        status = isWabeActive;
         if (isWabeActive)
         {
             // estadistica de tiempo
-            timePlayed += Time.deltaTime;
-            textTimePlayed.text = timePlayed.ToString();
+            textCountEnemysNotDead.text = totalEnemysEscape.ToString();
             textCountEnemys.text = totalEnemyDefeat.ToString();
 
             enemysPerWabe = level * wabe;
@@ -173,6 +176,11 @@ public class Exterminate : MonoBehaviour, IGameMode
         panelDeCarteles.MostrarCartel("ENEMIGOS ELIMINADOS");
         yield return new WaitForSeconds(3f);
         Win();
+    }
+
+    public static bool GetStatus()
+    {
+        return status;
     }
 }
 

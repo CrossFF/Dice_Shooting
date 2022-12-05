@@ -10,12 +10,12 @@ public class Line : MonoBehaviour
     [SerializeField] private Transform playerPosition;
     [SerializeField] private Transform turretPosition;
     [SerializeField] private Transform spawnPoisiiton;
-    [SerializeField] private int layerForEnemys;
+    [SerializeField] private int layerForSprite;
 
     // propiedades
     public Vector3 PlayerPosition { get { return playerPosition.position; } }
     public Vector3 TurretPosition { get { return turretPosition.position; } }
-    public int LayerForEnemys { get { return layerForEnemys; } }
+    public int LayerForSprite { get { return layerForSprite; } }
 
     private void Start()
     {

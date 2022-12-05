@@ -33,7 +33,7 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
         HP = hp;
         animator.SetBool("Move", true);
         audioSource = GetComponent<AudioSource>();
-        spriteRenderer.sortingOrder = Line.LayerForEnemys;
+        spriteRenderer.sortingOrder = Line.LayerForSprite;
     }
 
     private void Update()

@@ -27,14 +27,18 @@ public class DiceButon : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        // solo posible si el personaje esta vivo
-        if (PlayerHP.IsPlayerAlive())
+        // solo posible si el personaje esta vivo y el modo de juego esta activo
+        if (Exterminate.GetStatus())
         {
-            canvasGroup.interactable = false;
-            canvasGroup.blocksRaycasts = false;
-            canvasGroup.alpha = 0f;
-            playerEquipment.Shoot(dice, value);
+            if (PlayerHP.IsPlayerAlive())
+            {
+                canvasGroup.interactable = false;
+                canvasGroup.blocksRaycasts = false;
+                canvasGroup.alpha = 0f;
+                playerEquipment.Shoot(dice, value);
+            }
         }
+
     }
 
     public void SetDice(Dice d, Equipment e)

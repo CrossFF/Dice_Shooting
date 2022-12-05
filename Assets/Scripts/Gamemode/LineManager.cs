@@ -16,7 +16,6 @@ public class LineManager : MonoBehaviour
         playerIndex = 1;
         linesList[playerIndex].SetPlayer(player);
         gameMode = GameObject.Find("Game Mode").GetComponent<IGameMode>();
-        gameMode.Activate();
     }
 
     public Vector3 GetPlayerPosition()
@@ -38,6 +37,11 @@ public class LineManager : MonoBehaviour
             linesList[nextPos].SetPlayer(player);
         }
         return GetPlayerPosition(); // pos del personaje    
+    }
+
+    public int GetLayer()
+    {
+        return linesList[playerIndex].LayerForSprite;
     }
 
     public bool IsTurretHere()

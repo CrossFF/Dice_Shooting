@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private SwipeControls swipeControls;// Movimiento tipo Swipe
     private AnimationManager animationManager;
+    private SpriteRenderer spriteRenderer; // Referencia al render
 
     // Referencias al controlador de lineas, 
     //  para el movimiento y otras mecanicas
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
         animationManager = GetComponent<AnimationManager>();
         audioSource = GetComponent<AudioSource>();
         swipeControls = GetComponent<SwipeControls>();
+        spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
         //seteo de posicion de personaje
         posTarget = lineManager.GetPlayerPosition();
     }
@@ -30,24 +32,28 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // movimiento solo permitido cuando estas vivo
-        if (PlayerHP.IsPlayerAlive())
+        // movimiento solo permitido cuando estas vivo o el modo de juego este activo
+        if (Exterminate.GetStatus())
         {
-            //movimiento por teclado
-            if (Input.GetButtonDown("Vertical"))
+            if (PlayerHP.IsPlayerAlive())
             {
-                ChangePosition(Mathf.FloorToInt(Input.GetAxisRaw("Vertical")) * -1);
-            }
-            // movimiento por swipe
-            if (swipeControls.SwipeUp)
-            {
-                ChangePosition(-1);
-            }
-            if (swipeControls.SwipeDown)
-            {
-                ChangePosition(+1);
+                //movimiento por teclado
+                if (Input.GetButtonDown("Vertical"))
+                {
+                    ChangePosition(Mathf.FloorToInt(Input.GetAxisRaw("Vertical")) * -1);
+                }
+                // movimiento por swipe
+                if (swipeControls.SwipeUp)
+                {
+                    ChangePosition(-1);
+                }
+                if (swipeControls.SwipeDown)
+                {
+                    ChangePosition(+1);
+                }
             }
         }
+
         // movimiento del personaje desde posicion origen hasta destino
         transform.position = Vector3.MoveTowards(transform.position, posTarget, speed * Time.deltaTime);
     }
@@ -59,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
         posTarget = lineManager.MovePlayer(yMove);
         if (prevPos != posTarget)
         {
+            spriteRenderer.sortingOrder = lineManager.GetLayer();
             animationManager.MoveAnimation();
             if (audioSource.clip != dashSoundClip) audioSource.clip = dashSoundClip;
             audioSource.Play();
