@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class RewardsOptions : MonoBehaviour
 {
+    [Header("References")]
     private CanvasGroup canvasGroup;
     [SerializeField] private List<GameObject> prefabOptionsButtons;
     [SerializeField] private Transform parentOptions;
@@ -13,6 +14,7 @@ public class RewardsOptions : MonoBehaviour
     [SerializeField] private Transform panelAdd;
     [SerializeField] private Transform panelDelete;
     private List<GameObject> tempButtons;
+    [SerializeField] private RewardBox rewardBoxObject;
 
     private void Start()
     {
@@ -21,6 +23,12 @@ public class RewardsOptions : MonoBehaviour
         canvasGroup.alpha = 0f;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
+    }
+
+    public void StartRewardState()
+    {
+        // muestro cofre de recompenza
+        rewardBoxObject.Spawn();
     }
 
     public void ShowOptions()

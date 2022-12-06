@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum Difficulty
+{
+    Easy,
+    Normal,
+    Hard,
+    Test
+}
+
 public class Exterminate : MonoBehaviour, IGameMode
 {
     [Header("Referancias")]
@@ -17,7 +25,7 @@ public class Exterminate : MonoBehaviour, IGameMode
     [Header("Extermine")]
     [SerializeField] private int limitWabe; // cantidad maxima de oleadas por dificultad
     [SerializeField] private int totalLevels; // cantidad de niveles por dificultad
-    [SerializeField] private int level = 1;
+    [SerializeField] private int enemysToSpawn = 1;
     [SerializeField] private int wabe = 1;
     [SerializeField] private float timeSpawn;
     private float cronometer = 0f;
@@ -64,25 +72,25 @@ public class Exterminate : MonoBehaviour, IGameMode
         switch (difficulty)
         {
             case Difficulty.Easy:
-                level = 3;
+                enemysToSpawn = 3;
                 timeSpawn = 2f;
                 limitWabe = 5;
                 totalLevels = 3;
                 break;
             case Difficulty.Normal:
-                level = 5;
+                enemysToSpawn = 5;
                 timeSpawn = 1f;
                 limitWabe = 5;
                 totalLevels = 5;
                 break;
             case Difficulty.Hard:
-                level = 20;
+                enemysToSpawn = 20;
                 timeSpawn = 0.2f;
                 limitWabe = 8;
                 totalLevels = 8;
                 break;
             case Difficulty.Test:
-                level = 1;
+                enemysToSpawn = 1;
                 timeSpawn = 2f;
                 limitWabe = 3;
                 totalLevels = 3;
@@ -117,7 +125,7 @@ public class Exterminate : MonoBehaviour, IGameMode
             textCountEnemysNotDead.text = totalEnemysEscape.ToString();
             textCountEnemys.text = totalEnemyDefeat.ToString();
 
-            enemysPerWabe = level * wabe;
+            enemysPerWabe = enemysToSpawn * wabe;
             // si puedo spawnear un enemigo lo hago
             if (enemysPerWabe > totalEnemySpawn)
             {
@@ -153,9 +161,10 @@ public class Exterminate : MonoBehaviour, IGameMode
                             if (totalLevels > 0)
                             {
                                 wabe = 1;
-                                level++;
+                                enemysToSpawn++;
                                 // inicio etapa de recompenza
-                                rewardsOptions.ShowOptions();
+                                panelDeCarteles.MostrarCartel("Enemigos Derrotados");
+                                rewardsOptions.StartRewardState();
                                 //reseteo variables  
                                 totalEnemySpawn = 0;
                                 enemysInWabe = 0;
@@ -188,12 +197,4 @@ public class Exterminate : MonoBehaviour, IGameMode
     {
         return status;
     }
-}
-
-public enum Difficulty
-{
-    Easy,
-    Normal,
-    Hard,
-    Test
 }
