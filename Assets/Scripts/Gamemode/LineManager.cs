@@ -107,4 +107,12 @@ public class LineManager : MonoBehaviour
     {
         gameMode.DespawnEnemy();
     }
+
+    public void DespawnTurrets()
+    {
+        foreach (var item in linesList)
+        {
+            item.DespawnTurret();
+        }
+    }
 }

@@ -18,6 +18,9 @@ public class ExplosiveTurret : MonoBehaviour, IDamageable, ITurret
     [SerializeField] private ParticleSystem particleExplosion;
     [SerializeField] private Image chargueLevelImage;
     [SerializeField] private TMP_Text cgargueLevelText;
+    [SerializeField] private Animator animator;
+    [SerializeField] private ParticleSystem particleDespawn;
+    private bool move = false;
 
     public void Dismantle()
     {
@@ -43,6 +46,14 @@ public class ExplosiveTurret : MonoBehaviour, IDamageable, ITurret
         explosiveCapacity += dice;
     }
 
+    public void Despawn()
+    {
+        move = true;
+        animator.SetTrigger("Despawn");
+        particleDespawn.Play();
+        Destroy(gameObject, 0.5f);
+    }
+
     public void GetDamage(float damage)
     {
         // la mina explota
@@ -65,5 +76,10 @@ public class ExplosiveTurret : MonoBehaviour, IDamageable, ITurret
         }  
         chargueLevelImage.fillAmount = levelChargue / explosiveCapacity;
         cgargueLevelText.text = Mathf.Floor(levelChargue).ToString();
+
+        if(move)
+        {
+            transform.position -= (Vector3.right * 10) * Time.deltaTime;
+        }
     }
 }

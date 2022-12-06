@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameInfo : MonoBehaviour
 {
     static GameObject permanent;
-    static Difficulty difficulty = Difficulty.Easy;
+    static Difficulty difficulty = Difficulty.Test;
 
     public Difficulty Difficulty { get { return difficulty; } }
 

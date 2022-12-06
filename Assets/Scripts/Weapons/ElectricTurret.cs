@@ -19,6 +19,9 @@ public class ElectricTurret : MonoBehaviour, IDamageable, ITurret
     [SerializeField] private ParticleSystem particlesAttack;
     [SerializeField] private AudioSource audioSourceActiveTurret;
     [SerializeField] private AudioSource audioSourceTurretAttack;
+    [SerializeField] private Animator animator;
+    [SerializeField] private ParticleSystem particleDespawn;
+    private bool move = false;
 
     public void Install(int dice)
     {
@@ -31,6 +34,14 @@ public class ElectricTurret : MonoBehaviour, IDamageable, ITurret
     public void Dismantle()
     {
         Destroy(gameObject, 0.2f);
+    }
+
+    public void Despawn()
+    {
+        move = true;
+        animator.SetTrigger("Despawn");
+        particleDespawn.Play();
+        Destroy(gameObject, 0.5f);
     }
 
     public void GetDamage(float damage)
@@ -55,6 +66,11 @@ public class ElectricTurret : MonoBehaviour, IDamageable, ITurret
         else
         {
             if (!particlesTurretActive.isStopped) particlesTurretActive.Stop();
+        }
+
+        if(move)
+        {
+            transform.position -= (Vector3.right * 10) * Time.deltaTime;
         }
     }
 

@@ -181,11 +181,16 @@ public class Equipment : MonoBehaviour
     {
         StartCoroutine(Walking());      
     }
+
     IEnumerator Walking()
     {
         // activo animacion de caminata
         animationManager.Walk(true);
-        yield return new WaitForSeconds(3f);
+        // muevo el escenario
+        GameObject.Find("Ground Control").GetComponent<GroundControl>().MoveGround();
+        // despawneo torretas
+        lineManager.DespawnTurrets();
+        yield return new WaitForSeconds(1.8f);
         // inicio nueva oleada
         animationManager.Walk(false);
         lineManager.ActivateGameMode(); 

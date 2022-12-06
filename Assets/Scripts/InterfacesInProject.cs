@@ -23,6 +23,7 @@ public interface ITurret
     float HP { get; set; }
     void Install(int dice);
     void Dismantle();
+    void Despawn();
 }
 
 public interface IRewardPanel

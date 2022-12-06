@@ -81,6 +81,12 @@ public class Exterminate : MonoBehaviour, IGameMode
                 limitWabe = 8;
                 totalLevels = 8;
                 break;
+            case Difficulty.Test:
+                level = 1;
+                timeSpawn = 2f;
+                limitWabe = 3;
+                totalLevels = 3;
+                break;
         }
         wabe = 1;
         Activate();
@@ -96,7 +102,7 @@ public class Exterminate : MonoBehaviour, IGameMode
         sceneControl.GameOver();
     }
 
-    private void Start() 
+    private void Start()
     {
         GameInfo gameInfo = GameObject.Find("Game Info").GetComponent<GameInfo>();
         SetDifficulty(gameInfo.Difficulty);
@@ -188,5 +194,6 @@ public enum Difficulty
 {
     Easy,
     Normal,
-    Hard
+    Hard,
+    Test
 }

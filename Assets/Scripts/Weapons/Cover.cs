@@ -10,6 +10,8 @@ public class Cover : MonoBehaviour, IDamageable, ITurret
     public AudioClip getDamageSound;
     public AudioClip destroySound;
     public Animator animator;
+    [SerializeField] private ParticleSystem particleDespawn;
+    private bool move = false;
 
     public void Install(int dice)
     {
@@ -21,6 +23,14 @@ public class Cover : MonoBehaviour, IDamageable, ITurret
     {
         // la coveretura es destruida
         StartCoroutine(DestroyCover());
+    }
+
+    public void Despawn()
+    {
+        move = true;
+        animator.SetTrigger("Despawn");
+        particleDespawn.Play();
+        Destroy(gameObject, 0.5f);
     }
 
     public void GetDamage(float damage)
@@ -48,5 +58,13 @@ public class Cover : MonoBehaviour, IDamageable, ITurret
         animator.SetTrigger("Destroy");
         yield return new WaitForSeconds(destroySound.length);
         Destroy(this.gameObject);
+    }
+
+    private void Update()
+    {
+        if (move)
+        {
+            transform.position -= (Vector3.right * 10) * Time.deltaTime;
+        }
     }
 }

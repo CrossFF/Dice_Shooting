@@ -48,6 +48,16 @@ public class Line : MonoBehaviour
         if (turret != null) turret = null;
     }
 
+    public void DespawnTurret()
+    {
+        if(turret != null)
+        {
+            ITurret t = turret.GetComponent<ITurret>();
+            ClearTurret();
+            t.Despawn();
+        }
+    }
+
     public Transform GetTurret()
     {
         return turret;
