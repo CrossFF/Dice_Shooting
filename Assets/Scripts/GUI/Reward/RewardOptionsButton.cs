@@ -22,16 +22,16 @@ public class RewardOptionsButton : MonoBehaviour, IPointerDownHandler
         switch (enumRewardOptions)
         {
             case EnumRewardOptions.UpgradeDice:
-                theText = "Mejorar dado";
+                theText = "Mejorar Carta";
                 break;
             case EnumRewardOptions.TransformDice:
-                theText = "Transformar dado";
+                theText = "Transformar Carta";
                 break;
             case EnumRewardOptions.AddDice:
-                theText = "Agregar dado";
+                theText = "Agregar Carta";
                 break;
             case EnumRewardOptions.DeleteDice:
-                theText = "Eliminar dado";
+                theText = "Eliminar Carta";
                 break;
         }
         text.text = theText;

@@ -7,8 +7,10 @@ public class GameInfo : MonoBehaviour
 {
     static GameObject permanent;
     static Difficulty difficulty = Difficulty.Test;
+    static Character character;
 
     public Difficulty Difficulty { get { return difficulty; } }
+    public Character Character { get { return character; } }
 
     private void Awake()
     {
@@ -26,5 +28,10 @@ public class GameInfo : MonoBehaviour
     public void SetDifficulty(Difficulty d)
     {
         difficulty = d;
+    }
+
+    public void SaveCharacter(Character chara)
+    {
+        character = chara;
     }
 }

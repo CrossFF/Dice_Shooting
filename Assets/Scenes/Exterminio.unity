@@ -428,7 +428,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Selecciona un dado a eliminar
+  m_Text: Selecciona una carta a eliminar
 --- !u!222 &11668666
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2112,7 +2112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306136843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.59, y: 1.31, z: 0}
+  m_LocalPosition: {x: -4.68, y: 1.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18222,7 +18222,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Selecciona un dado normal para transformaldo en avanzado
+  m_Text: Selecciona una carta normal para transformarla en avanzada
 --- !u!222 &902137277
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19937,7 +19937,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Selecciona un dado para mejorarlo
+  m_Text: Selecciona una carta para mejorarla
 --- !u!222 &1238565489
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21151,7 +21151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabPrimaryWeapon: {fileID: 4517929774465634753, guid: a9d3694ddb045c9489592483895102e9, type: 3}
-  prefabTurret: {fileID: 5247533545840813881, guid: 937911813ab036a429f511f5526e29a6, type: 3}
+  prefabTurret: {fileID: 3036267272314719583, guid: 66ad252b12c48934a90cf146a5a4f61f, type: 3}
   dicePanel: {fileID: 180319699}
   prefabDiceButton: {fileID: 7772008346688846970, guid: 070f820e5a3997141b8667a00b833c5e, type: 3}
   actionPointImage: {fileID: 2099107348}
@@ -21502,8 +21502,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -113}
-  m_SizeDelta: {x: -173.9425, y: -451.8262}
+  m_AnchoredPosition: {x: -0.000061035156, y: -116}
+  m_SizeDelta: {x: -797.0256, y: -451.8262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1511612983
 MonoBehaviour:
@@ -38065,7 +38065,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Selecciona un dado para agregarlo a tu colecci\xF3n"
+  m_Text: "Selecciona una carta para agregarla a tu colecci\xF3n"
 --- !u!222 &1985750893
 CanvasRenderer:
   m_ObjectHideFlags: 0

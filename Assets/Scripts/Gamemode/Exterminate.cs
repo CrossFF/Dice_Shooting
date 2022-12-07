@@ -102,6 +102,7 @@ public class Exterminate : MonoBehaviour, IGameMode
 
     public void Win()
     {
+        GameObject.Find("Character").GetComponent<Equipment>().SaveCharacter();
         sceneControl.YouWin();
     }
 

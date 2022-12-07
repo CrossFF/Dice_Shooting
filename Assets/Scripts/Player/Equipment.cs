@@ -26,6 +26,7 @@ public class Equipment : MonoBehaviour
     [SerializeField] private AnimationManager animationManager; // controlador de animaciones
     [SerializeField] private LineManager lineManager; // controlador de Lineas
     [SerializeField] private CameraController cameraController; // controlador de camaras
+    private GameInfo gameInfo;
 
     // referencias como propíedades para el arma
     public AnimationManager AnimationManager { get { return animationManager; } }
@@ -34,21 +35,40 @@ public class Equipment : MonoBehaviour
 
     private void Start()
     {
+        gameInfo = GameObject.Find("Game Info").GetComponent<GameInfo>();
         dicesGameObjetc = new List<GameObject>();
-        // seteo de armas
-        // instancio las armas que va a usar el jugador
-        GameObject tPrimaryWeapon = Instantiate(prefabPrimaryWeapon, transform);
-        // defino el arma que se esta usando en primera instancia
-        primaryWeapon = tPrimaryWeapon.GetComponent<IShootable>();
-        tPrimaryWeapon.GetComponent<Weapon>().SetEquipment(this);
-        // seteo una pool de dados iniciales
-        dices = new DicePool();
+        if (gameInfo.Character != null)
+        {
+            // seteo la info del personaje segun lo que tenga el game info
+            // vida del jugador
+            gameObject.GetComponent<IDamageable>().HP = gameInfo.Character.HP;
+            // informacion de equipamiento
+            prefabPrimaryWeapon = gameInfo.Character.PrimaryWeapon;
+            prefabTurret = gameInfo.Character.SecondaryWeapon;
+            dices = gameInfo.Character.Dices;
+            // instancio el arma que va a usar el jugador
+            GameObject tPrimaryWeapon = Instantiate(prefabPrimaryWeapon, transform);
+            // seteo de armas
+            primaryWeapon = tPrimaryWeapon.GetComponent<IShootable>();
+            tPrimaryWeapon.GetComponent<Weapon>().SetEquipment(this);
+        }
+        else
+        {
+            // dados
+            dices = new DicePool();
+            // instancio el arma que va a usar el jugador
+            GameObject tPrimaryWeapon = Instantiate(prefabPrimaryWeapon, transform);
+            // seteo de armas
+            primaryWeapon = tPrimaryWeapon.GetComponent<IShootable>();
+            tPrimaryWeapon.GetComponent<Weapon>().SetEquipment(this);
+        }
+        // muestro los dados
         ShowDiceToUse();
     }
 
     private void Update()
     {
-        //print(actionPoints / 3f);
+        // muestro la cantidad de puntos de accion
         actionPointImage.fillAmount = actionPoints / 3f;
     }
 
@@ -179,7 +199,7 @@ public class Equipment : MonoBehaviour
     // inicia nueva oleada, para centralizar funciones
     public void NewWabe()
     {
-        StartCoroutine(Walking());      
+        StartCoroutine(Walking());
     }
 
     IEnumerator Walking()
@@ -193,6 +213,13 @@ public class Equipment : MonoBehaviour
         yield return new WaitForSeconds(1.8f);
         // inicio nueva oleada
         animationManager.Walk(false);
-        lineManager.ActivateGameMode(); 
+        lineManager.ActivateGameMode();
+    }
+
+    public void SaveCharacter()
+    {
+        float hp = GetComponent<IDamageable>().HP;
+        Character character = new Character(dices, prefabPrimaryWeapon, prefabTurret, hp);
+        gameInfo.SaveCharacter(character);
     }
 }
