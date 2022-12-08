@@ -41,6 +41,14 @@ public class Character
     #endregion
 
     #region Funciones y Metodos
+    public void SetPrimaryWeapon(GameObject weapon)
+    {
+        primaryWeapon = weapon;
+    }
 
+    public void SetSecondaryWeapon(GameObject weapon)
+    {
+        secondaryWeapon = weapon;
+    }
     #endregion
 }

@@ -16,6 +16,7 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
     [SerializeField] private float damage;
     [SerializeField] private float attackDistance;
     [SerializeField] private float timeBetweenAttacks;
+    [SerializeField] private float stunProbability;
 
     [Header("FXs")]
     [SerializeField] private ParticleSystem getDamage;
@@ -78,16 +79,24 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
 
     public void GetDamage(float damage)
     {
-        animator.SetBool("Move", false);
-        getDamage.Play();
         if (alive)
         {
             StopAllCoroutines();
             HP -= damage;
+            getDamage.Play();
             if (HP > 0)
             {
-                // solso resive daño        
-                StartCoroutine(OnlyDamage());
+                float probability = Random.Range(0, 1);
+                if (probability < stunProbability)
+                {
+                    animator.SetBool("Move", false);
+                    StartCoroutine(Damage(true));
+                }
+                else
+                {
+                    // solso resive daño        
+                    StartCoroutine(Damage(false));
+                }
             }
             else
             {
@@ -97,7 +106,7 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
         }
     }
 
-    IEnumerator OnlyDamage()
+    IEnumerator Damage(bool stop)
     {
         //sonido
         audioSource.pitch = AjustPitch();
@@ -105,7 +114,10 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
         audioSource.Play();
         //control de animaciones y movimiento
         isGetingDamage = true;
-        animator.SetTrigger("Get Damage");
+        if (stop)
+        {
+            animator.SetTrigger("Get Damage");
+        }
         yield return new WaitForSeconds(0.5f);
         isAttacking = false;
         isGetingDamage = false;
@@ -113,6 +125,7 @@ public class Dino : MonoBehaviour, IEnemy, IDamageable
 
     IEnumerator Death()
     {
+        animator.SetBool("Move", false);
         //sonido
         audioSource.pitch = 1;
         audioSource.clip = deathSound;

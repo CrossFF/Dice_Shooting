@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RewardDiceButton : MonoBehaviour, IPointerDownHandler
 {
@@ -25,13 +26,20 @@ public class RewardDiceButton : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        panel.Use(dice);
+        if(SceneManager.GetActiveScene().name == "Exterminio")
+            panel.Use(dice);
     }
 
     public void SetDice(Dice d, IRewardPanel p)
     {
         dice = d;
         panel = p;
+        ApplyVisuals();
+    }
+
+    public void SetDice(Dice d)
+    {
+        dice = d;
         ApplyVisuals();
     }
 

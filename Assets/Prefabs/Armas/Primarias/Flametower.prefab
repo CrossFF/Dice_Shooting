@@ -4882,7 +4882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb88331746823f940a7a1919cc6aa13b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  inicialDamage: 1
   distanceAttack: 8
   timeTick: 0.5
   particleNormalFlame: {fileID: 2701142117256855367}

@@ -41,6 +41,7 @@ public class SceneControl : MonoBehaviour
 
     public void GameOver()
     {
+        GameObject.Find("Game Info").GetComponent<GameInfo>().SaveCharacter(null);
         SceneManager.LoadScene(2);
     }
 

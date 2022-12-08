@@ -42,6 +42,8 @@ public class Exterminate : MonoBehaviour, IGameMode
     private int totalEnemyDefeat = 0;
     private int totalEnemysEscape = 0; // enemigos que lograron escaparse
 
+    private Difficulty difficulty;
+
     public void Activate()
     {
         isWabeActive = true;
@@ -67,8 +69,9 @@ public class Exterminate : MonoBehaviour, IGameMode
         isWabeActive = false;
     }
 
-    public void SetDifficulty(Difficulty difficulty)
+    public void SetDifficulty(Difficulty dif)
     {
+        difficulty = dif;
         switch (difficulty)
         {
             case Difficulty.Easy:
@@ -135,53 +138,71 @@ public class Exterminate : MonoBehaviour, IGameMode
                 if (cronometer >= timeSpawn)
                 {
                     // cuando sea tiempo de spawner algo
-                    //spawn de enemigo
-                    lineManager.SpawnEnemy(prefabEnemys[0]);
-                    totalEnemySpawn++;
-                    enemysInWabe++;
-                    cronometer = 0;
+                    SpawnEnemy();
                 }
             }
             else
             {
-                // verifico si estan muertos todos los enemigos
-                if (enemysInWabe <= 0)
+                // verifico la win condition
+                WinCondition();
+            }
+        }
+    }
+
+    private void SpawnEnemy()
+    {
+        if (difficulty == Difficulty.Easy)
+        {
+            lineManager.SpawnEnemy(prefabEnemys[0]);
+        }
+        else
+        {
+            int num = Random.Range(0, prefabEnemys.Count);
+            lineManager.SpawnEnemy(prefabEnemys[num]);
+        }
+        totalEnemySpawn++;
+        enemysInWabe++;
+        cronometer = 0;
+    }
+
+    private void WinCondition()
+    {
+        // verifico si estan muertos todos los enemigos
+        if (enemysInWabe <= 0)
+        {
+            // aumento la oleada o el nivel
+            if (wabe < limitWabe)
+            {
+                wabe++;
+                panelDeCarteles.MostrarCartel("Nueva oleada");
+            }
+            else
+            {
+                if (enemysDefeat > totalEnemySpawn / 2)
                 {
-                    // aumento la oleada o el nivel
-                    if (wabe < limitWabe)
+                    Pause();
+                    totalLevels--;
+                    if (totalLevels > 0)
                     {
-                        wabe++;
-                        panelDeCarteles.MostrarCartel("Nueva oleada");
+                        wabe = 1;
+                        enemysToSpawn++;
+                        // inicio etapa de recompenza
+                        panelDeCarteles.MostrarCartel("Enemigos Derrotados");
+                        rewardsOptions.StartRewardState();
+                        //reseteo variables  
+                        totalEnemySpawn = 0;
+                        enemysInWabe = 0;
+                        cronometer = 0f;
+                        if (timeSpawn > 0.2f) timeSpawn = Mathf.Clamp(timeSpawn - 0.2f, 0.2f, 5);
                     }
                     else
                     {
-                        if (enemysDefeat > totalEnemySpawn / 2)
-                        {
-                            Pause();
-                            totalLevels--;
-                            if (totalLevels > 0)
-                            {
-                                wabe = 1;
-                                enemysToSpawn++;
-                                // inicio etapa de recompenza
-                                panelDeCarteles.MostrarCartel("Enemigos Derrotados");
-                                rewardsOptions.StartRewardState();
-                                //reseteo variables  
-                                totalEnemySpawn = 0;
-                                enemysInWabe = 0;
-                                cronometer = 0f;
-                                if (timeSpawn > 0.2f) timeSpawn = Mathf.Clamp(timeSpawn - 0.2f, 0.2f, 5);
-                            }
-                            else
-                            {
-                                StartCoroutine(ActiveWin());
-                            }
-                        }
-                        else
-                        {
-                            Lose();
-                        }
+                        StartCoroutine(ActiveWin());
                     }
+                }
+                else
+                {
+                    Lose();
                 }
             }
         }
