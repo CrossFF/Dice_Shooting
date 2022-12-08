@@ -41,7 +41,7 @@ public class Equipment : MonoBehaviour
         {
             // seteo la info del personaje segun lo que tenga el game info
             // vida del jugador
-            gameObject.GetComponent<IDamageable>().HP = gameInfo.Character.HP;
+            gameObject.GetComponent<PlayerHP>().HP = gameInfo.Character.ActualHP;
             // informacion de equipamiento
             prefabPrimaryWeapon = gameInfo.Character.PrimaryWeapon;
             prefabTurret = gameInfo.Character.SecondaryWeapon;
@@ -218,8 +218,9 @@ public class Equipment : MonoBehaviour
 
     public void SaveCharacter()
     {
-        float hp = GetComponent<IDamageable>().HP;
-        Character character = new Character(dices, prefabPrimaryWeapon, prefabTurret, hp);
+        PlayerHP playerHP = GetComponent<PlayerHP>();
+        float actualHP = playerHP.HP;
+        Character character = new Character(dices, prefabPrimaryWeapon, prefabTurret, actualHP);
         gameInfo.SaveCharacter(character);
     }
 }

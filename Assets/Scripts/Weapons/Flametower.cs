@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Flametower : MonoBehaviour, IShootable
+public class Flametower : Weapon, IShootable
 {
     [Header("Stats")]
-    [SerializeField] private float damage;
+    [SerializeField] private float inicialDamage;
     [SerializeField] private float distanceAttack;
     [SerializeField] private float timeTick;
     private bool isAttacking = false;
     private float specialAttackTime, attackTime, cronometer;
-
+ 
     [Header("References")]
     [SerializeField] private ParticleSystem particleNormalFlame;
     [SerializeField] private ParticleSystem particleSpecialFlame;
@@ -29,6 +29,8 @@ public class Flametower : MonoBehaviour, IShootable
         cronometer = 0;
         attackTime = 0;
         specialAttackTime = 0;
+
+        SetDamage(inicialDamage);
     }
 
     void Update()
@@ -52,7 +54,7 @@ public class Flametower : MonoBehaviour, IShootable
                 particleSpecialFlame.Stop();
             }
         }
-
+ 
         // Ataque
         if (isAttacking)
         {
@@ -94,7 +96,7 @@ public class Flametower : MonoBehaviour, IShootable
                     // hago daño a todos los enemigos en la linea
                     foreach (var item in allEnemys)
                     {
-                        item.GetDamage(damage);
+                        item.GetDamage(Damage);
                     }
                 }
                 else
@@ -108,7 +110,7 @@ public class Flametower : MonoBehaviour, IShootable
                     }
                     foreach (var item in enemysInDistance)
                     {
-                        item.GetDamage(damage);
+                        item.GetDamage(Damage);
                     }
                 }
                 // reseto

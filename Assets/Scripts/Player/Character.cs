@@ -7,7 +7,7 @@ public class Character
     private DicePool dicePool;
     private GameObject primaryWeapon;
     private GameObject secondaryWeapon;
-    private float hp;
+    private float actualHP;
     //private float damagePWeapon;
     //private float damageSWeapon;
 
@@ -15,7 +15,7 @@ public class Character
     public DicePool Dices { get { return dicePool; } }
     public GameObject PrimaryWeapon { get { return primaryWeapon; } }
     public GameObject SecondaryWeapon { get { return secondaryWeapon; } }
-    public float HP { get { return hp; } }
+    public float ActualHP { get { return actualHP; } }
     //public float DamagePrimaryWeapon { get { return damagePWeapon; } }
     //public float DamageSecondaryWeapon { get { return damageSWeapon; } }
     #endregion
@@ -31,12 +31,12 @@ public class Character
         damageSWeapon = sWDamage;
     }*/
 
-    public Character(DicePool dices, GameObject pWeapon, GameObject sWeapon, float health)
+    public Character(DicePool dices, GameObject pWeapon, GameObject sWeapon, float actHP)
     {
         dicePool = dices;
         primaryWeapon = pWeapon;
         secondaryWeapon = sWeapon;
-        hp = health;
+        actualHP = actHP;
     }
     #endregion
 

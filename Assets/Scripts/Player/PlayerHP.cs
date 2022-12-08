@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHP : MonoBehaviour, IDamageable
 {
-    [SerializeField] private float hp; // para poder ponerle la vida que considere necesaria
+    public float inicialHP; // para poder ponerle la vida que considere necesaria
     public float HP { get; set; } // interfaz
     private bool alive;
     private static bool Alive;
@@ -23,7 +23,7 @@ public class PlayerHP : MonoBehaviour, IDamageable
 
     private void Awake()
     {
-        HP = hp;
+        HP = inicialHP;
         alive = true;
         Alive = alive;
         animationManager = GetComponent<AnimationManager>();
