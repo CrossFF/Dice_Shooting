@@ -105,8 +105,9 @@ public class Exterminate : MonoBehaviour, IGameMode
 
     public void Win()
     {
-        GameObject.Find("Character").GetComponent<Equipment>().SaveCharacter();
-        sceneControl.YouWin();
+        GameObject.Find("Character").GetComponent<Equipment>().SaveCharacter(totalEnemyDefeat, totalEnemysEscape);
+        // vuelo al menu de misones y Equipo
+        sceneControl.StartGame();
     }
 
     public void Lose()
@@ -210,7 +211,7 @@ public class Exterminate : MonoBehaviour, IGameMode
 
     IEnumerator ActiveWin()
     {
-        panelDeCarteles.MostrarCartel("ENEMIGOS ELIMINADOS");
+        panelDeCarteles.MostrarCartel("MISION COMPLETADA");
         yield return new WaitForSeconds(3f);
         Win();
     }

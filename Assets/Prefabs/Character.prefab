@@ -5537,7 +5537,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.24705882}
   m_FlipX: 0
@@ -5697,7 +5697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c093ede455e56804cba906edfba40350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 5
+  inicialHP: 0
   getDamageSoundClip: {fileID: 8300000, guid: 814361f21f2b14d45b7ee00bf83c7085, type: 3}
   deadSoundClip: {fileID: 8300000, guid: d26bdf97c1504fa44a61f453b357c87b, type: 3}
   getDamageParticleSystem: {fileID: 4837052042856420218}
@@ -5892,6 +5892,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4837052044655893289}
     m_Modifications:
+    - target: {fileID: 9109586994183073018, guid: 33b94b93943c4d545b9867965b2ca835, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9109586994183073021, guid: 33b94b93943c4d545b9867965b2ca835, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1

@@ -30,6 +30,12 @@ public class GameLobby : MonoBehaviour
     [SerializeField] private Animator animCardsMenu;
     private List<GameObject> tCards;
 
+    [Header("Mission References")]
+    [SerializeField] private Transform DisplayMision;
+    [SerializeField] private GameObject prefabButtonMision;
+    [SerializeField] private Text textMissions;
+    [SerializeField] private Text textEnemysDefeat;
+    [SerializeField] private Text textEnemysNotDefeat;
     #endregion
     void Start()
     {
@@ -46,10 +52,20 @@ public class GameLobby : MonoBehaviour
         {
             // es una nueva partida
             // creo un personaje nuevo
-            Character newCharacter = new Character(new DicePool(), prefabsPrimaryWeapon[0], prefabsSecondaryWeapon[0], 5);
+            Character newCharacter = new Character(new DicePool(),
+                                                   prefabsPrimaryWeapon[0],
+                                                   prefabsSecondaryWeapon[0],
+                                                   5,
+                                                   0,
+                                                   0,
+                                                   0);
             gameInfo.SaveCharacter(newCharacter);
         }
         SetInfoEquipMenu();
+
+        //instancio misiones para que el jugador
+        GenerateMissions();
+        ShowMissionsStats();
     }
 
     public void ShowEquipMenu()
@@ -94,7 +110,7 @@ public class GameLobby : MonoBehaviour
             }
         }
         // cartas
-        if(tCards == null) tCards = new List<GameObject>();
+        if (tCards == null) tCards = new List<GameObject>();
         // limpieza de lista
         foreach (var item in tCards.ToArray())
         {
@@ -137,6 +153,7 @@ public class GameLobby : MonoBehaviour
 
     public void ChangePrimaryWeapon(int index)
     {
+        animSelectionWeapon.SetBool("Menu Active", false);
         if (index <= prefabsPrimaryWeapon.Count - 1)
             gameInfo.Character.SetPrimaryWeapon(prefabsPrimaryWeapon[index]);
         SetInfoEquipMenu();
@@ -144,6 +161,7 @@ public class GameLobby : MonoBehaviour
 
     public void ChangeSecondaryWeapon(int index)
     {
+        animSelectionWeapon.SetBool("Menu Active", false);
         if (index <= prefabsSecondaryWeapon.Count - 1)
             gameInfo.Character.SetSecondaryWeapon(prefabsSecondaryWeapon[index]);
         SetInfoEquipMenu();
@@ -158,6 +176,79 @@ public class GameLobby : MonoBehaviour
     public void HideCards()
     {
         animCardsMenu.SetBool("Menu Active", false);
+    }
+    #endregion
+    #region Mision Functions
+    public void GenerateMissions()
+    {
+        // creo misiones en base a la cantidad de misiones completadas
+        if (gameInfo.Character.MissionCount < 3)
+        {
+            // genero 3 misiones faciles
+            for (int i = 0; i < 3; i++)
+            {
+                Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Easy);
+            }
+        }
+        if (gameInfo.Character.MissionCount > 2 && gameInfo.Character.MissionCount < 6)
+        {
+            switch (gameInfo.Character.MissionCount)
+            {
+                case 3:
+                    // genero 2 misiones faciles, 1 normal}
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Easy);
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Easy);
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
+                    break;
+                case 4:
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Easy);
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
+                    break;
+                case 5:
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
+                    break;
+            }
+        }
+        if (gameInfo.Character.MissionCount > 5 && gameInfo.Character.MissionCount < 8)
+        {
+            switch (gameInfo.Character.MissionCount)
+            {
+                case 6:
+                    // genero 2 misiones normales, 1 dificil
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Hard);
+                    break;
+                case 7:
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Hard);
+                    Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Hard);
+                    break;
+            }
+        }
+        if (gameInfo.Character.MissionCount > 7)
+        {
+            // genero 3 misiones dificiles
+            for (int i = 0; i < 3; i++)
+            {
+                Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Hard);
+            }
+        }
+    }
+
+    public void StartMision(Difficulty difficulty)
+    {
+        GetComponent<SceneControl>().StartGame(difficulty);
+    }
+
+    void ShowMissionsStats()
+    {
+        textMissions.text = gameInfo.Character.MissionCount.ToString();
+        textEnemysDefeat.text = gameInfo.Character.EnemysDefeat.ToString();
+        textEnemysNotDefeat.text = gameInfo.Character.EnemysNotDefeat.ToString();
     }
     #endregion
 }

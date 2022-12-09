@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class RewardDiceButton : MonoBehaviour, IPointerDownHandler
+public class RewardDiceButton : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
     private Dice dice;
     private IRewardPanel panel;
@@ -28,6 +28,19 @@ public class RewardDiceButton : MonoBehaviour, IPointerDownHandler
     {
         if(SceneManager.GetActiveScene().name == "Exterminio")
             panel.Use(dice);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        // para marcar que es intercatuable
+        // aumento el tamaño del objeto en la UI
+        transform.localScale = new Vector3(1.1f,1.1f,1.1f); 
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        // vuelvo el objeto a su tamaño orginal
+        transform.localScale = new Vector3(1,1,1);
     }
 
     public void SetDice(Dice d, IRewardPanel p)

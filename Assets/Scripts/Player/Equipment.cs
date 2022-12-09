@@ -216,11 +216,17 @@ public class Equipment : MonoBehaviour
         lineManager.ActivateGameMode();
     }
 
-    public void SaveCharacter()
+    public void SaveCharacter(int eD, int eND)
     {
         PlayerHP playerHP = GetComponent<PlayerHP>();
         float actualHP = playerHP.HP;
-        Character character = new Character(dices, prefabPrimaryWeapon, prefabTurret, actualHP);
+        Character character = new Character(dices,
+                                            prefabPrimaryWeapon,
+                                            prefabTurret,
+                                            actualHP,
+                                            gameInfo.Character.MissionCount + 1,
+                                            gameInfo.Character.EnemysDefeat + eD,
+                                            gameInfo.Character.EnemysNotDefeat + eND);
         gameInfo.SaveCharacter(character);
     }
 }

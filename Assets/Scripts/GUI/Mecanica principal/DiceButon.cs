@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class DiceButon : MonoBehaviour, IPointerDownHandler
+public class DiceButon : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
     private Dice dice;
     private int value = 0;
@@ -38,7 +38,19 @@ public class DiceButon : MonoBehaviour, IPointerDownHandler
                 playerEquipment.Shoot(dice, value);
             }
         }
+    }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        // para marcar que es intercatuable
+        // aumento el tamaño del objeto en la UI
+        transform.localScale = new Vector3(1.1f,1.1f,1.1f); 
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        // vuelvo el objeto a su tamaño orginal
+        transform.localScale = new Vector3(1,1,1);
     }
 
     public void SetDice(Dice d, Equipment e)
