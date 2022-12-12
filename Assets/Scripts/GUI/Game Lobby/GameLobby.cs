@@ -182,7 +182,7 @@ public class GameLobby : MonoBehaviour
     public void GenerateMissions()
     {
         // creo misiones en base a la cantidad de misiones completadas
-        if (gameInfo.Character.MissionCount < 3)
+        if (gameInfo.Character.MissionCount < 2)
         {
             // genero 3 misiones faciles
             for (int i = 0; i < 3; i++)
@@ -190,46 +190,46 @@ public class GameLobby : MonoBehaviour
                 Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Easy);
             }
         }
-        if (gameInfo.Character.MissionCount > 2 && gameInfo.Character.MissionCount < 6)
+        if (gameInfo.Character.MissionCount > 1 && gameInfo.Character.MissionCount < 5)
         {
             switch (gameInfo.Character.MissionCount)
             {
-                case 3:
+                case 2:
                     // genero 2 misiones faciles, 1 normal}
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Easy);
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Easy);
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
                     break;
-                case 4:
+                case 3:
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Easy);
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
                     break;
-                case 5:
+                case 4:
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
                     break;
             }
         }
-        if (gameInfo.Character.MissionCount > 5 && gameInfo.Character.MissionCount < 8)
+        if (gameInfo.Character.MissionCount > 4 && gameInfo.Character.MissionCount < 7)
         {
             switch (gameInfo.Character.MissionCount)
             {
-                case 6:
+                case 5:
                     // genero 2 misiones normales, 1 dificil
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Hard);
                     break;
-                case 7:
+                case 6:
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Normal);
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Hard);
                     Instantiate(prefabButtonMision, DisplayMision).GetComponent<MisionButton>().SetInfo(Difficulty.Hard);
                     break;
             }
         }
-        if (gameInfo.Character.MissionCount > 7)
+        if (gameInfo.Character.MissionCount > 6)
         {
             // genero 3 misiones dificiles
             for (int i = 0; i < 3; i++)

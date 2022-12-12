@@ -64,17 +64,17 @@ public class RewardDiceButton : MonoBehaviour, IPointerDownHandler, IPointerEnte
         // color de fondo y nombre dependiendo uso de dado
         switch (dice.DiceUse)
         {
-            case DiceUse.Attack:
+            case DiceUse.WeaponAttack:
                 imageBottom.color = bottomColors[0];
                 imageNameCard.color = nameColors[0];
                 imageSpriteCard.sprite = spritesDices[0];
                 break;
-            case DiceUse.Special1:
+            case DiceUse.SupportEquip:
                 imageBottom.color = bottomColors[1];
                 imageNameCard.color = nameColors[1];
                 imageSpriteCard.sprite = spritesDices[1];
                 break;
-            case DiceUse.Special2:
+            case DiceUse.WeaponSkill:
                 imageBottom.color = bottomColors[2];
                 imageNameCard.color = nameColors[2];
                 imageSpriteCard.sprite = spritesDices[2];

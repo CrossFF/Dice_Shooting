@@ -106,13 +106,13 @@ public class Equipment : MonoBehaviour
 
         switch (dice.DiceUse)
         {
-            case DiceUse.Attack:
+            case DiceUse.WeaponAttack:
                 primaryWeapon.Shoot(value);
                 break;
-            case DiceUse.Special1:
+            case DiceUse.SupportEquip:
                 InstallTurret(value);
                 break;
-            case DiceUse.Special2:
+            case DiceUse.WeaponSkill:
                 primaryWeapon.Special(value);
                 break;
         }

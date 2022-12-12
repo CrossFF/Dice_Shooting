@@ -43,11 +43,12 @@ public class Exterminate : MonoBehaviour, IGameMode
     private int totalEnemysEscape = 0; // enemigos que lograron escaparse
 
     private Difficulty difficulty;
+    private int levels;
 
     public void Activate()
     {
         isWabeActive = true;
-        panelDeCarteles.MostrarCartel("Nuevo nivel");
+        panelDeCarteles.MostrarCartel("wave start");
     }
 
     public void DeathEnemy()
@@ -100,6 +101,7 @@ public class Exterminate : MonoBehaviour, IGameMode
                 break;
         }
         wabe = 1;
+        levels = totalLevels;
         Activate();
     }
 
@@ -152,14 +154,53 @@ public class Exterminate : MonoBehaviour, IGameMode
 
     private void SpawnEnemy()
     {
-        if (difficulty == Difficulty.Easy)
+        int num = 0;
+        switch (difficulty)
         {
-            lineManager.SpawnEnemy(prefabEnemys[0]);
-        }
-        else
-        {
-            int num = Random.Range(0, prefabEnemys.Count);
-            lineManager.SpawnEnemy(prefabEnemys[num]);
+            case Difficulty.Easy:
+                if (Mathf.FloorToInt(levels / 2) == totalLevels)
+                {
+                    // a mitad de oleada invoco enemigos fuertes
+                    // a final monstruos muy fuertes
+                    num = Random.Range(0, 2);
+                    lineManager.SpawnEnemy(prefabEnemys[num]);
+                }
+                else if (totalLevels == 1)
+                {
+                    num = Random.Range(0, prefabEnemys.Count);
+                    lineManager.SpawnEnemy(prefabEnemys[num]);
+                }
+                else
+                {
+                    lineManager.SpawnEnemy(prefabEnemys[0]);
+                }
+                break;
+
+            case Difficulty.Normal:
+                if (Mathf.FloorToInt(levels / 2) == totalLevels)
+                {
+                    // a la mitad todos los enemigos
+                    num = Random.Range(0, prefabEnemys.Count);
+                    lineManager.SpawnEnemy(prefabEnemys[num]);
+                }
+                else
+                {
+                    // a inicio monstruos normales y fuertes
+                    num = Random.Range(0, 2);
+                    lineManager.SpawnEnemy(prefabEnemys[num]);
+                }
+                break;
+
+            case Difficulty.Hard:
+                // todos los enemigos
+                num = Random.Range(0, prefabEnemys.Count);
+                lineManager.SpawnEnemy(prefabEnemys[num]);
+                break;
+            default:
+                // todos los enemigos
+                num = Random.Range(0, prefabEnemys.Count);
+                lineManager.SpawnEnemy(prefabEnemys[num]);
+                break;
         }
         totalEnemySpawn++;
         enemysInWabe++;
@@ -175,7 +216,7 @@ public class Exterminate : MonoBehaviour, IGameMode
             if (wabe < limitWabe)
             {
                 wabe++;
-                panelDeCarteles.MostrarCartel("Nueva oleada");
+                panelDeCarteles.MostrarCartel("New Wave");
             }
             else
             {
@@ -188,7 +229,7 @@ public class Exterminate : MonoBehaviour, IGameMode
                         wabe = 1;
                         enemysToSpawn++;
                         // inicio etapa de recompenza
-                        panelDeCarteles.MostrarCartel("Enemigos Derrotados");
+                        panelDeCarteles.MostrarCartel("enemies defeated");
                         rewardsOptions.StartRewardState();
                         //reseteo variables  
                         totalEnemySpawn = 0;
@@ -211,7 +252,7 @@ public class Exterminate : MonoBehaviour, IGameMode
 
     IEnumerator ActiveWin()
     {
-        panelDeCarteles.MostrarCartel("MISION COMPLETADA");
+        panelDeCarteles.MostrarCartel("mission complete");
         yield return new WaitForSeconds(3f);
         Win();
     }

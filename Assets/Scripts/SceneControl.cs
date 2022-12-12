@@ -8,7 +8,7 @@ public class SceneControl : MonoBehaviour
     public void StartGame()
     {
         // escena de Misiones y Equipo
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(0);
     }
 
     public void StartGame(Difficulty difficulty)
@@ -19,28 +19,10 @@ public class SceneControl : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void ExitGame()
-    {
-        // Cerrar Aplicacion
-        Application.Quit();
-    }
-
-    public void MainMenu()
-    {
-        // Menu Principal
-        SceneManager.LoadScene(0);
-    }
-
     public void GameOver()
     {
         // Escena de GAME OVER
         GameObject.Find("Game Info").GetComponent<GameInfo>().SaveCharacter(null);
         SceneManager.LoadScene(2);
-    }
-
-    public void YouWin()
-    {
-        // Escena de GANASTE, pero la voy a eliminar, sobra un poquito
-        SceneManager.LoadScene(3);
     }
 }

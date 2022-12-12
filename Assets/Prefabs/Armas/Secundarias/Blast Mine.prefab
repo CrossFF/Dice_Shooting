@@ -34128,7 +34128,7 @@ GameObject:
   - component: {fileID: 3711349124700956886}
   - component: {fileID: 5911492173385195362}
   m_Layer: 0
-  m_Name: Explosive Turret
+  m_Name: Blast Mine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

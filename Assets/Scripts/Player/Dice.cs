@@ -13,22 +13,22 @@ public class DicePool
         for (int i = 0; i < 2; i++)
         {
             // ataque
-            dices.Add(new Dice(DiceUse.Attack));
+            dices.Add(new Dice(DiceUse.WeaponAttack));
         }
         for (int i = 0; i < 2; i++)
         {
             // ataque 1 mejora
-            dices.Add(new Dice(DiceUse.Attack, DiceProperty.Normal, 1));
+            dices.Add(new Dice(DiceUse.WeaponAttack, DiceProperty.Normal, 1));
         }
         for (int i = 0; i < 2; i++)
         {
             // especial 1
-            dices.Add(new Dice(DiceUse.Special1));
+            dices.Add(new Dice(DiceUse.SupportEquip));
         }
         for (int i = 0; i < 2; i++)
         {
             //especial 2
-            dices.Add(new Dice(DiceUse.Special2));
+            dices.Add(new Dice(DiceUse.WeaponSkill));
         }
     }
     #endregion
@@ -109,16 +109,16 @@ public class DicePool
             switch (num)
             {
                 case 0:
-                    diceUse = DiceUse.Attack;
+                    diceUse = DiceUse.WeaponAttack;
                     break;
                 case 1:
-                    diceUse = DiceUse.Special1;
+                    diceUse = DiceUse.SupportEquip;
                     break;
                 case 2:
-                    diceUse = DiceUse.Special2;
+                    diceUse = DiceUse.WeaponSkill;
                     break;
                 default:
-                    diceUse = DiceUse.Attack;
+                    diceUse = DiceUse.WeaponAttack;
                     break;
             }
             // defino el tipo del dado
@@ -373,9 +373,9 @@ public class Dice
 
 public enum DiceUse
 {
-    Attack,
-    Special1,
-    Special2
+    WeaponAttack,
+    SupportEquip,
+    WeaponSkill
 }
 
 public enum DiceProperty
