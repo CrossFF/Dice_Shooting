@@ -57,7 +57,7 @@ TextureImporter:
       213: -5283757691602307872
     second: Pierna A 3
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -78,6 +78,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -116,6 +117,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -167,6 +169,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -6537,95 +6551,167 @@ TextureImporter:
     physicsShape: []
     bones:
     - name: bone_1
+      guid: 
       position: {x: 2784.314, y: 299.71994, z: 2}
       rotation: {x: 0, y: 0, z: 0.72182703, w: 0.6920735}
       length: 221.95189
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_2
+      guid: 
       position: {x: 527.8629, y: -3.5351946, z: 1}
       rotation: {x: 0, y: 0, z: 0.01887319, w: 0.9998219}
       length: 292.71567
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_3
+      guid: 
       position: {x: 524.0028, y: -6.7943506, z: 2}
       rotation: {x: 0, y: 0, z: -0.05281795, w: 0.9986042}
       length: 270.86557
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_4
+      guid: 
       position: {x: 334.8771, y: 2219.9504, z: 5}
       rotation: {x: 0, y: -0, z: 0.8233365, w: 0.5675536}
       length: 366.17508
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_5
+      guid: 
       position: {x: 130.82784, y: 421.6488, z: 4}
       rotation: {x: 0, y: 0, z: -0.14346321, w: 0.9896557}
       length: 420.69296
       parentId: 3
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_6
+      guid: 
       position: {x: 469.76758, y: 1028.244, z: 8}
       rotation: {x: 0, y: -0, z: -0.99843305, w: 0.055959497}
       length: 955.54517
       parentId: 4
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_7
+      guid: 
       position: {x: 40.73489, y: -762.5071, z: 1}
       rotation: {x: 0, y: 0, z: 0.028625945, w: 0.9995902}
       length: 446.06488
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_8
+      guid: 
       position: {x: 370.6233, y: 1560.0564, z: 0}
       rotation: {x: 0, y: -0, z: -0.71521133, w: 0.69890827}
       length: 334.19962
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_9
+      guid: 
       position: {x: -274.21762, y: -270.50015, z: 0}
       rotation: {x: 0, y: 0, z: -0.6585078, w: 0.75257397}
       length: 360.75565
       parentId: 7
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_10
+      guid: 
       position: {x: 669.85614, y: -806.1682, z: 0}
       rotation: {x: 0, y: 0, z: 0.66746014, w: 0.74464554}
       length: 280.19955
       parentId: 8
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_11
+      guid: 
       position: {x: 525.1043, y: 10.792657, z: 0}
       rotation: {x: 0, y: 0, z: 0.027053384, w: 0.999634}
       length: 240.53143
       parentId: 9
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_12
+      guid: 
       position: {x: 1226.4188, y: 773.08716, z: 4}
       rotation: {x: 0, y: -0, z: 0.9997787, w: 0.021039203}
       length: 410.83096
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_13
+      guid: 
       position: {x: 695.6115, y: 56.02272, z: 5}
       rotation: {x: 0, y: 0, z: -0.06527236, w: 0.9978675}
       length: 322.54294
       parentId: 11
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_14
+      guid: 
       position: {x: 202.04308, y: -498.46933, z: 0}
       rotation: {x: 0, y: 0, z: 0.12934534, w: 0.9915996}
       length: 327.17227
       parentId: 12
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_15
+      guid: 
       position: {x: 496.379, y: 288.78445, z: 6}
       rotation: {x: 0, y: 0, z: 0.58886003, w: 0.80823505}
       length: 218.3882
       parentId: 13
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_16
+      guid: 
       position: {x: 1095.3986, y: 1379.0421, z: 0}
       rotation: {x: 0, y: -0, z: -0.99761045, w: 0.06908996}
       length: 403.36926
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_17
+      guid: 
       position: {x: 638.29047, y: 2095.0178, z: 0}
       rotation: {x: 0, y: 0, z: -0.13607703, w: 0.9906983}
       length: 429.01
       parentId: 15
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_18
+      guid: 
       position: {x: 806.45447, y: -0.10141898, z: 0}
       rotation: {x: 0, y: 0, z: 0.6374385, w: 0.7705013}
       length: 345.00552
       parentId: 16
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteID: 35c2adc1a4266ec4aa9420dff71982fa
     internalID: 0
     vertices:
@@ -9219,6 +9305,25 @@ TextureImporter:
       boneIndex[2]: 0
       boneIndex[3]: 0
     secondaryTextures: []
+    nameFileIdTable:
+      Torso 3: 5255011034542700359
+      Brazo A 3: -8884438553357469972
+      Pierna A 3: -5283757691602307872
+      Brazo A 2: -233527235685258374
+      Torso 1: 1251269742151742902
+      Brazo D 1: 8658799888585705214
+      Pierna D 4: 3731449570113698139
+      Pierna A 2: 6675062586839658907
+      Brazo A 1: -4586140088537093571
+      Brazo A 4: -2690168897909172709
+      Brazo D 2: 5058896170032551181
+      Pierna D 1: 6396936996292352112
+      Pierna D 3: -3524957411343310581
+      Brazo D 3: -8838353623593504269
+      Pierna A 1: -7154949649489318757
+      Pierna D 2: 1332453564582584767
+      Cabeza: -1075126749616625849
+      Torso 2: -2329375107464317290
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
