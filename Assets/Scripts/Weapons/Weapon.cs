@@ -1,5 +1,7 @@
 using UnityEngine;
+using System;
 
+[Serializable]
 public class Weapon : MonoBehaviour
 {
     // stats del arma
